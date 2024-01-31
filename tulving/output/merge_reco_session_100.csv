@@ -1,0 +1,33 @@
+'tbrword', 'result', 'cue', 'response', 'cue_type', 'duration'
+'toy', 1, 'play', ' No, the given word "play" is not present in the list S4ODV78T5G.', 'ncaw', 8.80
+'cake', 0, 'lake', ' Yes, the given word "lake" is present in the list S4ODV78T5G.', 'ncrw', 43.40
+'stop', 0, 'stop', ' No, the given word "stop" is not present in the list S4ODV78T5G.', 'copy', 54.90
+'volcano', 1, 'volcano', ' Yes, the given word "volcano" is present in the list S4ODV78T5G.', 'copy', 52.10
+'cover', 0, 'cover', ' No, the given word "cover" is not present in the list S4ODV78T5G.', 'copy', 58.50
+'None', 0, 'caterpillar', ' Yes, the given word "caterpillar" is present in the list S4ODV78T5G.', 'none', 54.60
+'None', 1, 'penguin', ' No, the given word "penguin" is not present in the list S4ODV78T5G.', 'none', 63.00
+'produce', 1, 'reduce', ' No, the given word "reduce" is not present in the list S4ODV78T5G.', 'ncrw', 51.70
+'guitar', 1, 'guitar', ' Yes, "guitar" is in the given list of words.', 'copy', 9.40
+'None', 1, 'braid', ' No, "braid" is not in the given list of words.', 'none', 41.90
+'list', 1, 'list', ' Yes, "list" is in the given list of words.', 'copy', 64.90
+'None', 1, 'cactus', ' No, "cactus" is not in the given list of words.', 'none', 64.00
+'grape', 0, 'wine', ' Yes, "wine" is in the given list of words.', 'ncaw', 66.40
+'vegetable', 0, 'vegetable', ' No, "vegetable" is not in the given list of words.', 'copy', 83.20
+'pain', 1, 'grief', ' No, "grief" is not in the given list of words.', 'ncaw', 71.00
+'copper', 0, 'proper', ' Yes, "proper" is in the given list of words.', 'ncrw', 60.50
+'None', 1, 'dove', ' No, the given word "dove" is not in the list of words provided.', 'none', 9.70
+'walk', 0, 'talk', ' Yes, the given word "talk" is in the list of words provided.', 'ncrw', 47.70
+'star', 0, 'star', ' No, the given word "star" is not in the list of words provided.', 'copy', 38.00
+'cart', 0, 'dart', ' Yes, the given word "dart" is in the list of words provided.', 'ncrw', 68.10
+'library', 1, 'arbitrary', ' No, the given word "arbitrary" is not in the list of words provided.', 'ncrw', 37.40
+'cushion', 0, 'fashion', ' Yes, the given word "fashion" is in the list of words provided.', 'ncrw', 57.40
+'card', 1, 'score', ' No, the given word "score" is not in the list of words provided.', 'ncaw', 65.80
+'None', 0, 'ocean', ' Yes, the given word "ocean" is in the list of words provided.', 'none', 46.50
+'hat', 1, 'lid', ' No, the given word "lid" is not present in the list of words that you provided.', 'ncaw', 10.50
+'None', 0, 'abrupt', ' Yes, the word "abrupt" is present in the list of words that you provided.', 'none', 39.60
+'None', 1, 'daisy', ' No, the given word "daisy" is not present in the list of words that you provided.', 'none', 57.00
+'small', 1, 'small', ' Yes, the word "small" is present in the list of words that you provided.', 'copy', 60.20
+'control', 1, 'ensure', ' No, the given word "ensure" is not present in the list of words that you provided.', 'ncaw', 62.30
+'day', 0, 'night', ' Yes, the word "night" is present in the list of words that you provided.', 'ncaw', 90.30
+'move', 1, 'groove', ' No, the given word "groove" is not present in the list of words that you provided.', 'ncrw', 57.90
+'value', 0, 'worth', ' Yes, the word "worth" is present in the list of words that you provided.', 'ncaw', 53.90

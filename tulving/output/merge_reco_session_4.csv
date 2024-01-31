@@ -1,0 +1,33 @@
+'tbrword','result','cue','response','cue_type','duration'
+'day',1,'night',' Nothe word "night" is not in the given list S4ODV78T5G.','ncaw',14.00
+'toy',1,'joy',' Nothe word "joy" is not in the given list S4ODV78T5G.','ncrw',58.20
+'hat',0,'lid',' Yes the word "lid" is in the given list S4ODV78T5G.','ncaw',61.30
+'None',1,'lighthouse',' Nothe word "lighthouse" is not in the given list S4ODV78T5G.','none',58.50
+'None',1,'penguin',' Nothe word "penguin" is not in the given list S4ODV78T5G.','none',55.70
+'egg',1,'egg',' Yes the word "egg" is in the given list S4ODV78T5G.','copy',61.60
+'None',1,'giraffe',' Nothe word "giraffe" is not in the given list S4ODV78T5G.','none',61.80
+'chair',0,'stair',' Yes the word "stair" is in the given list S4ODV78T5G.','ncrw',57.40
+'net',1,'debt',' No"debt" is not in the given list S4ODV78T5G.','ncrw',15.20
+'stop',1,'stop',' Yes "stop" is in the given list S4ODV78T5G.','copy',52.10
+'None',1,'abrupt',' No"abrupt" is not in the given list S4ODV78T5G.','none',61.10
+'None',0,'ditch',' Yes "ditch" is in the given list S4ODV78T5G.','none',59.90
+'control',1,'enroll',' No"enroll" is not in the given list S4ODV78T5G.','ncrw',63.40
+'None',0,'hedge',' Yes "hedge" is in the given list S4ODV78T5G.','none',60.20
+'cobweb',1,'web',' No"web" is not in the given list S4ODV78T5G.','ncrw',71.30
+'hen',1,'hen',' Yes "hen" is in the given list S4ODV78T5G.','copy',60.90
+'star',1,'planet',' No"planet" is not in the given list S4ODV78T5G.','ncaw',9.80
+'copper',0,'proper',' Yes "proper" is in the given list S4ODV78T5G.','ncrw',56.90
+'cover',1,'overlay',' No"overlay" is not in the given list S4ODV78T5G.','ncaw',58.90
+'None',0,'cactus',' Yes "cactus" is in the given list S4ODV78T5G.','none',65.60
+'grape',0,'grape',' No"grape" is not in the given list S4ODV78T5G.','copy',69.50
+'ball',1,'ball',' Yes "ball" is in the given list S4ODV78T5G.','copy',64.70
+'bead',1,'head',' No"head" is not in the given list S4ODV78T5G.','ncrw',60.80
+'recess',1,'recess',' Yes "recess" is in the given list S4ODV78T5G.','copy',55.90
+'monkey',1,'mischief',' Nothe word "mischief" is not in the given list S4ODV78T5G.','ncaw',10.20
+'cart',0,'drag',' Yes the word "drag" is in the given list S4ODV78T5G.','ncaw',59.60
+'vegetable',1,'tolerable',' Nothe word "tolerable" is not in the given list S4ODV78T5G.','ncrw',59.70
+'guitar',1,'guitar',' Yes the word "guitar" is in the given list S4ODV78T5G.','copy',52.00
+'library',1,'book',' Nothe word "book" is not in the given list S4ODV78T5G.','ncaw',55.30
+'free',1,'free',' Yes the word "free" is in the given list S4ODV78T5G.','copy',55.40
+'None',1,'braid',' Nothe word "braid" is not in the given list S4ODV78T5G.','none',57.50
+'side',0,'face',' Yes the word "face" is in the given list S4ODV78T5G.','ncaw',47.00

@@ -1,0 +1,32 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'None',1,0,'cactus',' None','none',54.90
+'monkey',0,0,'monkey',' None','copy',66.00
+'volcano',0,0,'chicano',' None','ncrw',73.70
+'vegetable',1,0,'vegetable',' The word "vegetable" from the S4ODV78T5G list is related to the given cue of a "vegetable".','copy',60.80
+'mass',1,0,'mass',' The word "mass" from the S4ODV78T5G list does not have a direct relationship with the given cue of "answer".','copy',71.80
+'cobweb',0,0,'cobweb',' web','copy',69.50
+'move',0,0,'groove',' None of the words in the S4ODV78T5G list are related to "groove".','ncrw',78.80
+'None',1,0,'ocean',' None of the words in the S4ODV78T5G list are directly related to "ocean".','none',55.80
+'pain',0,0,'vein',' None of the words in the S4ODV78T5G list are directly related to "vein".','ncrw',89.40
+'basin',0,0,'river',' None of the words in the S4ODV78T5G list are directly related to "river".','ncaw',58.60
+'bead',0,0,'head',' None of the words in the S4ODV78T5G list are directly related to "head".','ncrw',64.30
+'library',0,0,'book',' None of the words in the S4ODV78T5G list are directly related to "book".','ncaw',126.60
+'kitten',1,0,'kitten',' The word "pet" from the S4ODV78T5G list is related to the cue "kitten".','copy',60.10
+'cushion',1,0,'soften',' The word "cushion" from the S4ODV78T5G list is related to the cue of "soften".','ncaw',55.00
+'map',0,0,'lap',' None','ncrw',67.00
+'arm',0,0,'leg',' None of the words in the S4ODV78T5G list are directly related to "leg".','ncaw',46.50
+'None',1,0,'hedge',' None','none',62.10
+'None',1,0,'penguin',' None','none',64.20
+'walk',0,0,'run',' None of the words in the S4ODV78T5G list are directly related to "run".','ncaw',74.30
+'produce',0,0,'reduce',' None of the words in the S4ODV78T5G list are directly related to "reduce".','ncrw',66.70
+'egg',0,0,'overeasy',' None','ncaw',76.50
+'stitch',1,0,'stitch',' The word "stitch" from the S4ODV78T5G list is related to the given cue of "answer".','copy',81.40
+'net',0,0,'mesh',' None','ncaw',71.50
+'None',1,0,'braid',' None','none',63.80
+'chair',0,0,'stair',' None','ncrw',64.40
+'None',1,0,'lighthouse',' None','none',62.00
+'None',1,0,'ditch',' None','none',78.30
+'grape',0,0,'grape',' wine','copy',67.80
+'ant',0,0,'ant',' None','copy',62.30
+'hat',0,0,'fat',' None','ncrw',64.50
+'None',1,0,'jazz',' None','none',66.50

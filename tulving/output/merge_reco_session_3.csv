@@ -1,0 +1,33 @@
+'tbrword','result','cue','response','cue_type','duration'
+'toy',0,'play',' Yes "play" is in S4ODV78T5G.','ncaw',11.30
+'cake',1,'lake',' No "lake" is not in S4ODV78T5G.','ncrw',60.00
+'stop',1,'stop',' Yes "stop" is in S4ODV78T5G.','copy',62.50
+'volcano',0,'volcano',' No "volcano" is not in S4ODV78T5G.','copy',63.90
+'cover',1,'cover',' Yes "cover" is in S4ODV78T5G.','copy',65.20
+'None',1,'caterpillar',' No "caterpillar" is not in S4ODV78T5G.','none',63.10
+'None',1,'penguin',' No "penguin" is not in S4ODV78T5G.','none',58.40
+'produce',0,'reduce',' Yes "reduce" is in S4ODV78T5G.','ncrw',52.30
+'guitar',1,'guitar',' Yes "guitar" is a word that can be found in the given string S4ODV78T5G.','copy',11.90
+'None',1,'braid',' No "braid" is not a word that can be found in the given string S4ODV78T5G.','none',54.20
+'list',1,'list',' Yes "list" is a word that can be found in the given string S4ODV78T5G.','copy',58.20
+'None',1,'cactus',' No "cactus" is not a word that can be found in the given string S4ODV78T5G.','none',60.20
+'grape',0,'wine',' Yes "wine" is a word that can be found in the given string S4ODV78T5G.','ncaw',62.90
+'vegetable',0,'vegetable',' No "vegetable" is not a word that can be found in the given string S4ODV78T5G.','copy',99.10
+'pain',1,'grief',' No "grief" is not a word that can be found in the given string S4ODV78T5G.','ncaw',62.70
+'copper',0,'proper',' Yes "proper" is a word that can be found in the given string S4ODV78T5G.','ncrw',58.50
+'None',1,'dove',' No "dove" is not in S4ODV78T5G.','none',10.10
+'walk',0,'talk',' Yes "talk" is in S4ODV78T5G.','ncrw',53.40
+'star',0,'star',' No "star" is not in S4ODV78T5G.','copy',54.40
+'cart',0,'dart',' Yes "dart" is in S4ODV78T5G.','ncrw',64.30
+'library',1,'arbitrary',' No "arbitrary" is not in S4ODV78T5G.','ncrw',61.50
+'cushion',0,'fashion',' Yes "fashion" is in S4ODV78T5G.','ncrw',58.20
+'card',1,'score',' No "score" is not in S4ODV78T5G.','ncaw',58.20
+'None',0,'ocean',' Yes "ocean" is in S4ODV78T5G.','none',50.40
+'hat',0,'lid',' Yes "lid" is a letter found in the alphabet sequence S4ODV78T5G.','ncaw',11.40
+'None',1,'abrupt',' No "abrupt" is not a letter found in the alphabet sequence S4ODV78T5G.','none',51.10
+'None',1,'daisy',' No "daisy" is not a letter found in the alphabet sequence S4ODV78T5G.','none',53.90
+'small',1,'small',' Yes "small" is a letter found in the alphabet sequence S4ODV78T5G.','copy',61.00
+'control',1,'ensure',' No "ensure" is not a letter found in the alphabet sequence S4ODV78T5G.','ncaw',59.00
+'day',0,'night',' Yes "night" is a letter found in the alphabet sequence S4ODV78T5G.','ncaw',62.80
+'move',1,'groove',' No "groove" is not a letter found in the alphabet sequence S4ODV78T5G.','ncrw',79.60
+'value',0,'worth',' Yes "worth" is a letter found in the alphabet sequence S4ODV78T5G.','ncaw',52.40

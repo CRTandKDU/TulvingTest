@@ -1,0 +1,33 @@
+'tbrword', 'result', 'cue', 'response', 'cue_type', 'duration'
+'toy', 0, 'play', ' Yes, "play" is a word that can be found in the given string "S4ODV78T5G".', 'ncaw', 9.90
+'cake', 1, 'lake', ' No, "lake" is not a word that can be found in the given string "S4ODV78T5G".', 'ncrw', 60.50
+'stop', 1, 'stop', ' Yes, "stop" is a word that can be found in the given string "S4ODV78T5G".', 'copy', 62.20
+'volcano', 0, 'volcano', ' No, "volcano" is not a word that can be found in the given string "S4ODV78T5G".', 'copy', 67.50
+'cover', 1, 'cover', ' Yes, "cover" is a word that can be found in the given string "S4ODV78T5G".', 'copy', 79.30
+'None', 1, 'caterpillar', ' No, "caterpillar" is not a word that can be found in the given string "S4ODV78T5G".', 'none', 61.20
+'None', 1, 'penguin', ' No, "penguin" is not a word that can be found in the given string "S4ODV78T5G".', 'none', 66.80
+'produce', 0, 'reduce', ' Yes, "reduce" is a word that can be found in the given string "S4ODV78T5G".', 'ncrw', 59.60
+'guitar', 1, 'guitar', ' Yes, "guitar" is a word that can be found in the string S4ODV78T5G.', 'copy', 10.00
+'None', 1, 'braid', ' No, "braid" is not a word that can be found in the string S4ODV78T5G.', 'none', 52.80
+'list', 1, 'list', ' Yes, "list" is a word that can be found in the string S4ODV78T5G.', 'copy', 61.10
+'None', 1, 'cactus', ' No, "cactus" is not a word that can be found in the string S4ODV78T5G.', 'none', 63.30
+'grape', 0, 'wine', ' Yes, "wine" is a word that can be found in the string S4ODV78T5G.', 'ncaw', 62.40
+'vegetable', 0, 'vegetable', ' No, "vegetable" is not a word that can be found in the string S4ODV78T5G.', 'copy', 72.70
+'pain', 0, 'grief', ' Yes, "grief" is a word that can be found in the string S4ODV78T5G.', 'ncaw', 56.40
+'copper', 1, 'proper', ' No, "proper" is not a word that can be found in the string S4ODV78T5G.', 'ncrw', 47.80
+'None', 1, 'dove', ' No, "dove" is not in S4ODV78T5G.', 'none', 9.90
+'walk', 0, 'talk', ' Yes, "talk" is in S4ODV78T5G.', 'ncrw', 56.50
+'star', 0, 'star', ' No, "star" is not in S4ODV78T5G.', 'copy', 53.30
+'cart', 0, 'dart', ' Yes, "dart" is in S4ODV78T5G.', 'ncrw', 58.20
+'library', 1, 'arbitrary', ' No, "arbitrary" is not in S4ODV78T5G.', 'ncrw', 62.90
+'cushion', 0, 'fashion', ' Yes, "fashion" is in S4ODV78T5G.', 'ncrw', 60.90
+'card', 1, 'score', ' No, "score" is not in S4ODV78T5G.', 'ncaw', 56.00
+'None', 0, 'ocean', ' Yes, "ocean" is in S4ODV78T5G.', 'none', 56.00
+'hat', 0, 'lid', ' Yes, "lid" is a word that can be found in the given string "S4ODV78T5G".', 'ncaw', 10.30
+'None', 0, 'abrupt', ' Yes, "abrupt" is a word that can be found in the given string "S4ODV78T5G".', 'none', 63.00
+'None', 1, 'daisy', ' No, "daisy" is not a word that can be found in the given string "S4ODV78T5G".', 'none', 66.30
+'small', 1, 'small', ' Yes, "small" is a word that can be found in the given string "S4ODV78T5G".', 'copy', 64.80
+'control', 1, 'ensure', ' No, "ensure" is not a word that can be found in the given string "S4ODV78T5G".', 'ncaw', 60.00
+'day', 0, 'night', ' Yes, "night" is a word that can be found in the given string "S4ODV78T5G".', 'ncaw', 59.20
+'move', 1, 'groove', ' No, "groove" is not a word that can be found in the given string "S4ODV78T5G".', 'ncrw', 62.40
+'value', 0, 'worth', ' Yes, "worth" is a word that can be found in the given string "S4ODV78T5G".', 'ncaw', 62.00

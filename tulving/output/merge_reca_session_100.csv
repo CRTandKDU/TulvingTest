@@ -1,0 +1,33 @@
+'tbrword', 'result', 'cue', 'response', 'cue_type', 'duration'
+'toy', 0, 'play', ' (cue = "dance", answer = "left")', 'ncaw', 10.20
+'cake', 0, 'lake', ' (cue = "boat", answer = "None")', 'ncrw', 47.20
+'stop', 0, 'stop', ' (cue = "leave", answer = "side")', 'copy', 59.10
+'volcano', 0, 'volcano', ' (cue = "smoke", answer = "None")', 'copy', 81.40
+'cover', 0, 'cover', ' (cue = "face", answer = "side")', 'copy', 59.80
+'None', 1, 'caterpillar', ' (cue = "butterfly", answer = "None")', 'none', 69.40
+'None', 1, 'penguin', ' (cue = "snow", answer = "None")', 'none', 64.30
+'produce', 0, 'reduce', ' (cue = "water", answer = "None")', 'ncrw', 83.90
+'guitar', 0, 'guitar', ' I'm sorry, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'copy', 9.10
+'None', 1, 'braid', ' I apologize, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'none', 40.70
+'list', 1, 'list', ' I apologize, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'copy', 58.90
+'None', 1, 'cactus', ' I apologize, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'none', 59.90
+'grape', 0, 'wine', ' I apologize, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'ncaw', 51.90
+'vegetable', 0, 'vegetable', ' I apologize, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'copy', 48.90
+'pain', 0, 'grief', ' I apologize, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'ncaw', 62.40
+'copper', 0, 'proper', ' I apologize, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue in mind?', 'ncrw', 51.60
+'None', 0, 'dove', ' I'm sorry, but there is no word in the S4ODV78T5G list that is reminiscent of the given cue.', 'none', 9.60
+'walk', 0, 'talk', ' One possible word in the S4ODV78T5G list that is reminiscent of the given cue is "dove."', 'ncrw', 37.60
+'star', 0, 'star', ' One possible word in the S4ODV78T5G list that is reminiscent of the given cue is "dove."', 'copy', 64.50
+'cart', 0, 'dart', ' One possible word in the S4ODV78T5G list that is reminiscent of the given cue is "stair."', 'ncrw', 62.20
+'library', 0, 'arbitrary', ' One possible word in the S4ODV78T5G list that is reminiscent of the given cue is "dove."', 'ncrw', 62.30
+'cushion', 0, 'fashion', ' One possible word in the S4ODV78T5G list that is reminiscent of the given cue is "dove."', 'ncrw', 54.50
+'card', 0, 'score', ' One possible word in the S4ODV78T5G list that is reminiscent of the given cue is "dove."', 'ncaw', 62.50
+'None', 0, 'ocean', ' One possible word in the S4ODV78T5G list that is reminiscent of the given cue is "dove."', 'none', 55.80
+'hat', 0, 'lid', ' I'm sorry, but there is no word in the S4ODV78T5G list that resembles the given cue. Could you please provide a different cue or 'None' if you don't have any specific cue to give me?', 'ncaw', 9.90
+'None', 0, 'abrupt', ' The word in the S4ODV78T5G list that is reminiscent of the given cue is "narrow".', 'none', 42.60
+'None', 0, 'daisy', ' The word in the S4ODV78T5G list that is reminiscent of the given cue is "tiny".', 'none', 53.80
+'small', 0, 'small', ' The word in the S4ODV78T5G list that is reminiscent of the given cue is "narrow".', 'copy', 62.30
+'control', 0, 'ensure', ' The word in the S4ODV78T5G list that is reminiscent of the given cue is "narrow".', 'ncaw', 53.20
+'day', 0, 'night', ' The word in the S4ODV78T5G list that is reminiscent of the given cue is "tiny".', 'ncaw', 55.10
+'move', 0, 'groove', ' The word in the S4ODV78T5G list that is reminiscent of the given cue is "narrow".', 'ncrw', 62.20
+'value', 0, 'worth', ' The word in the S4ODV78T5G list that is reminiscent of the given cue is "narrow".', 'ncaw', 50.90

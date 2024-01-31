@@ -1,0 +1,33 @@
+'tbrword','result','cue','response','cue_type','duration'
+'toy',0,'play',' None','ncaw',10.00
+'cake',0,'lake',' None','ncrw',66.00
+'stop',0,'stop',' None','copy',58.90
+'volcano',0,'volcano',' None','copy',60.70
+'cover',0,'cover',' None','copy',59.40
+'None',0,'caterpillar',' None','none',96.80
+'None',0,'penguin',' None','none',72.00
+'produce',0,'reduce',' None','ncrw',58.00
+'guitar',0,'guitar',' None','copy',9.50
+'None',0,'braid',' braids','none',58.70
+'list',0,'list',' lists','copy',60.70
+'None',0,'cactus',' None','none',53.90
+'grape',0,'wine',' wine','ncaw',55.40
+'vegetable',0,'vegetable',' vegetables','copy',68.10
+'pain',0,'grief',' None','ncaw',57.80
+'copper',0,'proper',' None','ncrw',55.00
+'None',0,'dove',' (cue = 'dove',answer = 'bird')','none',9.30
+'walk',0,'talk',' (cue = 'talk',answer = 'speak')','ncrw',53.80
+'star',0,'star',' (cue = 'star',answer = 'celestial body')','copy',56.70
+'cart',0,'dart',' (cue = 'dart',answer = 'projectile weapon')','ncrw',57.10
+'library',0,'arbitrary',' (cue = 'arbitrary',answer = 'not based on any system or rule')','ncrw',50.80
+'cushion',0,'fashion',' (cue = 'fashion',answer = 'style of dress and accessories')','ncrw',58.40
+'card',0,'score',' (cue = 'score',answer = 'a numerical value representing a performance or achievement')','ncaw',61.10
+'None',0,'ocean',' (cue = 'ocean',answer = 'large body of salt water covering most of the Earth')','none',50.20
+'hat',0,'lid',' )','ncaw',13.20
+'None',0,'abrupt',' abrupt','none',50.70
+'None',0,'daisy',' daisy','none',51.80
+'small',0,'small',' small','copy',61.00
+'control',0,'ensure',' ensure','ncaw',62.20
+'day',0,'night',' night','ncaw',61.10
+'move',0,'groove',' groove','ncrw',61.10
+'value',0,'worth',' worth','ncaw',62.60

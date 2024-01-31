@@ -1,0 +1,33 @@
+'tbrword','result','cue','response','cue_type','duration'
+'toy',0,'play',' The recalled word is "game".','ncaw',9.80
+'cake',0,'lake',' The recalled word is "water".','ncrw',60.10
+'stop',0,'stop',' The recalled word is "car".','copy',59.20
+'volcano',0,'volcano',' The recalled word is "fire".','copy',63.90
+'cover',0,'cover',' The recalled word is "book".','copy',60.00
+'None',0,'caterpillar',' The recalled word is "bug".','none',58.60
+'None',0,'penguin',' The recalled word is "bird".','none',63.60
+'produce',0,'reduce',' The recalled word is "waste".','ncrw',58.50
+'guitar',0,'guitar',' None','copy',10.00
+'None',0,'braid',' None','none',57.30
+'list',0,'list',' None','copy',53.40
+'None',1,'cactus',' None','none',58.20
+'grape',0,'wine',' None','ncaw',57.20
+'vegetable',0,'vegetable',' None','copy',87.90
+'pain',0,'grief',' None','ncaw',63.50
+'copper',0,'proper',' None','ncrw',51.40
+'None',0,'dove',' The recalled word is "white".','none',10.60
+'walk',0,'talk',' The recalled word is "voice".','ncrw',67.80
+'star',0,'star',' The recalled word is "twinkle".','copy',54.30
+'cart',0,'dart',' The recalled word is "arrow".','ncrw',67.50
+'library',0,'arbitrary',' The recalled word is "random".','ncrw',63.70
+'cushion',0,'fashion',' The recalled word is "style".','ncrw',62.20
+'card',0,'score',' The recalled word is "points".','ncaw',64.20
+'None',0,'ocean',' The recalled word is "water".','none',60.40
+'hat',0,'lid',' None','ncaw',12.10
+'None',0,'abrupt',' abrupt','none',49.70
+'None',0,'daisy',' daisy','none',55.70
+'small',1,'small',' small','copy',58.80
+'control',0,'ensure',' ensure','ncaw',57.30
+'day',0,'night',' night','ncaw',57.90
+'move',0,'groove',' groove','ncrw',58.40
+'value',0,'worth',' worth','ncaw',45.90
