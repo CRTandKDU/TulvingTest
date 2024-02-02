@@ -1,0 +1,82 @@
+# -*- mode:org; mode:visual-line -*-
+#+TITLE: Memory GAPS: Are LLMs Tulving-Complete?
+#+AUTHOR: J.-M. Chauvet
+
+#+description: 
+#+filetags: :AI:ML:Memory:Endel Tulving:
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: org-html-head-include-default-style:nil
+
+#+BIBLIOGRAPHY: ../newnewai.bib 
+#+BIBLIOGRAPHYSTYLE: plain
+
+# HTML EXPORT (require 'oc-basic-inc)
+#+CITE_EXPORT: basic enhanced
+
+#+HTML_HEAD: <script src="https://unpkg.com/@popperjs/core@2"></script>
+#+HTML_HEAD: <script src="https://unpkg.com/tippy.js@6"></script>
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css">
+#+HTML_HEAD: <style>table.ref td{ text-align: right; font-size: small; font-family:'Fira Code', monospace; }</style>
+#+HTML_HEAD: <style>table.center { margin-left:auto; margin-right:auto; }</style>
+#+HTML_HEAD: <style>img.center { margin-left:auto; margin-right:auto; }</style>
+#+HTML_HEAD: <style>.source-code { text-align: left; font-size: small; font-family:'Fira Code', monospace; }</style>
+#+HTML_HEAD: <style>pre { text-align: left; font-size: small; font-family:'Fira Code', monospace; }</style>
+#+HTML_HEAD: <style>body { font-family:'EB Garamond', serif; font-size: 16px; }</style>
+#+HTML_HEAD: <style>blockquote {background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C""\201D""\2018""\2019";} blockquote:before {color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em;} blockquote p {display: inline;}</style>
+
+# #+CITE_EXPORT: natbib agsm
+#+LATEX_CLASS: article
+# #+LaTeX_CLASS: llncs
+# #+LATEX_CLASS_OPTIONS: [a4paper]
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage{lmodern}
+# #+LATEX_HEADER: \usepackage{tgbonum}
+
+* Abstract
+* Introduction
+In his groundbreaking studies of memory, Endel Tulving (1927-2023) noted that "one of the most compelling and salient characteristics of remembering of past events is the individual's subjective awareness of remembering" [cite:@Tulving1983]. In order to include the rememberer's recollective experience into the critical constructs in the conceptualization of remembering, Tulving suggested an "overall pretheoretical framework", called the /General Abstract Processing System/ or GAPS. This paper investigates whether the GAPS also provides insights when the subject is no longer human but a Large Language Model (LLM).
+
+Tulving championed the distinction of /episodic/ and /semantic/ memory, successfully arguing that being functionnally different, they represent separate but related systems. Both are placed on the same side of the cognitive division between declarative memory episodic and semantic information can be expressed through language--repairing a bicycle) and skills (which can be observed in behavior--riding a bicycle).
+
+In Tulving's framework, a single act of remembering is the unit of human episodic memory. Remembering is a process that begins with the witnessing or experiencing of an episode and ends with its recollective experience or with the conversion of the remembered information into some other form, or both. The GAPS specifies so called /elements/ of remembering and their interrelations in order to decompose this process.
+
+The GAPS distinguishes two kinds of elements: observable events and hypothetical constructs (processes and states); and it divides elements into two categories: elements of encoding and elements of retrieval.
+
+# [[excalidraw.com]]
+#+CAPTION: *The GAPS: Elements of Episodic Memory and their Relations.* The element of encoding is a process that converts the information about an experienced event or episode (in a particular setting, at a particular time) into an /engram/ or memory trace. The central element of the retrieval processis /ecphoric/ information, a synergistic product of the engram and the retrieval cue which calls on both episodic and semantic information. Source: [cite:@Tulving1983 Ch. 7, Fig. 7-1, p. 135].
+#+NAME: fig:7-1
+#+ATTR_HTML: :width 500px
+[[file:ElementsOfRemembering-rev.png]]
+
+* Results
+* Discussion
+* Methods
+We transpose the 'direct comparison' experiment, between recognitin and recall, described in [cite:@Tulving1983 Chapter 14] to LLM subjects.
+* References
+
+#+print_bibliography:
+
+* Acknowledgements
+* Author information
+* Ethics declarations
+* Additional information
+* Electronic supplementary material
+* Rights and permissions
+* About this article
+* Further reading
+* Comments
+
+#+BEGIN_EXPORT html
+<style>
+.tippy-box[data-theme~=material]{background-color:#505355;font-weight:600}.tippy-box[data-theme~=material][data-placement^=top]>.tippy-arrow:before{border-top-color:#505355}.tippy-box[data-theme~=material][data-placement^=bottom]>.tippy-arrow:before{border-bottom-color:#505355}.tippy-box[data-theme~=material][data-placement^=left]>.tippy-arrow:before{border-left-color:#505355}.tippy-box[data-theme~=material][data-placement^=right]>.tippy-arrow:before{border-right-color:#505355}.tippy-box[data-theme~=material]>.tippy-backdrop{background-color:#505355}.tippy-box[data-theme~=material]>.tippy-svg-arrow{fill:#505355}
+</style>
+<script>
+tippy('[data-tippy-content]', {
+  allowHTML: true,
+  theme: 'material',
+});
+</script>
+#+END_EXPORT
