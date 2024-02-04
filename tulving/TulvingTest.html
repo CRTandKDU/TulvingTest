@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-02-02 ven. 18:22 -->
+<!-- 2024-02-04 dim. 18:45 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Memory GAPS: Are LLMs Tulving-Complete?</title>
@@ -204,27 +204,28 @@
 <style>pre { text-align: left; font-size: small; font-family:'Fira Code', monospace; }</style>
 <style>body { font-family:'EB Garamond', serif; font-size: 16px; }</style>
 <style>blockquote {background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C""\201D""\2018""\2019";} blockquote:before {color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em;} blockquote p {display: inline;}</style>
+<style>.figure p:nth-child(2) {text-align: justify; text-justify: inter-word;}</style>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Memory GAPS: Are LLMs Tulving-Complete?</h1>
 
-<div id="outline-container-org7ad4d15" class="outline-2">
-<h2 id="org7ad4d15">Abstract</h2>
+<div id="outline-container-org1f71e03" class="outline-2">
+<h2 id="org1f71e03">Abstract</h2>
 </div>
-<div id="outline-container-orga79ecd8" class="outline-2">
-<h2 id="orga79ecd8">Introduction</h2>
-<div class="outline-text-2" id="text-orga79ecd8">
+<div id="outline-container-org049aa85" class="outline-2">
+<h2 id="org049aa85">Introduction</h2>
+<div class="outline-text-2" id="text-org049aa85">
 <p>
-In his groundbreaking studies of memory, Endel Tulving (1927-2023) noted that "one of the most compelling and salient characteristics of remembering of past events is the individual's subjective awareness of remembering" (Endel Tulving, 1983). In order to include the rememberer's recollective experience into the critical constructs in the conceptualization of remembering, Tulving suggested an "overall pretheoretical framework", called the <i>General Abstract Processing System</i> or GAPS. This paper investigates whether the GAPS also provides insights when the subject is no longer human but a Large Language Model (LLM).
+In his groundbreaking studies of memory, Endel Tulving (1927-2023) noted that "one of the most compelling and salient characteristics of remembering of past events is the individual's subjective awareness of remembering" (<span data-tippy-content="<b>Endel Tulving</b> (1983) <i>Elements of Episodic Memory</i>.">Endel Tulving, 1983</span>). In order to include the rememberer's recollective experience into the critical constructs in the conceptualization of remembering, Tulving suggested an "overall pretheoretical framework", called the <i>General Abstract Processing System</i> or GAPS. This paper investigates whether the GAPS also provides insights when the subject is no longer human but a Large Language Model (LLM).
 </p>
 
 <p>
-Tulving championed the distinction of <i>episodic</i> and <i>semantic</i> memory, successfully arguing that being functionnally different, they represent separate but related systems. Both are placed on the same side of the cognitive division between declarative memory episodic and semantic information can be expressed through language&#x2013;repairing a bicycle) and skills (which can be observed in behavior&#x2013;riding a bicycle).
+Tulving championed the distinction of <i>episodic</i> from <i>semantic</i> memory, successfully arguing that being functionnally different, they represent separate but related systems. Both are placed on the same side of the cognitive division between <i>declarative memory</i> (as episodic and semantic information can be expressed through language&#x2013;e.g. repairing a bicycle) on the one hand, and <i>skills</i> (which can be observed only in behavior&#x2013;e.g. riding a bicycle) on the other.
 </p>
 
 <p>
-In Tulving's framework, a single act of remembering is the unit of human episodic memory. Remembering is a process that begins with the witnessing or experiencing of an episode and ends with its recollective experience or with the conversion of the remembered information into some other form, or both. The GAPS specifies so called <i>elements</i> of remembering and their interrelations in order to decompose this process.
+In Tulving's framework, a single act of remembering forms the unit of human episodic memory. Remembering is a process that begins with the witnessing or experiencing of an episode and ends with its recollective experience or with the conversion of the remembered information into some other form, or both. The GAPS specifies so called <i>elements</i> of remembering and their interrelations in order to decompose this process.
 </p>
 
 <p>
@@ -232,63 +233,100 @@ The GAPS distinguishes two kinds of elements: observable events and hypothetical
 </p>
 
 
-<div id="orgc2b1938" class="figure">
+<div id="org10193d3" class="figure">
 <p><img src="ElementsOfRemembering-rev.png" alt="ElementsOfRemembering-rev.png" width="500px" />
 </p>
-<p><span class="figure-number">Figure 1: </span><b>The GAPS: Elements of Episodic Memory and their Relations.</b> The element of encoding is a process that converts the information about an experienced event or episode (in a particular setting, at a particular time) into an <i>engram</i> or memory trace. The central element of the retrieval processis <i>ecphoric</i> information, a synergistic product of the engram and the retrieval cue which calls on both episodic and semantic information. Source: (Endel Tulving, 1983 Ch. 7, Fig. 7-1, p. 135).</p>
+<p><span class="figure-number">Figure 1: </span><b>The GAPS: Elements of Episodic Memory and their Relations.</b> The element of encoding is a process that converts the information about an experienced event or episode (in a particular setting, at a particular time) into an <i>engram</i> or memory trace. The central element of the retrieval processes <i>ecphoric</i> information, a synergistic product of the engram and the retrieval cue, which calls on both episodic and semantic information. Source for figure: (<span data-tippy-content="<b>Endel Tulving</b> (1983) <i>Elements of Episodic Memory</i>.">Endel Tulving, 1983</span>).</p>
+</div>
+
+<p>
+Of particular interest to this study of applicability of the GAPS framework to LLM are the possible transpositions of engram and ecphoric information in the domain of generative AI. In his seminal book, Tulving offers a very broad definition of engrams as "the product of encoding", "conditions for recollection of the experienced event", or "differences between the state of the memory system before and after encoding", the latter closed to the original introduction of the terms by Richard Semon (1859&#x2013;1918)) "to represent the enduring changes brought about by the energetic effect of stimuli in the organism" (<span data-tippy-content="<b>Daniel L. Schacter; James Eric Eich; Endel Tulving</b> (1978) <i>Richard Semon's theory of memory</i>.">Daniel L. Schacter et al., 1978</span>, <span data-tippy-content="<b>Semon, Richard Wolfgang</b> (1920) <i>Die Mneme als erhaltendes Prinzip im Wechsel des organischen Geschehens</i>.">Semon, 1920</span>). Note that the nature of the changes are unknown, but the term became known to psychology research through the work of Karl Lashley (1890&#x2013;1958) concluding, amongst other experimental results on neural mechanisms in learning and memory that "there is no demonstrable localization of memory trace" (<span data-tippy-content="<b>Lashley, Karl S</b> (1950) <i>In search of the engram.</i>.">Lashley, 1950</span>).
+</p>
+
+<p>
+Similarly inspired by Semon, Tulving suggested the terms <i>ecphory</i> and <i>ecphoric information</i> to designate the process that brings (i) the relevant information in the retrieval environment into interaction with  (ii) the original or recoded engram, and the output of this process. Such ecphoric information determines the particulars of recollective experience, in the next phase of remembering: conversion. In the GAPS model, ecphoric information is basically a task-free component of the retrieval process, it is simply used by converting it into another form in the memory performance.
+</p>
+
+<p>
+The 1983 GAPS model categories of encoding and retrieval is not without analogies with the <i>Transformer</i> architecture of neural networks at the core of LLM, which articulates encoders and decoders to process vector embeddings representing words and sentences.
+</p>
+
+
+<div id="org1df2b0f" class="figure">
+<p><img src="Transformer.png" alt="Transformer.png" width="500px" />
+</p>
+<p><span class="figure-number">Figure 2: </span><b>The Transformer Architecture.</b> Based on the 2017 paper (<span data-tippy-content="<b>Vaswani, Ashish; Shazeer, Noam; Parmar, Niki; Uszkoreit, Jakob; Jones, Llion; Gomez, Aidan N.; Kaiser, \Lukasz; Polosukhin, Illia</b> (2017) <i>Attention is all you need</i>.">Vaswani et al., 2017</span>) attention mechanism, the Transformer architecture requires less training time than previous recurrent neural architectures. Input text is split into tokens (sometimes called <i>n-gram</i>, dangerously reminiscent of Semon's engrams&#x2013;see text), then converted into vectors. Through different layers, each token is contextualized with other tokens via parallel attention heads, calculating weights for each according to its importance. The Transformer Architecture elaborates on <i>softmax-based</i> attention mechanism (<span data-tippy-content="<b>Dzmitry Bahdanau; Kyunghyun Cho; Yoshua Bengio</b> (2014) <i>Neural Machine Translation by Jointly Learning to Align and Translate</i>.">Dzmitry Bahdanau et al., 2014</span>) and <i>Fast Weight Controllers</i> (<span data-tippy-content="<b>Imanol Schlag; Kazuki Irie; Jürgen Schmidhuber</b> (2021) <i>Linear Transformers Are Secretly Fast Weight Programmers</i>.">Imanol Schlag et al., 2021</span>). Source for figure: (<span data-tippy-content="<b>Vaswani, Ashish; Shazeer, Noam; Parmar, Niki; Uszkoreit, Jakob; Jones, Llion; Gomez, Aidan N.; Kaiser, \Lukasz; Polosukhin, Illia</b> (2017) <i>Attention is all you need</i>.">Vaswani et al., 2017</span>).</p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9eb2987" class="outline-2">
-<h2 id="org9eb2987">Results</h2>
+<div id="outline-container-org5f2ad21" class="outline-2">
+<h2 id="org5f2ad21">Results</h2>
 </div>
-<div id="outline-container-orgd30cac6" class="outline-2">
-<h2 id="orgd30cac6">Discussion</h2>
+<div id="outline-container-orgb6f460d" class="outline-2">
+<h2 id="orgb6f460d">Discussion</h2>
 </div>
-<div id="outline-container-org499dc70" class="outline-2">
-<h2 id="org499dc70">Methods</h2>
-<div class="outline-text-2" id="text-org499dc70">
+<div id="outline-container-org00462f4" class="outline-2">
+<h2 id="org00462f4">Methods</h2>
+<div class="outline-text-2" id="text-org00462f4">
 <p>
-We transpose the 'direct comparison' experiment, between recognitin and recall, described in (Endel Tulving, 1983 Chapter 14) to LLM subjects.
+We transpose the 'direct comparison' experiment, between recognitin and recall, described in (<span data-tippy-content="<b>Endel Tulving</b> (1983) <i>Elements of Episodic Memory</i>.">Endel Tulving, 1983</span>) to LLM subjects.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf79c8ba" class="outline-2">
-<h2 id="orgf79c8ba">References</h2>
-<div class="outline-text-2" id="text-orgf79c8ba">
+<div id="outline-container-orgdd7058b" class="outline-2">
+<h2 id="orgdd7058b">References</h2>
+<div class="outline-text-2" id="text-orgdd7058b">
+<p>
+Daniel L. Schacter; James Eric Eich; Endel Tulving (1978). <i>Richard Semon's theory of memory</i>, Journal of Verbal Learning and Verbal Behavior <a href="https://www.sciencedirect.com/science/article/pii/S0022537178904437">https://www.sciencedirect.com/science/article/pii/S0022537178904437</a>.</p>
+
+<p>
+Dzmitry Bahdanau; Kyunghyun Cho; Yoshua Bengio (2014). <i>Neural Machine Translation by Jointly Learning to Align and Translate</i>.</p>
+
 <p>
 Endel Tulving (1983). <i>Elements of Episodic Memory</i>, Oxford University Press.</p>
+
+<p>
+Imanol Schlag; Kazuki Irie; Jürgen Schmidhuber (2021). <i>Linear Transformers Are Secretly Fast Weight Programmers</i>.</p>
+
+<p>
+Lashley, Karl S (1950). <i>In search of the engram.</i>, Academic Press.</p>
+
+<p>
+Semon, Richard Wolfgang (1920). <i>Die Mneme als erhaltendes Prinzip im Wechsel des organischen Geschehens</i>, Engelmann <a href="http://dx.doi.org/10.5962/bhl.title.10234">http://dx.doi.org/10.5962/bhl.title.10234</a>.</p>
+
+<p>
+Vaswani, Ashish; Shazeer, Noam; Parmar, Niki; Uszkoreit, Jakob; Jones, Llion; Gomez, Aidan N.; Kaiser, \Lukasz; Polosukhin, Illia (2017). <i>Attention is all you need</i>, Curran Associates Inc..</p>
 </div>
 </div>
 
-<div id="outline-container-orgf4bab2d" class="outline-2">
-<h2 id="orgf4bab2d">Acknowledgements</h2>
+<div id="outline-container-orgb8e065a" class="outline-2">
+<h2 id="orgb8e065a">Acknowledgements</h2>
 </div>
-<div id="outline-container-org25203a4" class="outline-2">
-<h2 id="org25203a4">Author information</h2>
+<div id="outline-container-org4a92e6e" class="outline-2">
+<h2 id="org4a92e6e">Author information</h2>
 </div>
-<div id="outline-container-org5a35f8f" class="outline-2">
-<h2 id="org5a35f8f">Ethics declarations</h2>
+<div id="outline-container-org242ce6a" class="outline-2">
+<h2 id="org242ce6a">Ethics declarations</h2>
 </div>
-<div id="outline-container-orge7e73bd" class="outline-2">
-<h2 id="orge7e73bd">Additional information</h2>
+<div id="outline-container-org2bbef72" class="outline-2">
+<h2 id="org2bbef72">Additional information</h2>
 </div>
-<div id="outline-container-org1dc36e3" class="outline-2">
-<h2 id="org1dc36e3">Electronic supplementary material</h2>
+<div id="outline-container-org4582a54" class="outline-2">
+<h2 id="org4582a54">Electronic supplementary material</h2>
 </div>
-<div id="outline-container-org29093de" class="outline-2">
-<h2 id="org29093de">Rights and permissions</h2>
+<div id="outline-container-org4d98948" class="outline-2">
+<h2 id="org4d98948">Rights and permissions</h2>
 </div>
-<div id="outline-container-orge26746b" class="outline-2">
-<h2 id="orge26746b">About this article</h2>
+<div id="outline-container-org60a5a44" class="outline-2">
+<h2 id="org60a5a44">About this article</h2>
 </div>
-<div id="outline-container-orgac7c373" class="outline-2">
-<h2 id="orgac7c373">Further reading</h2>
+<div id="outline-container-org321ce7f" class="outline-2">
+<h2 id="org321ce7f">Further reading</h2>
 </div>
-<div id="outline-container-orgfc18a44" class="outline-2">
-<h2 id="orgfc18a44">Comments</h2>
-<div class="outline-text-2" id="text-orgfc18a44">
+<div id="outline-container-orgd921f09" class="outline-2">
+<h2 id="orgd921f09">Comments</h2>
+<div class="outline-text-2" id="text-orgd921f09">
 <style>
 .tippy-box[data-theme~=material]{background-color:#505355;font-weight:600}.tippy-box[data-theme~=material][data-placement^=top]>.tippy-arrow:before{border-top-color:#505355}.tippy-box[data-theme~=material][data-placement^=bottom]>.tippy-arrow:before{border-bottom-color:#505355}.tippy-box[data-theme~=material][data-placement^=left]>.tippy-arrow:before{border-left-color:#505355}.tippy-box[data-theme~=material][data-placement^=right]>.tippy-arrow:before{border-right-color:#505355}.tippy-box[data-theme~=material]>.tippy-backdrop{background-color:#505355}.tippy-box[data-theme~=material]>.tippy-svg-arrow{fill:#505355}
 </style>
@@ -303,7 +341,7 @@ tippy('[data-tippy-content]', {
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: J.-M. Chauvet</p>
-<p class="date">Created: 2024-02-02 ven. 18:22</p>
+<p class="date">Created: 2024-02-04 dim. 18:45</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

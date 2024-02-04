@@ -26,6 +26,7 @@
 #+HTML_HEAD: <style>pre { text-align: left; font-size: small; font-family:'Fira Code', monospace; }</style>
 #+HTML_HEAD: <style>body { font-family:'EB Garamond', serif; font-size: 16px; }</style>
 #+HTML_HEAD: <style>blockquote {background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C""\201D""\2018""\2019";} blockquote:before {color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em;} blockquote p {display: inline;}</style>
+#+HTML_HEAD: <style>.figure p:nth-child(2) {text-align: justify; text-justify: inter-word;}</style>
 
 # #+CITE_EXPORT: natbib agsm
 #+LATEX_CLASS: article
@@ -39,17 +40,30 @@
 * Introduction
 In his groundbreaking studies of memory, Endel Tulving (1927-2023) noted that "one of the most compelling and salient characteristics of remembering of past events is the individual's subjective awareness of remembering" [cite:@Tulving1983]. In order to include the rememberer's recollective experience into the critical constructs in the conceptualization of remembering, Tulving suggested an "overall pretheoretical framework", called the /General Abstract Processing System/ or GAPS. This paper investigates whether the GAPS also provides insights when the subject is no longer human but a Large Language Model (LLM).
 
-Tulving championed the distinction of /episodic/ and /semantic/ memory, successfully arguing that being functionnally different, they represent separate but related systems. Both are placed on the same side of the cognitive division between declarative memory episodic and semantic information can be expressed through language--repairing a bicycle) and skills (which can be observed in behavior--riding a bicycle).
+Tulving championed the distinction of /episodic/ from /semantic/ memory, successfully arguing that being functionnally different, they represent separate but related systems. Both are placed on the same side of the cognitive division between /declarative memory/ (as episodic and semantic information can be expressed through language--e.g. repairing a bicycle) on the one hand, and /skills/ (which can be observed only in behavior--e.g. riding a bicycle) on the other.
 
-In Tulving's framework, a single act of remembering is the unit of human episodic memory. Remembering is a process that begins with the witnessing or experiencing of an episode and ends with its recollective experience or with the conversion of the remembered information into some other form, or both. The GAPS specifies so called /elements/ of remembering and their interrelations in order to decompose this process.
+In Tulving's framework, a single act of remembering forms the unit of human episodic memory. Remembering is a process that begins with the witnessing or experiencing of an episode and ends with its recollective experience or with the conversion of the remembered information into some other form, or both. The GAPS specifies so called /elements/ of remembering and their interrelations in order to decompose this process.
 
 The GAPS distinguishes two kinds of elements: observable events and hypothetical constructs (processes and states); and it divides elements into two categories: elements of encoding and elements of retrieval.
 
 # [[excalidraw.com]]
-#+CAPTION: *The GAPS: Elements of Episodic Memory and their Relations.* The element of encoding is a process that converts the information about an experienced event or episode (in a particular setting, at a particular time) into an /engram/ or memory trace. The central element of the retrieval processis /ecphoric/ information, a synergistic product of the engram and the retrieval cue which calls on both episodic and semantic information. Source: [cite:@Tulving1983 Ch. 7, Fig. 7-1, p. 135].
+#+ATTR_LATEX: :caption \captionsetup{justification=justified}
+#+CAPTION: *The GAPS: Elements of Episodic Memory and their Relations.* The element of encoding is a process that converts the information about an experienced event or episode (in a particular setting, at a particular time) into an /engram/ or memory trace. The central element of the retrieval processes /ecphoric/ information, a synergistic product of the engram and the retrieval cue, which calls on both episodic and semantic information. Source for figure: [cite:@Tulving1983 Ch. 7, Fig. 7-1, p. 135].
 #+NAME: fig:7-1
 #+ATTR_HTML: :width 500px
 [[file:ElementsOfRemembering-rev.png]]
+
+Of particular interest to this study of applicability of the GAPS framework to LLM are the possible transpositions of engram and ecphoric information in the domain of generative AI. In his seminal book, Tulving offers a very broad definition of engrams as "the product of encoding", "conditions for recollection of the experienced event", or "differences between the state of the memory system before and after encoding", the latter closed to the original introduction of the terms by Richard Semon (1859--1918)) "to represent the enduring changes brought about by the energetic effect of stimuli in the organism" [cite:@SCHACTER1978721;@Semon]. Note that the nature of the changes are unknown, but the term became known to psychology research through the work of Karl Lashley (1890--1958) concluding, amongst other experimental results on neural mechanisms in learning and memory that "there is no demonstrable localization of memory trace" [cite:@lashley1950search].
+
+Similarly inspired by Semon, Tulving suggested the terms /ecphory/ and /ecphoric information/ to designate the process that brings (i) the relevant information in the retrieval environment into interaction with  (ii) the original or recoded engram, and the output of this process. Such ecphoric information determines the particulars of recollective experience, in the next phase of remembering: conversion. In the GAPS model, ecphoric information is basically a task-free component of the retrieval process, it is simply used by converting it into another form in the memory performance.
+
+The 1983 GAPS model categories of encoding and retrieval is not without analogies with the /Transformer/ architecture of neural networks at the core of LLM, which articulates encoders and decoders to process vector embeddings representing words and sentences.
+
+#+ATTR_LATEX: :caption \captionsetup{justification=justified}
+#+CAPTION: *The Transformer Architecture.* Based on the 2017 paper [cite:@AttentionIsAllYouNeed2017] attention mechanism, the Transformer architecture requires less training time than previous recurrent neural architectures. Input text is split into tokens (sometimes called /n-gram/, dangerously reminiscent of Semon's engrams--see text), then converted into vectors. Through different layers, each token is contextualized with other tokens via parallel attention heads, calculating weights for each according to its importance. The Transformer Architecture elaborates on /softmax-based/ attention mechanism [cite:@bahdanau14] and /Fast Weight Controllers/ [cite:@schmidhuber]. Source for figure: [cite:@AttentionIsAllYouNeed2017].
+#+NAME: fig:2
+#+ATTR_HTML: :width 500px
+[[file:Transformer.png]]
 
 * Results
 * Discussion
