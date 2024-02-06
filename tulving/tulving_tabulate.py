@@ -1,11 +1,13 @@
 import argparse
+import pickle
 import numpy as np
 import pandas as pd
 
+TESTWORDS       = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\words_test.pickle"
 OUTPUT_DIR      = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\output\\"
 TEMPL_MERGERECO = "merge_reco_{}_session_{}.csv"
 TEMPL_MERGERECA = "merge_reca_{}_session_{}.csv"
-SESSIONS = None
+SESSIONS        = None
 
 def tulving_results( chrono, false_positives=True ):
     global SESSIONS, OUTPUT_DIR, TEMPL_MERGEFN
@@ -30,10 +32,51 @@ def tulving_results( chrono, false_positives=True ):
     return reco_df, reca_df
 
 
+def tulving_occurences( tbr, nsessions, dfs, cuetype ):
+    occurrences = np.zeros( len(tbr) )
+    iw = 0
+    for w in tbr:
+        for i in range( nsessions ):
+            df = dfs[i].loc[ lambda df: df["'tbrword'"] == f"'{w}'" ]
+            if df.empty :
+                pass
+            else:
+                if( 1 == df.iat[ 0, 1 ] and df.iat[ 0, 2 ] ) in cuetype :
+                    occurrences[iw] += 1
+        iw += 1
+    return occurrences
+
+
+def tulving_cuetype_results( chrono, cuetype, false_positives=True ):
+    global SESSIONS, OUTPUT_DIR, TEMPL_MERGEFN, TESTWORDS
+    COLRES  = "'RESULT'" if false_positives else "'FP'"
+    imm     = "imm" if "Immediate" == chrono else "del"
+    # Read session results from column implicitly designes by metrics (all/book)
+    i = 0
+    dfo, dfa = [ None for i in range( len(SESSIONS) ) ], [ None for i in range( len(SESSIONS) ) ]
+    for session in SESSIONS:
+        dfo[ i ] = pd.read_csv( OUTPUT_DIR + TEMPL_MERGERECO.format( imm, session ),
+                                      index_col=False,
+                                      usecols=lambda x: x.upper() in ["'TBRWORD'", COLRES, "'CUE_TYPE'"] )
+        dfa[ i ] = pd.read_csv( OUTPUT_DIR + TEMPL_MERGERECA.format( imm, session ),
+                                      index_col=False,
+                                      usecols=lambda x: x.upper() in ["'TBRWORD'", COLRES, "'CUE_TYPE'"] )
+        i += 1
+        
+    # Score each word
+    with open( TESTWORDS, 'rb' ) as f:
+        tbr = pickle.load( f )
+    occurrences_o = tulving_occurences( tbr, len(SESSIONS), dfo, cuetype )
+    occurrences_a = tulving_occurences( tbr, len(SESSIONS), dfa, cuetype )
+    return( pd.DataFrame( data={ 'words': tbr, 'occurrences': occurrences_o } ),
+            pd.DataFrame( data={ 'words': tbr, 'occurrences': occurrences_a } ) )
+        
+
 def summary( df, fp ):
-    # print( df.count() )
     COLRES = "'result'" if fp else "'fp'"
-    return df[ [COLRES, "'cue_type'"] ].groupby( "'cue_type'" ).mean()
+    # print( df )
+    summary= df.groupby( "'cue_type'" )[COLRES].mean()
+    return summary
     
 
 def main():
@@ -68,6 +111,18 @@ def main():
         
     df.index.rename( "Cue Type", inplace=True )
     print( df )
-         
+
+    # Pretty print most recognized/recalled words
+    print()
+    print( f'* {chrono} Task: Most recognized and recalled' )
+    print( '** Copy Cues' )
+    dfo, dfa = tulving_cuetype_results( chrono, [ "'copy'" ], false_positives = not args.book )
+    df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
+    print( df )
+    print( '** Associative Cues' )
+    dfo, dfa = tulving_cuetype_results( chrono, [ "'ncaw'" ], false_positives = not args.book )
+    df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
+    print( df )
+                         
 if __name__ == '__main__':
     main()
