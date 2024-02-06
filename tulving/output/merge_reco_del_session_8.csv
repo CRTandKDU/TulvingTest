@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'monkey',0,0,'monkey',' No"monkey" is not in the given list S4ODV78T5G.','copy',11.10
+'pain',0,1,'vein',' Yes "vein" is in the given list S4ODV78T5G.','ncrw',61.00
+'volcano',1,0,'chicano',' No"chicano" is not in the given list S4ODV78T5G.','ncrw',61.60
+'cart',0,1,'wheelbarrow',' Yes "wheelbarrow" is in the given list S4ODV78T5G.','ncaw',63.10
+'None',1,0,'braid',' No"braid" is not in the given list S4ODV78T5G.','none',64.30
+'stitch',0,1,'switch',' Yes "switch" is in the given list S4ODV78T5G.','ncrw',57.10
+'value',1,0,'worth',' No"worth" is not in the given list S4ODV78T5G.','ncaw',69.10
+'hat',0,1,'cap',' Yes "cap" is in the given list S4ODV78T5G.','ncaw',59.30
+'hen',1,0,'yen',' No"yen" is not in the given list S4ODV78T5G.','ncrw',9.70
+'arm',1,1,'arm',' Yes "arm" is in the given list S4ODV78T5G.','copy',55.10
+'None',1,0,'lighthouse',' No"lighthouse" is not in the given list S4ODV78T5G.','none',61.70
+'produce',1,1,'produce',' Yes "produce" is in the given list S4ODV78T5G.','copy',62.70
+'net',1,0,'debt',' No"debt" is not in the given list S4ODV78T5G.','ncrw',65.20
+'ant',0,1,'coolant',' Yes "coolant" is in the given list S4ODV78T5G.','ncrw',69.70
+'egg',1,0,'ovum',' No"ovum" is not in the given list S4ODV78T5G.','ncaw',66.30
+'None',0,1,'mango',' Yes "mango" is in the given list S4ODV78T5G.','none',53.40
+'None',1,0,'hedge',' Nothe word "hedge" is not in the given list S4ODV78T5G.','none',9.90
+'None',0,1,'ditch',' Yes the word "ditch" is in the given list S4ODV78T5G.','none',61.50
+'copper',0,0,'copper',' Nothe word "copper" is not in the given list S4ODV78T5G.','copy',57.10
+'small',0,1,'tiny',' Yes the word "tiny" is in the given list S4ODV78T5G.','ncaw',57.60
+'locket',1,0,'pendant',' Nothe word "pendant" is not in the given list S4ODV78T5G.','ncaw',64.20
+'vegetable',0,1,'tolerable',' Yes the word "tolerable" is in the given list S4ODV78T5G.','ncrw',62.50
+'curtain',0,0,'curtain',' Nothe word "curtain" is not in the given list S4ODV78T5G.','copy',59.60
+'sleet',0,1,'fleet',' Yes the word "fleet" is in the given list S4ODV78T5G.','ncrw',56.90
+'None',1,0,'bloom',' No"bloom" is not in the given list S4ODV78T5G.','none',10.00
+'None',0,1,'caterpillar',' Yes "caterpillar" is in the given list S4ODV78T5G.','none',59.10
+'pet',1,0,'love',' No"love" is not in the given list S4ODV78T5G.','ncaw',57.00
+'kitten',1,1,'kitten',' Yes "kitten" is in the given list S4ODV78T5G.','copy',63.40
+'None',1,0,'penguin',' No"penguin" is not in the given list S4ODV78T5G.','none',65.60
+'cover',0,1,'conceal',' Yes "conceal" is in the given list S4ODV78T5G.','ncaw',62.80
+'cake',0,0,'cake',' No"cake" is not in the given list S4ODV78T5G.','copy',63.50
+'sneeze',1,1,'sneeze',' Yes "sneeze" is in the given list S4ODV78T5G.','copy',57.70

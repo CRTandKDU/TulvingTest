@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'net',0,0,'net',' I'm sorry,but I don't know what list you are referring to. Could you please provide me with more information or context about the list and the word you want to check?','copy',12.30
+'None',1,0,'daisy',' The given word "daisy" is not present in the list provided. Could you please provide me with the list so that I can check if it contains any other word.','none',47.10
+'day',0,0,'day',' The given word "day" is not present in the list provided. Again,could you please provide me with the list so that I can check if it contains any other word.','copy',53.20
+'faucet',1,0,'spigot',' The given word "spigot" is not present in the list provided. Could you please provide me with the list so that I can check if it contains any other word.','ncaw',64.60
+'toy',1,0,'joy',' The given word "joy" is not present in the list provided. Could you please provide me with the list so that I can check if it contains any other word.','ncrw',63.70
+'None',1,0,'ditch',' The given word "ditch" is not present in the list provided. Could you please provide me with the list so that I can check if it contains any other word.','none',66.70
+'card',1,0,'score',' The given word "score" is not present in the list provided. Could you please provide me with the list so that I can check if it contains any other word.','ncaw',65.80
+'library',0,0,'library',' The given word "library" is not present in the list provided. Could you please provide me with the list so that I can check if it contains any other word.','copy',75.60
+'None',1,0,'braid',' Nothe given word "braid" is not related to the category of strings and does not match the pattern of a specific type of string known as a DNA sequence.','none',11.80
+'None',1,0,'abrupt',' Nothe given word "abrupt" is related to the category of time and does not match the pattern of a specific type of string known as a DNA sequence.','none',35.90
+'None',1,0,'giraffe',' Nothe given word "giraffe" is related to the category of animals and does not match the pattern of a specific type of string known as a DNA sequence.','none',49.50
+'None',1,0,'jazz',' Nothe given word "jazz" is related to the category of music and does not match the pattern of a specific type of string known as a DNA sequence.','none',50.10
+'basin',1,0,'satin',' Nothe given word "satin" is related to the category of fabric and does not match the pattern of a specific type of string known as a DNA sequence.','ncrw',53.00
+'kitten',1,0,'cat',' Nothe given word "cat" is related to the category of animals and does not match the pattern of a specific type of string known as a DNA sequence.','ncaw',54.50
+'recess',0,0,'recess',' Nothe given word "recess" is related to the category of time and does not match the pattern of a specific type of string known as a DNA sequence.','copy',53.50
+'sneeze',0,0,'sneeze',' Nothe given word "sneeze" is related to the category of actions and does not match the pattern of a specific type of string known as a DNA sequence.','copy',47.40
+'None',1,0,'frost',' Nothe given word "frost" is not present in the list S4ODV78T5G.','none',9.90
+'pet',0,1,'set',' Yes the given word "set" is present in the list S4ODV78T5G.','ncrw',36.50
+'control',0,0,'control',' Nothe given word "control" is not present in the list S4ODV78T5G.','copy',55.90
+'list',0,1,'rank',' Yes the given word "rank" is present in the list S4ODV78T5G.','ncaw',57.90
+'chair',1,0,'stair',' Nothe given word "stair" is not present in the list S4ODV78T5G.','ncrw',54.90
+'grape',0,1,'wine',' Yes the given word "wine" is present in the list S4ODV78T5G.','ncaw',59.00
+'free',0,0,'free',' Nothe given word "free" is not present in the list S4ODV78T5G.','copy',55.90
+'side',0,1,'face',' Yes the given word "face" is present in the list S4ODV78T5G.','ncaw',55.80
+'hat',0,0,'hat',' I'm sorry,but I don't know what you are referring to. Could you please provide more context or information about the list and the question being asked?','copy',10.20
+'value',0,1,'rescue',' Yes the word "rescue" is in the given list.','ncrw',36.10
+'copper',1,0,'gold',' Nothe word "gold" is not in the given list.###Gold is a chemical element with the symbol Au and atomic number 79. It is a highly sought-after precious metal that has been used for coinage,jewelry,and other arts since the beginning of recorded history.','ncaw',52.60
+'None',1,0,'bloom',' Nothe word "bloom" is not in the given list.Bloom is a term used to describe the growth and development of plants during their active life cycle. It is often associated with the process of flowering or fruiting.','none',57.50
+'egg',1,0,'overeasy',' Nothe word "overeezy" is not in the given list.Over Easy is a type of egg dish that consists of beaten eggs,usually scrambled but sometimes boiled or fried,and often served with toast,bacon,and hash browns.','ncaw',62.10
+'vegetable',1,0,'tolerable',' Nothe word "tolerable" is not in the given list.Tolerate refers to the ability to endure or accept something,usually a difficult situation or a person's behavior. It can also mean to grant permission or allow something to happen.','ncrw',38.70
+'cake',1,0,'lake',' Nothe word "lake" is not in the given list.A lake is a large body of water that is surrounded by land and often has a distinct boundary known as an outlet. It can be freshwater or saltwater and may be natural or man-made.','ncrw',56.30
+'map',1,0,'lap',' Nothe word "lap" is not in the given list.A lap is a small piece of land that juts out from a larger body of water,such as an island or a peninsula. It can be used for recreational purposes like swimming or fishing.','ncrw',56.10

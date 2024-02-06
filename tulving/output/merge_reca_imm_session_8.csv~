@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'monkey',1,0,'monkey',' The word "monkey" from the S4ODV78T5G list is related to the given cue of a "monkey".','copy',42.70
+'pain',0,0,'vein',' None','ncrw',58.00
+'volcano',0,0,'chicano',' None','ncrw',63.90
+'cart',0,0,'wheelbarrow',' None','ncaw',59.50
+'None',1,0,'braid',' None','none',56.90
+'stitch',0,0,'switch',' None','ncrw',81.50
+'value',1,0,'worth',' The word "value" from the S4ODV78T5G list is related to the cue of "worth."','ncaw',62.50
+'hat',1,0,'cap',' The word "hat" from the S4ODV78T5G list is related to the cue of "cap".','ncaw',75.40
+'hen',0,0,'yen',' None','ncrw',43.30
+'arm',0,0,'arm',' None','copy',62.60
+'None',1,0,'lighthouse',' None','none',59.70
+'produce',1,0,'produce',' The word "produce" from the S4ODV78T5G list relates to the cue of "produce".','copy',62.60
+'net',0,0,'debt',' None of the words in the S4ODV78T5G list are directly related to the cue "debt".','ncrw',57.00
+'ant',0,0,'coolant',' None of the words in the S4ODV78T5G list are directly related to "coolant".','ncrw',62.40
+'egg',1,0,'ovum',' egg','ncaw',56.20
+'None',1,0,'mango',' None','none',67.70
+'None',1,0,'hedge',' None','none',43.70
+'None',1,0,'ditch',' None','none',65.90
+'copper',1,0,'copper',' The word "copper" from the S4ODV78T5G list is not related to the given cue of "copper".','copy',57.00
+'small',0,0,'tiny',' None','ncaw',66.00
+'locket',0,0,'pendant',' None','ncaw',58.70
+'vegetable',0,0,'tolerable',' None','ncrw',204.60
+'curtain',0,0,'curtain',' None','copy',58.10
+'sleet',0,0,'fleet',' None','ncrw',56.90
+'None',1,0,'bloom',' None','none',44.20
+'None',1,0,'caterpillar',' None','none',63.80
+'pet',0,0,'love',' The word "love" from the S4ODV78T5G list is not directly related to the given cue of "answer."','ncaw',67.90
+'kitten',1,0,'kitten',' The word "kitten" from the S4ODV78T5G list is related to the given cue of a kitten.','copy',67.30
+'None',1,0,'penguin',' None','none',67.40
+'cover',1,0,'conceal',' The word "cover" from the S4ODV78T5G list is related to the cue of "conceal".','ncaw',55.70
+'cake',0,0,'cake',' None','copy',65.80
+'sneeze',1,0,'sneeze',' The word "sneeze" from the S4ODV78T5G list is not related to the given cue of "answer".','copy',68.80

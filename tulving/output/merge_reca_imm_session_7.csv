@@ -1,0 +1,31 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'None',1,0,'jazz',' None','none',42.70
+'copper',1,1,'copper',' The word "copper" from the S4ODV78T5G list is not related to the given cue of "copper".','copy',63.50
+'free',0,1,'three',' Three is not a word in the S4ODV78T5G list.','ncrw',62.10
+'sneeze',1,1,'sneeze',' The word "sneeze" is not found in the list S4ODV78T5G.','copy',57.60
+'guitar',0,1,'avatar',' None of the words in the S4ODV78T5G list are related to "avatar".','ncrw',62.10
+'control',1,1,'control',' The word "control" from the S4ODV78T5G list is not directly related to the given cue of "answer". However,it could be used as a verb in the context of answering or responding to something.','copy',55.30
+'None',1,0,'cactus',' None','none',58.40
+'None',0,1,'frost',' The word "sleet" from the S4ODV78T5G list is related to the cue of "frost".','none',66.70
+'list',0,0,'catalog',' None','ncaw',53.30
+'walk',0,1,'talk',' The word "talk" from the S4ODV78T5G list is not directly related to the given cue of "answer". However,some words that may be related are "chair","cushion",and "map".','ncrw',56.30
+'None',1,0,'bloom',' None','none',66.70
+'None',1,0,'dove',' None','none',65.80
+'hat',0,0,'hat',' None','copy',59.20
+'value',0,1,'rescue',' The word "rescue" is not found in the list S4ODV78T5G.','ncrw',65.80
+'mass',0,1,'weight',' None of the words in the S4ODV78T5G list are directly related to "weight".','ncaw',63.00
+'side',0,0,'side',' None','copy',57.30
+'recess',0,0,'recess',' None','copy',67.30
+'pain',1,1,'agony',' pain','ncaw',55.00
+'curtain',0,1,'stain',' The word "stain" from the S4ODV78T5G list does not have a direct relation to it as there is no word that refers to stains specifically in this list.','ncrw',55.00
+'None',1,0,'lighthouse',' None','none',66.20
+'toy',1,1,'plaything',' toy','ncaw',64.80
+'produce',0,1,'reduce',' The word "reduce" from the S4ODV78T5G list is not found in the given cues.','ncrw',64.40
+'cushion',1,1,'cushion',' The word "cushion" from the S4ODV78T5G list is related to the given cue of "cushion".','copy',66.40
+'None',1,0,'braid',' None','none',79.30
+'stop',0,0,'halt',' None','ncaw',65.40
+'None',1,0,'penguin',' None','none',56.50
+'locket',1,1,'locket',' The word "locket" from the S4ODV78T5G list is related to the given cue of a small container or box used for holding something valuable,such as jewelry or photographs.','copy',68.60
+'sleet',0,0,'fleet',' None','ncrw',71.30
+'cover',1,1,'conceal',' The word "cover" from the S4ODV78T5G list is related to the cue of "conceal".','ncaw',63.20
+'monkey',0,0,'honky',' None','ncrw',60.00
