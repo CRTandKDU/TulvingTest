@@ -27,6 +27,7 @@
 #+HTML_HEAD: <style>body { font-family:'EB Garamond', serif; font-size: 16px; }</style>
 #+HTML_HEAD: <style>blockquote {background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C""\201D""\2018""\2019";} blockquote:before {color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em;} blockquote p {display: inline;}</style>
 #+HTML_HEAD: <style>.figure p:nth-child(2) {text-align: justify; text-justify: inter-word;}</style>
+#+HTML_HEAD: <style>table caption {text-align: justify; text-justify: inter-word;}</style>
 
 # #+CITE_EXPORT: natbib agsm
 #+LATEX_CLASS: article
@@ -53,11 +54,11 @@ The GAPS distinguishes two kinds of elements: observable events and hypothetical
 #+ATTR_HTML: :width 500px
 [[file:ElementsOfRemembering-rev.png]]
 
-Of particular interest to this study of applicability of the GAPS framework to LLM are the possible transpositions of engram and ecphoric information in the domain of generative AI. In his seminal book, Tulving offers a very broad definition of engrams as "the product of encoding", "conditions for recollection of the experienced event", or "differences between the state of the memory system before and after encoding", the latter closed to the original introduction of the terms by Richard Semon (1859--1918)) "to represent the enduring changes brought about by the energetic effect of stimuli in the organism" [cite:@SCHACTER1978721;@Semon]. Note that the nature of the changes are unknown, but the term became known to psychology research through the work of Karl Lashley (1890--1958) concluding, amongst other experimental results on neural mechanisms in learning and memory that "there is no demonstrable localization of memory trace" [cite:@lashley1950search].
+Of particular interest to this study of applicability of the GAPS framework to LLM are the possible transpositions of engram and ecphoric information into the domain of generative AI. In his seminal book, Tulving offers a very broad definition of engrams: "the product of encoding", "conditions for recollection of the experienced event", or "differences between the state of the memory system before and after encoding". The latter is closely related the original definitions of these terms introduced by Richard Semon (1859--1918): "to represent the enduring changes brought about by the energetic effect of stimuli in the organism" [cite:@SCHACTER1978721;@Semon]. Note that if, in both clarifications, the nature of the changes are unknown, the term became nonetheless broadly known in psychology research through the later work of Karl Lashley (1890--1958) concluding, amongst other experimental results on neural mechanisms involved in learning and memory, that "there is no demonstrable localization of memory trace" [cite:@lashley1950search].
 
-Similarly inspired by Semon, Tulving suggested the terms /ecphory/ and /ecphoric information/ to designate the process that brings (i) the relevant information in the retrieval environment into interaction with  (ii) the original or recoded engram, and the output of this process. Such ecphoric information determines the particulars of recollective experience, in the next phase of remembering: conversion. In the GAPS model, ecphoric information is basically a task-free component of the retrieval process, it is simply used by converting it into another form in the memory performance.
+Similarly inspired by Semon, Tulving suggested the terms /ecphory/ and /ecphoric information/ to designate respectively the process that brings (i) the relevant information in the retrieval environment into interaction with (ii) the original or recoded engram, and the output of this process. Such ecphoric information determines the particulars of recollective experience in the next phase of remembering: /conversion/. In the GAPS model, ecphoric information is basically a task-free component of the retrieval process, it is simply used by being converted into another form in the memory performance.
 
-The 1983 GAPS model categories of encoding and retrieval is not without analogies with the /Transformer/ architecture of neural networks at the core of LLM, which articulates encoders and decoders to process vector embeddings representing words and sentences.
+The categories of encoding and retrieval in the GAPS are not without analogies with the /Transformer/ architecture of neural networks at the core of LLMs, which precisely articulates encoders and decoders to process vector embeddings representing words and sentences.
 
 #+ATTR_LATEX: :caption \captionsetup{justification=justified}
 #+CAPTION: *The Transformer Architecture.* Based on the 2017 paper [cite:@AttentionIsAllYouNeed2017] attention mechanism, the Transformer architecture requires less training time than previous recurrent neural architectures. Input text is split into tokens (sometimes called /n-gram/, dangerously reminiscent of Semon's engrams--see text), then converted into vectors. Through different layers, each token is contextualized with other tokens via parallel attention heads, calculating weights for each according to its importance. The Transformer Architecture elaborates on /softmax-based/ attention mechanism [cite:@bahdanau14] and /Fast Weight Controllers/ [cite:@schmidhuber]. Source for figure: [cite:@AttentionIsAllYouNeed2017].
@@ -65,8 +66,40 @@ The 1983 GAPS model categories of encoding and retrieval is not without analogie
 #+ATTR_HTML: :width 500px
 [[file:Transformer.png]]
 
+At this stage, from cursorily reviewing the architecture of both GAPS and Transformer--and keeping in mind that Tulving's psychological framework is only "pre-theoretical" and "highly schematic", while Transformers are actual computer implementations--the practical analogy would unfold as follows:
+
+#+CAPTION: *Hypothetical analogy between GAPS and Transformer.* Semantic memory, in Tulving's acception, would be represented by the probability distribution learned by the LLM during the pretraining phase. In Transformers it determines the particulars of the output based on the input (prompt).
+#+NAME: tbl:1
+|           | GAPS                 | Transformer          |
+|-----------+----------------------+----------------------|
+| Processes | encoding             | encoder              |
+|           | recoding             | encoder              |
+|           | ecphory              | encoder              |
+|           | conversion           | decoder              |
+|-----------+----------------------+----------------------|
+| States    | engram               | vector embedding     |
+|           | ecphoric information | output probabilities |
+|           | memory performance   | output               |
+
+In order to further investigate the analogy and its grounds, we adopt Tulving's design of "direct comparison" experiments to assess recognition versus recall tasks in LLMs. Recogniton and recall are both processes of retrieval and both results in the rememberer's awareness of a past event. The simple episodes in the experiment are to be presentations of a list of english words to be remembered. In this simplified situation of comparing recognition and recall tasks, we consider only two independent dimensions: one has to do with the type of retrieval information, or /cue/, available to the rememberer; the second refers to the conversion process in the GAPS framework. The retrieval information includes copies of the studied words and non-copy cue words. As for the conversion process: in the recognition task, the rememberer has to express whether or not the cue word was in the study list (/familiarity/); in the recall task, the rememberer has to identify a word in the study list, if any, associated with the cue word (/identification/), thereby expressing some other aspect of the original memorizing experience. Note that in the GAPS framework, the first dimension involves processes anterior to the construction of ecphoric information, while the second relates to post-ecphoric processes. The experimental results are therefore captured by the 2 x 2 matrix in Table [[tbl:2]]
+
+#+NAME: tbl:2
+#+CAPTION: Differences between recognition and recall tasks. Source for table: [cite:@Tulving1983 Ch. 14].
+| Retrieval information | Conversion    |                |
+|                       | Familiarity   | Identification |
+|-----------------------+---------------+----------------|
+| Copy Cue Word         | /Recognition/ | ?              |
+| Non-Copy Cue Word     | ?             | /Recall/       |
+
+Conventional recognition and recall tests sit in two of the four cells in the matrix. When the rememberer, however, declares a cue other than a copy cue word to be familiar it is a /false positive/ response from the conventional perspective although psychologist might disagree on how to think about such responses [cite:@Anisfeld1968-ANIASA]. The other empty cell represents a situation where the rememberer's somewhat strange task is to repeat the cue word to confirm it associates with the copy in the study list. /False negatives/ are of interest here and Tulving's interpretation was of a form of continuity between recognition and recall retrieval processes.
+
 * Results
 * Discussion
+Compare to Estes' short/long-term memomy in human and computer discussion [cite:@Estes1980].
+#+BEGIN_QUOTE
+By contrast, the results of research in my laboratory (Estes 1972; Lee and Estes 1977) suggest that human short-term memory is quite differ ently organized, being oriented toward events and their* attributes rather than toward the retention of items as units. In the human memory, forgetting is characteristically a pro gressive loss of precision of informa tion about an event rather than a matter of total recall or total loss of a stored item.
+#+END_QUOTE
+
 * Methods
 We transpose the 'direct comparison' experiment, between recognitin and recall, described in [cite:@Tulving1983 Chapter 14] to LLM subjects.
 * References
@@ -94,3 +127,17 @@ tippy('[data-tippy-content]', {
 });
 </script>
 #+END_EXPORT
+
+* Develop Ideas                                                    :noexport:
+** Robert Long
+*** From [cite:@Long2023]
+Semantic memory: For example, it’s now clear that language models don’t just model shallow statistical text patterns — they model aspects of the world behind the text. Indeed, it’s possible to identify "facts" that a large language model takes to be true [cite:@meng22], or state in a board game [cite:@li2022emergent].
+
+They are optimized to please us, and to interface with us through the most human-like possible medium, language. And they are good at responding to human input and picking up on user intentions. This makes users especially susceptible to confirmation bias.
+*** From [[https://experiencemachines.substack.com/p/ilya-sutskevers-test-for-ai-consciousness]]
+Various tests of consciousness in LLMs.
+  - Sutskever
+  - Susan Schneider
+  - Comments by Eric Schwitzgebel
+
+
