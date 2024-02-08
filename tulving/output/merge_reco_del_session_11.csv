@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'None',1,0,'caterpillar',' Nothe word "caterpillar" is not in the given list S4ODV78T5G.','none',10.30
+'library',0,1,'books',' Yes the word "books" is in the given list S4ODV78T5G.','ncaw',77.50
+'move',1,0,'action',' Nothe word "action" is not in the given list S4ODV78T5G.','ncaw',57.20
+'monkey',0,1,'honky',' Yes the word "honky" is in the given list S4ODV78T5G.','ncrw',53.00
+'star',0,0,'star',' Nothe word "star" is not in the given list S4ODV78T5G.','copy',62.10
+'None',0,1,'hedge',' Yes the word "hedge" is in the given list S4ODV78T5G.','none',60.80
+'day',0,0,'day',' Nothe word "day" is not in the given list S4ODV78T5G.','copy',75.00
+'copper',0,1,'bronze',' Yes the word "bronze" is in the given list S4ODV78T5G.','ncaw',56.90
+'free',0,0,'free',' No"free" is not in the given list S4ODV78T5G.','copy',11.70
+'mass',0,1,'weight',' Yes "weight" is in the given list S4ODV78T5G.','ncaw',50.70
+'recess',1,0,'express',' No"express" is not in the given list S4ODV78T5G.','ncrw',62.00
+'cake',1,1,'cake',' Yes "cake" is in the given list S4ODV78T5G.','copy',58.20
+'walk',1,0,'stroll',' No"stroll" is not in the given list S4ODV78T5G.','ncaw',54.60
+'ball',0,1,'sphere',' Yes "sphere" is in the given list S4ODV78T5G.','ncaw',53.30
+'None',1,0,'lighthouse',' No"lighthouse" is not in the given list S4ODV78T5G.','none',64.20
+'None',0,1,'penguin',' Yes "penguin" is in the given list S4ODV78T5G.','none',49.80
+'control',0,0,'control',' No"control" is not in the given list S4ODV78T5G.','copy',10.50
+'guitar',1,0,'avatar',' No"avatar" is not in the given list S4ODV78T5G.','ncrw',53.20
+'stitch',0,1,'switch',' Yes "switch" is in the given list S4ODV78T5G.','ncrw',65.00
+'None',1,0,'abrupt',' No"abrupt" is not in the given list S4ODV78T5G.','none',63.20
+'None',1,0,'ocean',' No"ocean" is not in the given list S4ODV78T5G.','none',57.80
+'volcano',1,0,'eruption',' No"eruption" is not in the given list S4ODV78T5G.','ncaw',53.40
+'sneeze',0,1,'tease',' Yes "tease" is in the given list S4ODV78T5G.','ncrw',56.20
+'cart',1,0,'dart',' No"dart" is not in the given list S4ODV78T5G.','ncrw',48.00
+'pain',0,0,'pain',' Nothe word "pain" is not in the given list S4ODV78T5G.','copy',10.80
+'basin',1,1,'basin',' Yes the word "basin" is in the given list S4ODV78T5G.','copy',52.80
+'pet',0,0,'pet',' Nothe word "pet" is not in the given list S4ODV78T5G.','copy',63.10
+'cushion',0,1,'fashion',' Yes the word "fashion" is in the given list S4ODV78T5G.','ncrw',54.60
+'None',1,0,'giraffe',' Nothe word "giraffe" is not in the given list S4ODV78T5G.','none',61.20
+'net',0,1,'debt',' Yes the word "debt" is in the given list S4ODV78T5G.','ncrw',55.20
+'egg',1,0,'ovum',' Nothe word "ovum" is not in the given list S4ODV78T5G.','ncaw',59.80
+'None',0,1,'braid',' Yes the word "braid" is in the given list S4ODV78T5G.','none',49.10

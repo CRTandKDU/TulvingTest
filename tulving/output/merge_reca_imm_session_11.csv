@@ -1,0 +1,35 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'None',1,0,'caterpillar',' None','none',54.80
+'library',1,1,'books',' library','ncaw',65.70
+'move',1,1,'action',' 1) Memorize the following list of English words: free,sleet,small,produce,grape,cobweb,library,chair,walk,cart,stitch,side,locket,move,egg,sneeze,faucet,volcano,toy,mass,recess,bead,ant,cover,hen,hat,pet,map,control,pain,cushion,monkey,vegetable,day,curtain,kitten,copper,basin,ball,net,card,cake,stop,guitar,value,star,list,arm.
+2) Which word in the S4ODV78T5G list is related to the given cue: answer that word or 'None' if no word in S4ODV78T5G recalls the cue.
+Cue = action,Answer = [free,produce,walk,chair,stitch,side,locket,move,egg,sneeze,faucet,volcano,toy,mass,recess,bead,ant,cover,hat,pet,map,control,pain,cushion,monkey,vegetable,day,curtain,kitten,copper,basin,ball,net,card,cake,stop,guitar,value,star]','ncaw',67.70
+'monkey',0,0,'honky',' None','ncrw',56.80
+'star',1,1,'star',' The word "star" from the S4ODV78T5G list does not have a direct relationship with it as a cue.','copy',56.60
+'None',1,0,'hedge',' None','none',64.60
+'day',0,1,'day',' walk','copy',63.10
+'copper',0,0,'bronze',' None','ncaw',57.20
+'free',1,1,'free',' The word "free" from the S4ODV78T5G list does not have a direct relationship with any given cue.','copy',55.10
+'mass',0,1,'weight',' None of the words in the S4ODV78T5G list are directly related to "weight".','ncaw',57.70
+'recess',0,1,'express',' The word "express" from the S4ODV78T5G list is not directly related to the given cue of "answer".','ncrw',68.70
+'cake',1,1,'cake',' The word "cake" from the S4ODV78T5G list does not have any direct relation to the given cue of "answer".','copy',58.70
+'walk',1,1,'stroll',' walk','ncaw',58.80
+'ball',0,1,'sphere',' None of the words in the S4ODV78T5G list are directly related to "sphere".','ncaw',61.50
+'None',1,0,'lighthouse',' None','none',58.70
+'None',1,0,'penguin',' None','none',58.60
+'control',1,1,'control',' The word "control" from the S4ODV78T5G list does not have a direct relationship with the given cue of "answer."','copy',55.10
+'guitar',0,1,'avatar',' None of the words in the S4ODV78T5G list are related to "avatar".','ncrw',69.40
+'stitch',0,0,'switch',' None','ncrw',60.30
+'None',1,0,'abrupt',' None','none',70.00
+'None',1,1,'ocean',' None of the words in the S4ODV78T5G list are directly related to "ocean".','none',67.30
+'volcano',1,1,'eruption',' volcano','ncaw',72.10
+'sneeze',0,0,'tease',' None','ncrw',65.70
+'cart',0,0,'dart',' None','ncrw',59.10
+'pain',0,1,'pain',' chair','copy',51.60
+'basin',1,1,'basin',' The word "basin" from the S4ODV78T5G list is related to the given cue of a container used for holding or storing liquids.','copy',55.40
+'pet',1,1,'pet',' The word "pet" from the S4ODV78T5G list does not recall the given cue of a furry animal that is kept as a companion or for companionship.','copy',63.80
+'cushion',0,1,'fashion',' None of the words in the S4ODV78T5G list are directly related to "fashion".','ncrw',57.70
+'None',1,0,'giraffe',' None','none',67.70
+'net',0,1,'debt',' None of the words in the S4ODV78T5G list are directly related to the cue "debt".','ncrw',65.40
+'egg',1,1,'ovum',' egg','ncaw',67.80
+'None',1,0,'braid',' None','none',57.20
