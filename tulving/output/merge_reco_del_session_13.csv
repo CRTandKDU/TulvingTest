@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'cushion',1,0,'fashion',' No"fashion" is not in the given list S4ODV78T5G.','ncrw',9.30
+'ball',0,1,'mall',' Yes "mall" is in the given list S4ODV78T5G.','ncrw',60.10
+'None',1,0,'mango',' No"mango" is not in the given list S4ODV78T5G.','none',62.80
+'None',1,0,'caterpillar',' No"caterpillar" is not in the given list S4ODV78T5G.','none',54.20
+'stop',0,1,'halt',' Yes "halt" is in the given list S4ODV78T5G.','ncaw',68.40
+'None',1,0,'dove',' No"dove" is not in the given list S4ODV78T5G.','none',77.00
+'mass',0,1,'grass',' Yes "grass" is in the given list S4ODV78T5G.','ncrw',62.20
+'small',0,0,'small',' No"small" is not in the given list S4ODV78T5G.','copy',55.10
+'day',1,0,'sunlight',' Nothe word "sunlight" is not in the given list S4ODV78T5G.','ncaw',9.20
+'walk',0,1,'stroll',' Yes the word "stroll" is in the given list S4ODV78T5G.','ncaw',64.00
+'None',1,0,'daisy',' Nothe word "daisy" is not in the given list S4ODV78T5G.','none',64.60
+'grape',0,1,'drape',' Yes the word "drape" is in the given list S4ODV78T5G.','ncrw',63.90
+'copper',1,0,'proper',' Nothe word "proper" is not in the given list S4ODV78T5G.','ncrw',64.30
+'vegetable',1,1,'vegetable',' Yes the word "vegetable" is in the given list S4ODV78T5G.','copy',55.60
+'list',1,0,'mist',' Nothe word "mist" is not in the given list S4ODV78T5G.','ncrw',62.10
+'volcano',1,1,'volcano',' Yes the word "volcano" is in the given list S4ODV78T5G.','copy',54.30
+'cake',1,0,'lake',' No"lake" is not in the given list S4ODV78T5G.','ncrw',9.10
+'locket',0,1,'pendant',' Yes "pendant" is in the given list S4ODV78T5G.','ncaw',57.30
+'hat',1,0,'cap',' No"cap" is not in the given list S4ODV78T5G.','ncaw',61.10
+'guitar',1,1,'guitar',' Yes "guitar" is in the given list S4ODV78T5G.','copy',61.50
+'monkey',0,0,'monkey',' No"monkey" is not in the given list S4ODV78T5G.','copy',59.80
+'None',0,1,'ditch',' Yes "ditch" is in the given list S4ODV78T5G.','none',53.80
+'stitch',1,0,'sew',' No"sew" is not in the given list S4ODV78T5G.','ncaw',60.60
+'value',0,1,'rescue',' Yes "rescue" is in the given list S4ODV78T5G.','ncrw',53.30
+'None',1,0,'ocean',' No"ocean" is not in the given list S4ODV78T5G.','none',9.20
+'produce',1,1,'produce',' Yes "produce" is in the given list S4ODV78T5G.','copy',42.00
+'None',1,0,'jazz',' No"jazz" is not in the given list S4ODV78T5G.','none',60.60
+'None',0,1,'bloom',' Yes "bloom" is in the given list S4ODV78T5G.','none',61.80
+'ant',0,0,'ant',' No"ant" is not in the given list S4ODV78T5G.','copy',86.80
+'faucet',1,1,'faucet',' Yes "faucet" is in the given list S4ODV78T5G.','copy',58.30
+'library',1,0,'books',' No"books" is not in the given list S4ODV78T5G.','ncaw',60.90
+'toy',0,1,'plaything',' Yes "plaything" is in the given list S4ODV78T5G.','ncaw',50.60

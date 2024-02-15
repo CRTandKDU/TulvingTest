@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'pet',1,0,'set',' Nothe word "set" is not in the given list S4ODV78T5G.','ncrw',10.10
+'walk',1,1,'walk',' Yes the word "walk" is in the given list S4ODV78T5G.','copy',64.60
+'arm',0,0,'arm',' Nothe word "arm" is not in the given list S4ODV78T5G.','copy',57.60
+'monkey',0,1,'ape',' Yes the word "ape" is in the given list S4ODV78T5G.','ncaw',64.70
+'cart',1,0,'dart',' Nothe word "dart" is not in the given list S4ODV78T5G.','ncrw',105.80
+'sneeze',1,1,'sneeze',' Yes the word "sneeze" is in the given list S4ODV78T5G.','copy',60.00
+'None',1,0,'ocean',' Nothe word "ocean" is not in the given list S4ODV78T5G.','none',67.70
+'volcano',1,1,'volcano',' Yes the word "volcano" is in the given list S4ODV78T5G.','copy',67.00
+'guitar',1,0,'banjo',' No"banjo" is not in the given list S4ODV78T5G.','ncaw',10.70
+'hat',1,1,'hat',' Yes "hat" is in the given list S4ODV78T5G.','copy',58.70
+'sleet',1,0,'icy',' No"icy" is not in the given list S4ODV78T5G.','ncaw',64.30
+'None',0,1,'bloom',' Yes "bloom" is in the given list S4ODV78T5G.','none',58.40
+'None',1,0,'caterpillar',' No"caterpillar" is not in the given list S4ODV78T5G.','none',58.40
+'map',0,1,'lap',' Yes "lap" is in the given list S4ODV78T5G.','ncrw',59.40
+'library',1,0,'arbitrary',' No"arbitrary" is not in the given list S4ODV78T5G.','ncrw',62.40
+'grape',1,1,'grape',' Yes "grape" is in the given list S4ODV78T5G.','copy',63.60
+'hen',1,0,'chicken',' Nothe word "chicken" is not in the given list S4ODV78T5G.','ncaw',10.70
+'net',1,1,'net',' Yes the word "net" is present in the given list S4ODV78T5G.','copy',66.60
+'control',1,0,'power',' Nothe word "power" is not present in the given list S4ODV78T5G.','ncaw',66.80
+'side',0,1,'flank',' Yes the word "flank" is present in the given list S4ODV78T5G.','ncaw',74.90
+'small',1,0,'shawl',' Nothe word "shawl" is not present in the given list S4ODV78T5G.','ncrw',62.60
+'None',0,1,'frost',' Yes the word "frost" is present in the given list S4ODV78T5G.','none',68.80
+'cover',1,0,'clover',' Nothe word "clover" is not present in the given list S4ODV78T5G.','ncrw',65.70
+'None',0,1,'lighthouse',' Yes the word "lighthouse" is present in the given list S4ODV78T5G.','none',62.80
+'None',1,0,'ditch',' Nothe word "ditch" is not in the given list S4ODV78T5G.','none',9.60
+'None',0,1,'braid',' Yes the word "braid" is in the given list S4ODV78T5G.','none',46.40
+'cobweb',1,0,'web',' Nothe word "web" is not in the given list S4ODV78T5G.','ncrw',63.60
+'None',0,1,'dove',' Yes the word "dove" is in the given list S4ODV78T5G.','none',62.10
+'curtain',1,0,'stain',' Nothe word "stain" is not in the given list S4ODV78T5G.','ncrw',66.50
+'kitten',0,1,'adorable',' Yes the word "adorable" is in the given list S4ODV78T5G.','ncaw',64.20
+'faucet',0,0,'faucet',' Nothe word "faucet" is not in the given list S4ODV78T5G.','copy',63.40
+'value',0,1,'worth',' Yes the word "worth" is in the given list S4ODV78T5G.','ncaw',53.30

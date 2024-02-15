@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'card',0,0,'card',' No"card" is not in the given list S4ODV78T5G.','copy',9.10
+'basin',0,1,'satin',' Yes "satin" is in the given list S4ODV78T5G.','ncrw',59.60
+'None',1,0,'caterpillar',' No"caterpillar" is not in the given list S4ODV78T5G.','none',60.60
+'net',1,1,'net',' Yes "net" is in the given list S4ODV78T5G.','copy',54.70
+'cushion',1,0,'fashion',' No"fashion" is not in the given list S4ODV78T5G.','ncrw',64.30
+'cart',1,1,'cart',' Yes "cart" is in the given list S4ODV78T5G.','copy',58.10
+'cake',1,0,'lake',' No"lake" is not in the given list S4ODV78T5G.','ncrw',64.50
+'copper',0,1,'proper',' Yes "proper" is in the given list S4ODV78T5G.','ncrw',57.20
+'stop',1,0,'halt',' Nothe word "halt" is not in the given list S4ODV78T5G.','ncaw',9.20
+'side',0,1,'ride',' Yes the word "ride" is in the given list S4ODV78T5G.','ncrw',52.30
+'ant',0,0,'ant',' Nothe word "ant" is not in the given list S4ODV78T5G.','copy',64.50
+'star',0,1,'shine',' Yes the word "shine" is in the given list S4ODV78T5G.','ncaw',58.80
+'move',1,1,'move',' Yes the word "move" is in the given list S4ODV78T5G.','copy',63.50
+'None',1,0,'abrupt',' Nothe word "abrupt" is not in the given list S4ODV78T5G.','none',55.50
+'toy',0,1,'joy',' Yes the word "joy" is in the given list S4ODV78T5G.','ncrw',56.40
+'faucet',1,0,'tap',' Nothe word "tap" is not in the given list S4ODV78T5G.','ncaw',56.90
+'hat',1,0,'fat',' Nothe word "fat" is not in the given list S4ODV78T5G.','ncrw',9.00
+'None',1,0,'giraffe',' Nothe word "giraffe" is not in the given list S4ODV78T5G.','none',55.80
+'hen',1,1,'hen',' Yes the word "hen" is in the given list S4ODV78T5G.','copy',54.70
+'None',1,0,'ocean',' Nothe word "ocean" is not in the given list S4ODV78T5G.','none',57.70
+'None',0,1,'bloom',' Yes the word "bloom" is in the given list S4ODV78T5G.','none',78.30
+'kitten',1,0,'adorable',' Nothe word "adorable" is not in the given list S4ODV78T5G.','ncaw',56.70
+'bead',0,1,'string',' Yes the word "string" is in the given list S4ODV78T5G.','ncaw',55.50
+'grape',1,0,'wine',' Nothe word "wine" is not in the given list S4ODV78T5G.','ncaw',66.20
+'stitch',1,0,'sew',' Nothe word "sew" is not in the given list S4ODV78T5G.','ncaw',9.40
+'cover',0,1,'conceal',' Yes the word "conceal" is in the given list S4ODV78T5G.','ncaw',49.00
+'value',0,0,'value',' Nothe word "value" is not in the given list S4ODV78T5G.','copy',50.40
+'chair',1,1,'chair',' Yes the word "chair" is in the given list S4ODV78T5G.','copy',60.50
+'locket',1,0,'rocket',' Nothe word "rocket" is not in the given list S4ODV78T5G.','ncrw',58.60
+'None',0,1,'braid',' Yes the word "braid" is in the given list S4ODV78T5G.','none',58.80
+'None',1,0,'ditch',' Nothe word "ditch" is not in the given list S4ODV78T5G.','none',61.10
+'None',1,0,'mango',' Nothe word "mango" is not in the given list S4ODV78T5G.','none',51.70

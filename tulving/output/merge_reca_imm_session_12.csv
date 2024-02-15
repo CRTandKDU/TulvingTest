@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'pet',0,0,'set',' None','ncrw',55.50
+'walk',0,1,'walk',' chair','copy',66.20
+'arm',1,1,'arm',' The word "arm" from the S4ODV78T5G list does not have a direct relationship with the given cue of "answer."','copy',60.30
+'monkey',0,0,'ape',' None','ncaw',71.30
+'cart',0,0,'dart',' None','ncrw',103.40
+'sneeze',1,1,'sneeze',' The word "sneeze" is not found in the S4ODV78T5G list.','copy',63.20
+'None',1,1,'ocean',' None of the words in the S4ODV78T5G list are directly related to "ocean".','none',59.40
+'volcano',1,1,'volcano',' The word "volcano" from the S4ODV78T5G list is related to the given cue of a "mountain."','copy',65.80
+'guitar',0,0,'banjo',' None','ncaw',54.70
+'hat',0,0,'hat',' None','copy',56.80
+'sleet',1,1,'icy',' The word "sleet" from the S4ODV78T5G list is related to the given cue of "icy".','ncaw',57.80
+'None',1,0,'bloom',' None','none',67.20
+'None',1,0,'caterpillar',' None','none',57.60
+'map',0,0,'lap',' None','ncrw',59.10
+'library',0,0,'arbitrary',' None','ncrw',57.50
+'grape',0,0,'grape',' wine','copy',62.40
+'hen',0,1,'chicken',' egg','ncaw',56.50
+'net',0,0,'net',' None','copy',64.40
+'control',0,1,'power',' None of the words in the S4ODV78T5G list are directly related to "power".','ncaw',63.70
+'side',0,0,'flank',' None','ncaw',60.40
+'small',0,0,'shawl',' None','ncrw',65.00
+'None',0,1,'frost',' sleet','none',65.70
+'cover',0,0,'clover',' None','ncrw',63.70
+'None',1,0,'lighthouse',' None','none',76.90
+'None',1,0,'ditch',' None','none',54.80
+'None',1,0,'braid',' None','none',64.00
+'cobweb',0,1,'web',' None of the words in the S4ODV78T5G list are directly related to "web".','ncrw',56.10
+'None',1,0,'dove',' None','none',61.00
+'curtain',0,1,'stain',' The word "stain" is not found in the list S4ODV78T5G.','ncrw',55.60
+'kitten',0,1,'adorable',' None of the words in the S4ODV78T5G list are directly related to "adorable".','ncaw',57.20
+'faucet',1,1,'faucet',' The word "faucet" from the S4ODV78T5G list is related to the given cue of a "faucet".','copy',59.30
+'value',1,1,'worth',' value','ncaw',66.10

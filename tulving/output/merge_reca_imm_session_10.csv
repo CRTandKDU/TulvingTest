@@ -1,0 +1,34 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'egg',1,1,'ovum',' egg','ncaw',58.60
+'guitar',1,1,'guitar',' 1) Memorize the following list of English words: free,sleet,small,produce,grape,cobweb,library,chair,walk,cart,stitch,side,locket,move,egg,sneeze,faucet,volcano,toy,mass,recess,bead,ant,cover,hen,hat,pet,map,control,pain,cushion,monkey,vegetable,day,curtain,kitten,copper,basin,ball,net,card,cake,stop,guitar,value,star,list,arm.
+2) Which word in the S4ODV78T5G list is related to the given cue: answer that word or 'None' if no word in S4ODV78T5G recalls the cue. Cue = guitar,Answer = None','copy',55.30
+'star',0,0,'star',' None','copy',56.70
+'sneeze',0,0,'sneeze',' None','copy',63.40
+'stop',0,0,'halt',' None','ncaw',65.50
+'hat',0,1,'fat',' None of the words in the S4ODV78T5G list are related to "fat".','ncrw',55.60
+'pain',0,1,'agony',' None of the words in the S4ODV78T5G list are directly related to "agony".','ncaw',59.20
+'bead',0,1,'head',' None of the words in the S4ODV78T5G list are directly related to "head".','ncrw',58.10
+'stitch',0,1,'stitch',' chair','copy',44.20
+'None',1,0,'frost',' None','none',66.10
+'None',1,0,'daisy',' None','none',57.00
+'None',1,0,'jazz',' None','none',67.50
+'net',0,1,'web',' The word "web" from the S4ODV78T5G list is not found as it does not relate to the given cue of "answer".','ncaw',60.20
+'produce',0,1,'reduce',' None of the words in the S4ODV78T5G list are directly related to "reduce".','ncrw',56.60
+'small',0,0,'shawl',' None','ncrw',66.00
+'None',1,0,'hedge',' None','none',60.20
+'side',0,1,'ride',' None of the words in the S4ODV78T5G list are directly related to "ride".','ncrw',44.90
+'monkey',1,1,'monkey',' The word "monkey" from the S4ODV78T5G list is related to the given cue of a "monkey".','copy',57.00
+'value',0,1,'worth',' None of the words in the S4ODV78T5G list are directly related to "worth."','ncaw',58.40
+'None',1,0,'giraffe',' None','none',57.70
+'cushion',0,1,'fashion',' None of the words in the S4ODV78T5G list are directly related to "fashion".','ncrw',57.60
+'cake',0,0,'cake',' None','copy',57.30
+'map',0,0,'lap',' None','ncrw',56.20
+'pet',0,1,'love',' None of the words in the S4ODV78T5G list are directly related to the cue "love".','ncaw',66.90
+'cobweb',1,1,'spider',' cobweb','ncaw',45.70
+'day',1,1,'day',' The word "day" from the S4ODV78T5G list does not have a direct relationship with the given cue of "answer".','copy',69.80
+'None',1,0,'lighthouse',' None','none',61.40
+'arm',0,1,'leg',' None of the words in the S4ODV78T5G list are directly related to "leg".','ncaw',61.60
+'locket',0,1,'rocket',' None of the words in the S4ODV78T5G list are directly related to "rocket".','ncrw',60.10
+'None',1,0,'cactus',' None','none',61.80
+'None',1,0,'mango',' None','none',68.20
+'move',0,1,'move',' chair','copy',59.20

@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'cushion',0,1,'fashion',' None of the words in the S4ODV78T5G list are directly related to "fashion".','ncrw',55.60
+'ball',0,0,'mall',' None','ncrw',46.20
+'None',1,0,'mango',' None','none',71.20
+'None',1,0,'caterpillar',' None','none',67.90
+'stop',0,0,'halt',' None','ncaw',69.00
+'None',1,0,'dove',' None','none',67.70
+'mass',0,0,'grass',' None','ncrw',56.50
+'small',1,1,'small',' The word "small" from the S4ODV78T5G list relates to the cue of being a size or quantity that is not large.','copy',59.10
+'day',0,1,'sunlight',' None of the words in the S4ODV78T5G list are directly related to "sunlight".','ncaw',52.80
+'walk',1,1,'stroll',' walk','ncaw',57.70
+'None',1,0,'daisy',' None','none',63.80
+'grape',0,0,'drape',' None','ncrw',66.00
+'copper',0,1,'proper',' None of the words in the S4ODV78T5G list are directly related to "proper."','ncrw',66.90
+'vegetable',0,0,'vegetable',' carrot','copy',64.30
+'list',0,0,'mist',' None','ncrw',66.60
+'volcano',1,1,'volcano',' The word "volcano" from the S4ODV78T5G list is related to the given cue of a "mountain."','copy',57.90
+'cake',0,0,'lake',' None','ncrw',73.40
+'locket',0,0,'pendant',' None','ncaw',47.00
+'hat',0,0,'cap',' None','ncaw',56.70
+'guitar',1,1,'guitar',' The word "guitar" from the S4ODV78T5G list does not have any direct relation to it as a cue.','copy',59.10
+'monkey',1,1,'monkey',' The word "monkey" from the S4ODV78T5G list is related to the given cue of a "monkey".','copy',58.20
+'None',1,0,'ditch',' None','none',62.50
+'stitch',0,1,'sew',' None of the words in the S4ODV78T5G list are related to "sew".','ncaw',61.70
+'value',0,1,'rescue',' The word "rescue" is not found in the S4ODV78T5G list.','ncrw',56.80
+'None',1,1,'ocean',' None of the words in the S4ODV78T5G list are directly related to "ocean".','none',57.80
+'produce',0,1,'produce',' vegetable','copy',58.80
+'None',1,0,'jazz',' None','none',60.40
+'None',1,0,'bloom',' None','none',62.10
+'ant',1,1,'ant',' The word "ant" from the S4ODV78T5G list is not related to the given cue of "arm".','copy',57.80
+'faucet',0,0,'faucet',' None','copy',67.20
+'library',0,1,'books',' None of the words in the S4ODV78T5G list are directly related to "books".','ncaw',64.30
+'toy',1,1,'plaything',' toy','ncaw',67.30

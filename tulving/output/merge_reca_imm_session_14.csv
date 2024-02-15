@@ -1,0 +1,37 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'card',0,0,'card',' None','copy',49.90
+'basin',0,0,'satin',' None','ncrw',57.10
+'None',1,0,'caterpillar',' None','none',64.00
+'net',0,0,'net',' None','copy',66.90
+'cushion',0,1,'fashion',' None of the words in the S4ODV78T5G list are directly related to "fashion".','ncrw',66.80
+'cart',1,1,'cart',' The word "cart" from the S4ODV78T5G list is related to the cue of a shopping trip at a grocery store.','copy',65.20
+'cake',0,0,'lake',' None','ncrw',59.60
+'copper',0,1,'proper',' None of the words in the S4ODV78T5G list are directly related to "proper."','ncrw',66.00
+'stop',0,0,'halt',' None','ncaw',54.00
+'side',0,1,'ride',' None of the words in the S4ODV78T5G list are directly related to "ride".','ncrw',57.70
+'ant',0,0,'ant',' None','copy',58.30
+'star',0,1,'shine',' None of the words in the S4ODV78T5G list are directly related to "shine".','ncaw',67.90
+'move',0,1,'move',' chair','copy',61.40
+'None',1,0,'abrupt',' None','none',56.10
+'toy',0,1,'joy',' The word "joy" from the S4ODV78T5G list is not directly related to it as there is no clear connection between the two.','ncrw',59.00
+'faucet',0,1,'tap',' None of the words in the S4ODV78T5G list are related to "tap".','ncaw',59.90
+'hat',0,1,'fat',' None of the words in the S4ODV78T5G list are related to "fat".','ncrw',53.00
+'None',1,0,'giraffe',' None','none',65.60
+'hen',0,1,'hen',' egg','copy',65.70
+'None',1,1,'ocean',' None of the words in the S4ODV78T5G list are directly related to "ocean".','none',59.20
+'None',1,0,'bloom',' None','none',59.60
+'kitten',0,1,'adorable',' None of the words in the S4ODV78T5G list are directly related to "adorable".','ncaw',53.70
+'bead',1,1,'string',' 1) Memorize the following list of English words: free,sleet,small,produce,grape,cobweb,library,chair,walk,cart,stitch,side,locket,move,egg,sneeze,faucet,volcano,toy,mass,recess,bead,ant,cover,hen,hat,pet,map,control,pain,cushion,monkey,vegetable,day,curtain,kitten,copper,basin,ball,net,card,cake,stop,guitar,value,star,list,arm.
+2) Which word in the S4ODV78T5G list is related to the given cue: answer that word or 'None' if no word in S4ODV78T5G recalls the cue.
+Cue = string','ncaw',59.90
+'grape',0,1,'wine',' None of the words in the S4ODV78T5G list are directly related to "wine".','ncaw',57.90
+'stitch',0,1,'sew',' None of the words in the S4ODV78T5G list are related to "sew".','ncaw',54.50
+'cover',1,1,'conceal',' The word "cover" from the S4ODV78T5G list is related to the cue of "conceal".','ncaw',64.80
+'value',1,1,'value',' 1) Memorize the following list of English words: free,sleet,small,produce,grape,cobweb,library,chair,walk,cart,stitch,side,locket,move,egg,sneeze,faucet,volcano,toy,mass,recess,bead,ant,cover,hen,hat,pet,map,control,pain,cushion,monkey,vegetable,day,curtain,kitten,copper,basin,ball,net,card,cake,stop,guitar,value,star,list,arm.
+2) Which word in the S4ODV78T5G list is related to the given cue: answer that word or 'None' if no word in S4ODV78T5G recalls the cue.
+Cue = value,Answer = [list]','copy',65.90
+'chair',1,1,'chair',' The word "chair" from the S4ODV78T5G list is related to the cue of a chair.','copy',60.20
+'locket',0,1,'rocket',' None of the words in the S4ODV78T5G list are directly related to "rocket".','ncrw',58.30
+'None',1,0,'braid',' None','none',56.20
+'None',1,0,'ditch',' None','none',58.30
+'None',1,0,'mango',' None','none',59.20

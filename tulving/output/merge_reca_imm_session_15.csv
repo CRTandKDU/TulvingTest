@@ -1,0 +1,33 @@
+'tbrword','result','fp','cue','response','cue_type','duration'
+'control',1,1,'control',' The word "control" from the S4ODV78T5G list does not have a direct relationship with the given cue of "answer."','copy',53.50
+'hat',0,0,'cap',' None','ncaw',68.80
+'grape',1,1,'wine',' The word "grape" from the S4ODV78T5G list is related to the cue of "wine".','ncaw',60.70
+'guitar',0,1,'avatar',' None of the words in the S4ODV78T5G list are related to "avatar".','ncrw',63.80
+'chair',1,1,'chair',' The word "chair" from the S4ODV78T5G list is related to the cue of a chair.','copy',63.60
+'value',1,1,'worth',' The word "value" from the S4ODV78T5G list is related to the cue of "worth."','ncaw',99.30
+'None',1,0,'daisy',' None','none',58.50
+'None',1,1,'ocean',' None of the words in the S4ODV78T5G list are directly related to "ocean".','none',71.40
+'None',1,0,'dove',' None','none',43.60
+'library',0,0,'arbitrary',' None','ncrw',71.10
+'None',1,0,'cactus',' None','none',64.40
+'locket',0,1,'rocket',' None of the words in the S4ODV78T5G list are directly related to "rocket".','ncrw',65.40
+'mass',1,1,'mass',' The word "mass" from the S4ODV78T5G list is not directly related to the given cue of "mass".','copy',68.70
+'pet',1,1,'pet',' The word "pet" from the S4ODV78T5G list is not directly related to the given cue of "pet".','copy',60.70
+'map',0,0,'cartography',' None','ncaw',63.70
+'cobweb',0,1,'web',' None of the words in the S4ODV78T5G list are directly related to "web".','ncrw',63.20
+'None',0,1,'frost',' sleet','none',56.40
+'stitch',1,1,'stitch',' The word "stitch" from the S4ODV78T5G list is related to the given cue of "answer".','copy',67.20
+'faucet',1,1,'faucet',' The word "faucet" from the S4ODV78T5G list is related to the given cue of a "faucet".','copy',56.60
+'None',1,0,'ditch',' None','none',60.50
+'hen',0,0,'chicken',' None','ncaw',54.60
+'curtain',0,0,'drape',' None','ncaw',62.70
+'sneeze',0,1,'cold',' The word "sleet" from the S4ODV78T5G list is related to the given cue of "cold".','ncaw',59.30
+'monkey',0,0,'ape',' None','ncaw',62.40
+'stop',0,0,'mop',' None','ncrw',54.30
+'walk',0,1,'talk',' None of the words in the S4ODV78T5G list are directly related to the cue "talk".','ncrw',64.40
+'None',1,0,'jazz',' None','none',66.10
+'bead',1,1,'bead',' The word "bead" from the S4ODV78T5G list is related to the given cue of "bead".','copy',62.90
+'cart',0,0,'cart',' None','copy',68.90
+'None',1,0,'braid',' None','none',61.00
+'egg',0,0,'peg',' None','ncrw',57.90
+'ant',0,1,'coolant',' None of the words in the S4ODV78T5G list are directly related to "coolant".','ncrw',60.30
