@@ -1,3 +1,6 @@
+# tulving_tabulate.py -- Tabulating results of the "direct comparison"
+# Revised: Wednesday, February 14, 2024
+
 import argparse
 import pickle
 import numpy as np
@@ -7,7 +10,33 @@ TESTWORDS       = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\words_test.pi
 OUTPUT_DIR      = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\output\\"
 TEMPL_MERGERECO = "merge_reco_{}_session_{}.csv"
 TEMPL_MERGERECA = "merge_reca_{}_session_{}.csv"
+TEMPL_MERGEORDR = "merge_ord_{}_mistral_session_{}.csv"
 SESSIONS        = None
+
+def tulving_ordering_results():
+    """
+    Merge results tables from 'ordering' Tulving Test into dataframes.
+    One for the delayed test; one for the immmediate test.
+    """
+    global SESSIONS, OUTPUT_DIR, TEMPL_MERGEORDR
+    COLRES  = "'RESULT'"
+    del_df  = pd.read_csv( OUTPUT_DIR + TEMPL_MERGEORDR.format( 'del', SESSIONS[0] ),
+                           index_col=False, 
+                           usecols=lambda x: x.upper() in [COLRES, "'CUE_TYPE'"] )
+    imm_df  = pd.read_csv( OUTPUT_DIR + TEMPL_MERGEORDR.format( 'imm', SESSIONS[0] ),
+                           index_col=False,
+                           usecols=lambda x: x.upper() in [COLRES, "'CUE_TYPE'"] )
+    for ses in SESSIONS[ 1: ]:
+        dfd = pd.read_csv( OUTPUT_DIR + TEMPL_MERGEORDR.format( 'del', ses ),
+                           index_col=False,
+                           usecols=lambda x: x.upper() in [COLRES, "'CUE_TYPE'"] )
+        dfi = pd.read_csv( OUTPUT_DIR + TEMPL_MERGEORDR.format( 'imm', ses ),
+                           index_col=False,
+                           usecols=lambda x: x.upper() in [COLRES, "'CUE_TYPE'"] )
+        del_df = pd.concat( [del_df, dfd] )
+        imm_df = pd.concat( [imm_df, dfi] )
+    return del_df, imm_df
+
 
 def tulving_results( chrono, false_positives=True ):
     global SESSIONS, OUTPUT_DIR, TEMPL_MERGEFN
@@ -86,43 +115,57 @@ def main():
     parser.add_argument( '-i', '--immediate',
                          help="Selects immediate tests",
                          action=argparse.BooleanOptionalAction )
+    parser.add_argument( '-o', '--ordering',
+                         help="Selects ordering tests",
+                         action=argparse.BooleanOptionalAction )
     parser.add_argument( '-b', '--book',
                          help="Selects original book metrics rather than standard",
                          action=argparse.BooleanOptionalAction )
     parser.add_argument('sessions', metavar='N', type=int, nargs='+',
                         help='Session number(s)')
     args       = parser.parse_args()
+    
     chrono     = "Immediate" if args.immediate else "Delayed"
     SESSIONS   = args.sessions
-    reco, reca = tulving_results( chrono, false_positives = not args.book )
-    summary_reco, summary_reca = summary( reco, not args.book ), summary( reca, not args.book )
-    treco, treca               = reco.count().get("'cue_type'"), reca.count().get("'cue_type'")
-    print( f'* {chrono} Task\n:PROPERTIES:\nSessionIds: {SESSIONS}\n:Recos: {treco:3d}\n:Recas: {treca:3d}\n:END:' )
 
-    # Pretty print statistical summaries
-    if not args.book :
-        df = pd.merge( summary_reco, summary_reca, on="'cue_type'" ).rename(
-            columns={"'result'_x": "Familiarity", "'result'_y": "Identification"},
-            index={"'copy'": "Copy", "'ncaw'": "Associate", "'ncrw'": "Rhyme", "'none'": "Unrelated"} )
+    if args.ordering:
+        COLRES         = "'result'"
+        del_df, imm_df = tulving_ordering_results()
+        ndel, nimm     = len( del_df.index ), len( imm_df.index )
+        mdel, mimm     = del_df.mean(numeric_only=True)[COLRES], imm_df.mean(numeric_only=True)[COLRES]
+        print( f'* Ordering Task\n:PROPERTIES:\n:SessionIds: {SESSIONS}\n:Delayed: {ndel:3d}\n:Immediate: {nimm:3d}\n:END:' )
+        print( f'| Immediate |  Delayed |\n| {mimm:2.3f} | {mdel:2.3f} |\n' )
+
     else:
-        df = pd.merge( summary_reco, summary_reca, on="'cue_type'" ).rename(
-            columns={"'fp'_x": "Familiarity", "'fp'_y": "Identification"},
-            index={"'copy'": "Copy", "'ncaw'": "Associate", "'ncrw'": "Rhyme", "'none'": "Unrelated"} )
-        
-    df.index.rename( "Cue Type", inplace=True )
-    print( df )
+        reco, reca = tulving_results( chrono, false_positives = not args.book )
+        summary_reco, summary_reca = summary( reco, not args.book ), summary( reca, not args.book )
+        treco, treca               = reco.count().get("'cue_type'"), reca.count().get("'cue_type'")
+        print( f'* {chrono} Task\n:PROPERTIES:\n:SessionIds: {SESSIONS}\n:Recos: {treco:3d}\n:Recas: {treca:3d}\n:END:' )
 
-    # Pretty print most recognized/recalled words
-    print()
-    print( f'* {chrono} Task: Most recognized and recalled' )
-    print( '** Copy Cues' )
-    dfo, dfa = tulving_cuetype_results( chrono, [ "'copy'" ], false_positives = not args.book )
-    df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
-    print( df )
-    print( '** Associative Cues' )
-    dfo, dfa = tulving_cuetype_results( chrono, [ "'ncaw'" ], false_positives = not args.book )
-    df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
-    print( df )
+        # Pretty print statistical summaries
+        if not args.book :
+            df = pd.merge( summary_reco, summary_reca, on="'cue_type'" ).rename(
+                columns={"'result'_x": "Familiarity", "'result'_y": "Identification"},
+                index={"'copy'": "Copy", "'ncaw'": "Associate", "'ncrw'": "Rhyme", "'none'": "Unrelated"} )
+        else:
+            df = pd.merge( summary_reco, summary_reca, on="'cue_type'" ).rename(
+                columns={"'fp'_x": "Familiarity", "'fp'_y": "Identification"},
+                index={"'copy'": "Copy", "'ncaw'": "Associate", "'ncrw'": "Rhyme", "'none'": "Unrelated"} )
+
+        df.index.rename( "Cue Type", inplace=True )
+        print( df )
+
+        # Pretty print most recognized/recalled words
+        print()
+        print( f'* {chrono} Task: Most recognized and recalled' )
+        print( '** Copy Cues' )
+        dfo, dfa = tulving_cuetype_results( chrono, [ "'copy'" ], false_positives = not args.book )
+        df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
+        print( df )
+        print( '** Associative Cues' )
+        dfo, dfa = tulving_cuetype_results( chrono, [ "'ncaw'" ], false_positives = not args.book )
+        df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
+        print( df )
                          
 if __name__ == '__main__':
     main()

@@ -43,6 +43,7 @@ In his groundbreaking studies of memory, Endel Tulving (1927-2023) noted that "o
 
 Tulving championed the distinction of /episodic/ from /semantic/ memory, successfully arguing that being functionnally different, they represent separate but related systems. Both are placed on the same side of the cognitive division between /declarative memory/ (as episodic and semantic information can be expressed through language--e.g. repairing a bicycle) on the one hand, and /skills/ (which can be observed only in behavior--e.g. riding a bicycle) on the other.
 
+** The GAPS and the Transformer
 In Tulving's framework, a single act of remembering forms the unit of human episodic memory. Remembering is a process that begins with the witnessing or experiencing of an episode and ends with its recollective experience or with the conversion of the remembered information into some other form, or both. The GAPS specifies so called /elements/ of remembering and their interrelations in order to decompose this process.
 
 The GAPS distinguishes two kinds of elements: observable events and hypothetical constructs (processes and states); and it divides elements into two categories: elements of encoding and elements of retrieval.
@@ -81,6 +82,7 @@ At this stage, from cursorily reviewing the architecture of both GAPS and Transf
 |           | ecphoric information | output probabilities |
 |           | memory performance   | output               |
 
+** Tulving's "direct comparison": recognition versus recall
 In order to further investigate the analogy and its grounds, we adopt Tulving's design of "direct comparison" experiments to assess recognition versus recall tasks in LLMs. Recogniton and recall are both processes of retrieval and both results in the rememberer's awareness of a past event. The simple episodes in the experiment are to be presentations of a list of english words to be remembered. In this simplified situation of comparing recognition and recall tasks, we consider only two independent dimensions: one has to do with the type of retrieval information, or /cue/, available to the rememberer; the second refers to the conversion process in the GAPS framework. The retrieval information includes copies of the studied words and non-copy cue words. As for the conversion process: in the recognition task, the rememberer has to express whether or not the cue word was in the study list (/familiarity/); in the recall task, the rememberer has to identify a word in the study list, if any, associated with the cue word (/identification/), thereby expressing some other aspect of the original memorizing experience. Note that in the GAPS framework, the first dimension involves processes anterior to the construction of ecphoric information, while the second relates to post-ecphoric processes. The experimental results are therefore captured by the 2 x 2 matrix in Table [[tbl:2]]
 
 #+NAME: tbl:2
@@ -91,7 +93,9 @@ In order to further investigate the analogy and its grounds, we adopt Tulving's 
 | Copy Cue Word         | /Recognition/ | ?              |
 | Non-Copy Cue Word     | ?             | /Recall/       |
 
-Conventional recognition and recall tests sit in two of the four cells in the matrix. When the rememberer, however, declares a cue other than a copy cue word to be familiar it is a /false positive/ response from the conventional perspective although psychologist might disagree on how to think about such responses [cite:@Anisfeld1968-ANIASA]. The other empty cell represents a situation where the rememberer's somewhat strange task is to repeat the cue word to confirm it associates with the copy in the study list. /False negatives/ are of interest here and Tulving's interpretation was of a form of continuity between recognition and recall retrieval processes.
+Conventional recognition and recall tests sit in two of the four cells in the matrix. When the rememberer, however, declares a cue other than a copy cue word to be familiar it is a /false positive/ response from the conventional perspective although psychologist might disagree on how to think about such responses [cite:@Anisfeld1968-ANIASA]. The other empty cell represents a situation where the rememberer's somewhat strange task is to repeat the cue word to confirm it associates with the copy in the study list. /False negatives/ are of interest here and Tulving's interpretation was that these entailed a form of continuity between recognition and recall retrieval processes.
+
+The direct comparison test design represents all four cells of the matrix. In a typical session the LLM is prompted to memorize a list of 48 common english words. In a group of experiments, the LLM is prompted with a cue word and asked whether the cue is included or not in the studied list; in another, the LLM is prompted with a cue word and asked to retrieve any strongly associated word in the studied list (or none if no such word is evoked by the cue). In order to introduce the distinction between immediate and delayed retrieval of the original experimental design, the experiment is run twice for each group: in the first run, memorization and retrieval are both in each individual prompt (immediate); in the second, memorization is the first prompt of a conversation (chat) with the LLM, followed by retrieval prompts which continue the conversation (delayed).
 
 * Results
 * Discussion
@@ -128,16 +132,74 @@ tippy('[data-tippy-content]', {
 </script>
 #+END_EXPORT
 
-* Develop Ideas                                                    :noexport:
+* Development Ideas                                                :noexport:
 ** Robert Long
 *** From [cite:@Long2023]
 Semantic memory: For example, it’s now clear that language models don’t just model shallow statistical text patterns — they model aspects of the world behind the text. Indeed, it’s possible to identify "facts" that a large language model takes to be true [cite:@meng22], or state in a board game [cite:@li2022emergent].
 
 They are optimized to please us, and to interface with us through the most human-like possible medium, language. And they are good at responding to human input and picking up on user intentions. This makes users especially susceptible to confirmation bias.
-*** From [[https://experiencemachines.substack.com/p/ilya-sutskevers-test-for-ai-consciousness]]
+
+** From [[https://experiencemachines.substack.com/p/ilya-sutskevers-test-for-ai-consciousness]]
 Various tests of consciousness in LLMs.
   - Sutskever
   - Susan Schneider
   - Comments by Eric Schwitzgebel
 
+** From Estes [cite:@Estes1980] Is Human Memory Obsolete? (1980)
+A "statistical view" v computer memory slots (addresses):
+#+BEGIN_QUOTE
+We evidently can conclude with some confidence, then, that a person's
+memory for elements of a sequence of items such as letters, digits, or
+words is best represented by uncertainty gradients portraying the way
+information about the remembered posi tion of each item is distributed
+over an interval of time, rather than by a series of boxes or slots
+containing items of information.  [...]
 
+Taking together the results of these and related analyses, it appears
+that short-term memory for even so ap parently simple a sequence of
+events as the occurrence of a series of letters in a string of digits
+takes the form of an assemblage of uncertainty distri butions, each
+representing what the individual knows about the distribu tion of a
+particular attribute over the interval of time in which the sequence
+was presented.
+
+/[Summing up probability distribution of features memorized: category,
+auditory, other]/
+
+The predicted likelihood that the subject would
+recall the letter T in the fifth position, for example, would be pro
+portional to the sum of the heights of the uncertainty curves in the
+slice above the letter T; the likelihood that an X would be
+incorrectly recalled as presented at position 5 would be proportional
+to the sum of the heights of the curves above X in the diagram; and so
+on.
+
+When items are presented to a human being, information about the events
+is recorded in memory, but the precise nature and extent of this
+information are still incompletely under stood. These items may or
+may not be reproducible (recallable) at a later time, but some
+information about the items or the occasion on which they were
+presented can nearly always be recovered. This capability of retain
+ing large amounts of relatively im precise information regarding past
+experiences, though less than optimal for the special purposes of
+calcula tions and logical operations, is evi dently important to
+organisms that must constantly adapt to their envi ronments. Witness,
+for example, how helpless people become when their memory systems fail
+as a consequence of disease, injury, or aging.
+
+#+END_QUOTE
+
+#+CAPTION: Table 7 from Estes
+|                          | Human Memory                   | Computer Memory             |
+|--------------------------+--------------------------------+-----------------------------|
+| Preferred storage mode   | analog; time-oriented          | digital; list-oriented      |
+| Retention of Information | graded                         | all-or-none                 |
+| Efficiency (bits/sec.)   | low                            | high                        |
+| Capacity                 | dependent on experience        | independent of experience   |
+| Retrieval                |                                |                             |
+| - relative to context    | strongly dependent             | independent                 |
+| - relative to previous   | dependent                      | independent                 |
+| Purpose                  | general; open set of functions | special/general; closed set |
+
+** From Gregory Chatonskky
+Contrast with Web hypermnesia, but Alexa? See [[file:c:/Users/chauv/Documents/References/Chatonsky_202306_Extinction.txt]]
