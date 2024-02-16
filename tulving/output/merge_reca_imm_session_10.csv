@@ -1,7 +1,5 @@
 'tbrword','result','fp','cue','response','cue_type','duration'
 'egg',1,1,'ovum',' egg','ncaw',58.60
-'guitar',1,1,'guitar',' 1) Memorize the following list of English words: free,sleet,small,produce,grape,cobweb,library,chair,walk,cart,stitch,side,locket,move,egg,sneeze,faucet,volcano,toy,mass,recess,bead,ant,cover,hen,hat,pet,map,control,pain,cushion,monkey,vegetable,day,curtain,kitten,copper,basin,ball,net,card,cake,stop,guitar,value,star,list,arm.
-2) Which word in the S4ODV78T5G list is related to the given cue: answer that word or 'None' if no word in S4ODV78T5G recalls the cue. Cue = guitar,Answer = None','copy',55.30
 'star',0,0,'star',' None','copy',56.70
 'sneeze',0,0,'sneeze',' None','copy',63.40
 'stop',0,0,'halt',' None','ncaw',65.50

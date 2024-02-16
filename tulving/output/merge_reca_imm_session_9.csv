@@ -21,9 +21,7 @@
 'bead',1,1,'bead',' The word "bead" from the S4ODV78T5G list is related to the given cue of "bead".','copy',65.80
 'kitten',0,0,'kitten',' None','copy',66.10
 'None',1,0,'caterpillar',' None','none',54.50
-'pet',1,1,'set',' 1) Memorize the following list of English words: free,sleet,small,produce,grape,cobweb,library,chair,walk,cart,stitch,side,locket,move,egg,sneeze,faucet,volcano,toy,mass,recess,bead,ant,cover,hen,hat,pet,map,control,pain,cushion,monkey,vegetable,day,curtain,kitten,copper,basin,ball,net,card,cake,stop,guitar,value,star,list,arm.
-2) Which word in the S4ODV78T5G list is related to the given cue: answer that word or 'None' if no word in S4ODV78T5G recalls the cue.
-Cue = set,Answer = None','ncrw',62.90
+'pet',1,1,'set','','ncrw',62.90
 'hen',0,1,'hen',' egg','copy',66.10
 'list',0,0,'catalog',' None','ncaw',52.50
 'pain',0,0,'vein',' None','ncrw',65.90
