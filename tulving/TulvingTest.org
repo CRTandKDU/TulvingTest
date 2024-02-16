@@ -35,6 +35,7 @@
 # #+LATEX_CLASS_OPTIONS: [a4paper]
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage{lmodern}
+#+LATEX_HEADER: \usepackage[font=small,labelfont=bf, justification=justified, format=plain]{caption}
 # #+LATEX_HEADER: \usepackage{tgbonum}
 
 * Abstract
@@ -49,7 +50,6 @@ In Tulving's framework, a single act of remembering forms the unit of human epis
 The GAPS distinguishes two kinds of elements: observable events and hypothetical constructs (processes and states); and it divides elements into two categories: elements of encoding and elements of retrieval.
 
 # [[excalidraw.com]]
-#+ATTR_LATEX: :caption \captionsetup{justification=justified}
 #+CAPTION: *The GAPS: Elements of Episodic Memory and their Relations.* The element of encoding is a process that converts the information about an experienced event or episode (in a particular setting, at a particular time) into an /engram/ or memory trace. The central element of the retrieval processes /ecphoric/ information, a synergistic product of the engram and the retrieval cue, which calls on both episodic and semantic information. Source for figure: [cite:@Tulving1983 Ch. 7, Fig. 7-1, p. 135].
 #+NAME: fig:7-1
 #+ATTR_HTML: :width 500px
@@ -61,7 +61,6 @@ Similarly inspired by Semon, Tulving suggested the terms /ecphory/ and /ecphoric
 
 The categories of encoding and retrieval in the GAPS are not without analogies with the /Transformer/ architecture of neural networks at the core of LLMs, which precisely articulates encoders and decoders to process vector embeddings representing words and sentences.
 
-#+ATTR_LATEX: :caption \captionsetup{justification=justified}
 #+CAPTION: *The Transformer Architecture.* Based on the 2017 paper [cite:@AttentionIsAllYouNeed2017] attention mechanism, the Transformer architecture requires less training time than previous recurrent neural architectures. Input text is split into tokens (sometimes called /n-gram/, dangerously reminiscent of Semon's engrams--see text), then converted into vectors. Through different layers, each token is contextualized with other tokens via parallel attention heads, calculating weights for each according to its importance. The Transformer Architecture elaborates on /softmax-based/ attention mechanism [cite:@bahdanau14] and /Fast Weight Controllers/ [cite:@schmidhuber]. Source for figure: [cite:@AttentionIsAllYouNeed2017].
 #+NAME: fig:2
 #+ATTR_HTML: :width 500px
@@ -90,15 +89,52 @@ In order to further investigate the analogy and its grounds, we adopt Tulving's 
 | Retrieval information | Conversion    |                |
 |                       | Familiarity   | Identification |
 |-----------------------+---------------+----------------|
-| Copy Cue Word         | /Recognition/ | ?              |
-| Non-Copy Cue Word     | ?             | /Recall/       |
+| Copy Cue Word         | /Recognition/ | /?/            |
+| Non-Copy Cue Word     | /?/           | /Recall/       |
 
 Conventional recognition and recall tests sit in two of the four cells in the matrix. When the rememberer, however, declares a cue other than a copy cue word to be familiar it is a /false positive/ response from the conventional perspective although psychologist might disagree on how to think about such responses [cite:@Anisfeld1968-ANIASA]. The other empty cell represents a situation where the rememberer's somewhat strange task is to repeat the cue word to confirm it associates with the copy in the study list. /False negatives/ are of interest here and Tulving's interpretation was that these entailed a form of continuity between recognition and recall retrieval processes.
 
-The direct comparison test design represents all four cells of the matrix. In a typical session the LLM is prompted to memorize a list of 48 common english words. In a group of experiments, the LLM is prompted with a cue word and asked whether the cue is included or not in the studied list; in another, the LLM is prompted with a cue word and asked to retrieve any strongly associated word in the studied list (or none if no such word is evoked by the cue). In order to introduce the distinction between immediate and delayed retrieval of the original experimental design, the experiment is run twice for each group: in the first run, memorization and retrieval are both in each individual prompt (immediate); in the second, memorization is the first prompt of a conversation (chat) with the LLM, followed by retrieval prompts which continue the conversation (delayed).
+The direct comparison test design represents all four cells of the matrix. In a typical session the LLM is prompted to memorize a list of 48 common english words. In a group of experiments, the LLM is prompted with a cue word and asked whether the cue is included or not in the studied list; in another group, the LLM is prompted with a cue word and asked to retrieve any strongly associated word in the studied list (or none if no such word is evoked by the cue).
+
+In each experiment 32 cue words are presented in the 32 prompts: eight of these cue words were identical with eight words in the list (/copy cues/), eight were strongly associated words (/non-copy associated/ cues), eight were rhyming words (/non copy rhymes/ cues), and eight were unrelated distractors (/non-copy unrelated/ cues). The 32 cue words are identical for both the recognition and the recall task.
+
+In order to introduce the distinction between immediate and delayed retrieval of the original experimental design, the experiment is run twice for each group: in the first run, memorization and retrieval are both in each individual prompt (immediate); in the second, memorization is the first prompt of a conversation (chat) with the LLM, followed by retrieval prompts which continue the conversation (delayed).
 
 * Results
+As a reference benchmark, the results of Tulving's original experiments are presented in Table [[tbl:3]] from [cite:@Tulving1983 Ch. 14, Table 14.2]:
+
+#+NAME: tbl:3
+#+CAPTION: *Summary of memory performance in the original 'direct comparison' experiment.* Each proportion shown is based on 576 observations. The data for the familiarity (recognition) task show proportion of cases in which the human subjects regarder the cue word as included in the list. Hence the data for copy cues represent 'correct' responses, whereas the data from the other three types of cues represent 'false positives'. The data for the indetification (recall) task indicate proportions of responses to the cue being any target word in the list.
+| Retrieval information |  Conversion |         |                |         |
+|                       | Familiarity |         | Identification |         |
+|                       |   Immediate | Delayed |      Immediate | Delayed |
+|-----------------------+-------------+---------+----------------+---------|
+| /                     |           < |         |              < |         |
+| Copy Cue Word         |        0.78 |    0.71 |           0.69 |    0.60 |
+| Non-Copy Associated   |        0.15 |    0.20 |           0.54 |    0.37 |
+| Non-copy Rhyme        |        0.09 |    0.15 |           0.20 |    0.31 |
+| Non-copy Unrelated    |        0.08 |    0.18 |           0.04 |    0.02 |
+
+
+The memory performance of LLMs in the Tulving Test of 'direct comparison' is presented along the same format in Table [[tbl:4]].
+
+#+NAME: tbl:4
+#+CAPTION: *Summary of memory performance of the ~mistral-7b-instruct-v0~ LLM in the 'direct comparison' experiment.* Each proportion is based on 320 observations (but see text). Interpretations of proportions are the same as above Table [[tbl:3]].
+| Retrieval information |  Conversion |         |                |         |
+|                       | Familiarity |         | Identification |         |
+|                       |   Immediate | Delayed |      Immediate | Delayed |
+|-----------------------+-------------+---------+----------------+---------|
+| /                     |           < |         |              < |         |
+| Copy Cue Word         |           1 |    0.50 |           0.71 |       0 |
+| Non-Copy Associated   |           0 |    0.46 |           0.69 |       0 |
+| Non-copy Rhyme        |           0 |    0.47 |           0.53 |       0 |
+| Non-copy Unrelated    |           0 |    0.41 |           0.14 |       0 |
+
+
+
+
 * Discussion
+
 Compare to Estes' short/long-term memomy in human and computer discussion [cite:@Estes1980].
 #+BEGIN_QUOTE
 By contrast, the results of research in my laboratory (Estes 1972; Lee and Estes 1977) suggest that human short-term memory is quite differ ently organized, being oriented toward events and their* attributes rather than toward the retention of items as units. In the human memory, forgetting is characteristically a pro gressive loss of precision of informa tion about an event rather than a matter of total recall or total loss of a stored item.

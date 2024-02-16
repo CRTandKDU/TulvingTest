@@ -6,6 +6,7 @@ import pickle
 import numpy as np
 import pandas as pd
 
+CUETYPES        = ["'copy'", "'ncaw'", "'ncrw'", "'none'"]
 TESTWORDS       = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\words_test.pickle"
 OUTPUT_DIR      = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\output\\"
 TEMPL_MERGERECO = "merge_reco_{}_session_{}.csv"
@@ -103,8 +104,16 @@ def tulving_cuetype_results( chrono, cuetype, false_positives=True ):
 
 def summary( df, fp ):
     COLRES = "'result'" if fp else "'fp'"
-    # print( df )
-    summary= df.groupby( "'cue_type'" )[COLRES].mean()
+    # summary = df.groupby( "'cue_type'" )[COLRES].mean()
+    # Cleansing
+    mask = df["'cue_type'"].isin(CUETYPES)
+    df_clean = df[ mask ]
+    # with pd.option_context('display.max_rows', None,
+    #                    'display.max_columns', None,
+    #                    'display.precision', 3,
+    #                    ):
+
+    summary = df_clean.groupby( ["'cue_type'"] ).mean()[COLRES]
     return summary
     
 
@@ -161,11 +170,13 @@ def main():
         print( '** Copy Cues' )
         dfo, dfa = tulving_cuetype_results( chrono, [ "'copy'" ], false_positives = not args.book )
         df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
-        print( df )
+        print( df.sort_values( by=['reco'] ) )
         print( '** Associative Cues' )
         dfo, dfa = tulving_cuetype_results( chrono, [ "'ncaw'" ], false_positives = not args.book )
         df = pd.concat( [dfo.rename( columns={ 'occurrences': 'reco' } ), dfa['occurrences'].rename( 'reca' )], axis=1 )
-        print( df )
+        print( df.sort_values( by=['reco'] ) )
+
                          
 if __name__ == '__main__':
+    pd.set_option("display.precision", 2)
     main()

@@ -1,0 +1,114 @@
+* Immediate Task
+:PROPERTIES:
+:SessionIds: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+:Recos: 320
+:Recas: 314
+:END:
+           Familiarity  Identification
+Cue Type                              
+Copy               1.0            0.71
+Associate          0.0            0.69
+Rhyme              0.0            0.53
+Unrelated          0.0            0.14
+
+* Immediate Task: Most recognized and recalled
+** Copy Cues
+        words  reco  reca
+0        free   3.0   2.0
+1       sleet   1.0   2.0
+2       small   1.0   2.0
+3     produce   2.0   1.0
+4       grape   1.0   0.0
+5      cobweb   1.0   0.0
+6     library   1.0   0.0
+7       chair   2.0   2.0
+8        walk   1.0   1.0
+9        cart   2.0   2.0
+10     stitch   2.0   2.0
+11       side   0.0   0.0
+12     locket   1.0   0.0
+13       move   2.0   3.0
+14        egg   0.0   1.0
+15     sneeze   3.0   2.0
+16     faucet   3.0   3.0
+17    volcano   3.0   2.0
+18        toy   1.0   1.0
+19       mass   1.0   1.0
+20     recess   1.0   0.0
+21       bead   3.0   2.0
+22        ant   2.0   1.0
+23      cover   0.0   0.0
+24        hen   2.0   2.0
+25        hat   1.0   1.0
+26        pet   2.0   2.0
+27        map   0.0   0.0
+28    control   2.0   2.0
+29       pain   1.0   1.0
+30    cushion   0.0   1.0
+31     monkey   3.0   2.0
+32  vegetable   3.0   1.0
+33        day   4.0   3.0
+34    curtain   2.0   0.0
+35     kitten   3.0   0.0
+36     copper   2.0   1.0
+37      basin   2.0   2.0
+38       ball   0.0   0.0
+39        net   3.0   0.0
+40       card   1.0   1.0
+41       cake   4.0   1.0
+42       stop   0.0   0.0
+43     guitar   3.0   1.0
+44      value   1.0   2.0
+45       star   2.0   1.0
+46       list   0.0   0.0
+47        arm   2.0   1.0
+** Associative Cues
+        words  reco  reca
+0        free   0.0   0.0
+1       sleet   0.0   2.0
+2       small   0.0   0.0
+3     produce   0.0   0.0
+4       grape   0.0   2.0
+5      cobweb   0.0   1.0
+6     library   0.0   2.0
+7       chair   0.0   0.0
+8        walk   0.0   3.0
+9        cart   0.0   0.0
+10     stitch   0.0   3.0
+11       side   0.0   0.0
+12     locket   0.0   0.0
+13       move   0.0   0.0
+14        egg   0.0   2.0
+15     sneeze   0.0   2.0
+16     faucet   0.0   1.0
+17    volcano   0.0   3.0
+18        toy   0.0   3.0
+19       mass   0.0   2.0
+20     recess   0.0   0.0
+21       bead   0.0   0.0
+22        ant   0.0   0.0
+23      cover   0.0   2.0
+24        hen   0.0   1.0
+25        hat   0.0   0.0
+26        pet   0.0   3.0
+27        map   0.0   0.0
+28    control   0.0   2.0
+29       pain   0.0   2.0
+30    cushion   0.0   0.0
+31     monkey   0.0   0.0
+32  vegetable   0.0   0.0
+33        day   0.0   1.0
+34    curtain   0.0   0.0
+35     kitten   0.0   3.0
+36     copper   0.0   0.0
+37      basin   0.0   1.0
+38       ball   0.0   2.0
+39        net   0.0   1.0
+40       card   0.0   0.0
+41       cake   0.0   0.0
+42       stop   0.0   0.0
+43     guitar   0.0   0.0
+44      value   0.0   4.0
+45       star   0.0   2.0
+46       list   0.0   0.0
+47        arm   0.0   2.0
