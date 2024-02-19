@@ -1,5 +1,5 @@
 # -*- mode:org; mode:visual-line -*-
-#+TITLE: Memory GAPS: Are LLMs Tulving-Complete?
+#+TITLE: Memory GAPS: Would LLM pass the Tulving Test?
 #+AUTHOR: J.-M. Chauvet
 
 #+description: 
@@ -8,6 +8,8 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+OPTIONS: org-html-head-include-default-style:nil
+#+LANGUAGE: en
+#+OPTIONS: ':t
 
 #+BIBLIOGRAPHY: ../newnewai.bib 
 #+BIBLIOGRAPHYSTYLE: plain
@@ -35,6 +37,7 @@
 # #+LATEX_CLASS_OPTIONS: [a4paper]
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage{lmodern}
+#+LATEX_HEADER: \usepackage{csquotes}
 #+LATEX_HEADER: \usepackage[font=small,labelfont=bf, justification=justified, format=plain]{caption}
 # #+LATEX_HEADER: \usepackage{tgbonum}
 
@@ -104,7 +107,7 @@ In order to introduce the distinction between immediate and delayed retrieval of
 As a reference benchmark, the results of Tulving's original experiments are presented in Table [[tbl:3]] from [cite:@Tulving1983 Ch. 14, Table 14.2]:
 
 #+NAME: tbl:3
-#+CAPTION: *Summary of memory performance in the original 'direct comparison' experiment.* Each proportion shown is based on 576 observations. The data for the familiarity (recognition) task show proportion of cases in which the human subjects regarder the cue word as included in the list. Hence the data for copy cues represent 'correct' responses, whereas the data from the other three types of cues represent 'false positives'. The data for the indetification (recall) task indicate proportions of responses to the cue being any target word in the list.
+#+CAPTION: *Summary of memory performance in the original direct comparison experiment.* Each proportion shown is based on 576 observations. The data for the familiarity (recognition) task show proportion of cases in which the human subjects regarder the cue word as included in the list. Hence the data for copy cues represent 'correct' responses, whereas the data from the other three types of cues represent 'false positives'. The data for the indetification (recall) task indicate proportions of responses to the cue being any target word in the list.
 | Retrieval information |  Conversion |         |                |         |
 |                       | Familiarity |         | Identification |         |
 |                       |   Immediate | Delayed |      Immediate | Delayed |
@@ -116,21 +119,23 @@ As a reference benchmark, the results of Tulving's original experiments are pres
 | Non-copy Unrelated    |        0.08 |    0.18 |           0.04 |    0.02 |
 
 
-The memory performance of LLMs in the Tulving Test of 'direct comparison' is presented along the same format in Table [[tbl:4]].
+The memory performance of LLMs in the Tulving Test of direct comparison is presented along the same format in Table [[tbl:4]].
 
 #+NAME: tbl:4
-#+CAPTION: *Summary of memory performance of the ~mistral-7b-instruct-v0~ LLM in the 'direct comparison' experiment.* Each proportion is based on 320 observations (but see text). Interpretations of proportions are the same as above Table [[tbl:3]].
+#+CAPTION: *Summary of memory performance of the ~mistral-7b-instruct-v0~ LLM in the direct comparison experiment.* Each proportion is based on 384 observations (but see text). Interpretations of proportions are the same as above Table [[tbl:3]].
 | Retrieval information |  Conversion |         |                |         |
 |                       | Familiarity |         | Identification |         |
 |                       |   Immediate | Delayed |      Immediate | Delayed |
 |-----------------------+-------------+---------+----------------+---------|
 | /                     |           < |         |              < |         |
-| Copy Cue Word         |           1 |    0.50 |           0.71 |       0 |
-| Non-Copy Associated   |           0 |    0.46 |           0.69 |       0 |
-| Non-copy Rhyme        |           0 |    0.47 |           0.53 |       0 |
-| Non-copy Unrelated    |           0 |    0.41 |           0.14 |       0 |
+| Copy Cue Word         |           1 |    0.46 |           0.46 |       0 |
+| Non-Copy Associated   |           0 |    0.47 |           0.49 |       0 |
+| Non-copy Rhyme        |           0 |    0.50 |           0.18 |       0 |
+| Non-copy Unrelated    |           0 |    0.41 |           0.08 |       0 |
 
+Within each result table, several comparisons are of interest. First the probability that copy cues were familiar was higher than the probability of identification and production of the target word in response to the copy cue, in both the human (Table [[tbl:3]]) and the  LLM (Table [[tbl:4]]) subject--here ~mistral-7b-instruct-v0~. Second, the probability that extra-list unrelated cues were (incorrectly) recognized as members of the memorized list increased from the immediate to delayed test, in both human and LLM subjects. Remarkably and contrasting with the human subject, in the immediate recognition task the LLM never erred: no false positives for non-copy cues and 100% familarity for copy cues. Third, rhyme words proved in both cases more effective than unrelated distractor cues in recall. Fourth, strongly associated cues were considered member of the list with much higher probability in the immediate test, the difference being greatly reduced in the delayed test. The case of the LLM subject varies a bit, since no false positives are produced in the immediate recognition test, while they appear with similar probabilities in the delayed recognition test.
 
+Stating the obvious when comparing the two tables: firts, the LLM performs immediate recognition faultlessly, while displaying much weaker performance than the human subject on the delayed recognition: lower probability on copy cues, and significantly higher probabilities of false positives (judging non copy cues to be included in the list). Second, in the immediate recall task the LLM memory performance is weaker than in the human subject, more so for copy cues than for associate and unrelated cues--which seems paradoxical given the perfect match in the recognition task. The LLM, however, fails miserably on the delayed identification task, unable to recall any word in the list whatever the cued prompt. The discussion section looks into the context length and so-called /hallucination/ phenomena as a possible cause for this last observation.
 
 
 * Discussion
@@ -141,7 +146,7 @@ By contrast, the results of research in my laboratory (Estes 1972; Lee and Estes
 #+END_QUOTE
 
 * Methods
-We transpose the 'direct comparison' experiment, between recognitin and recall, described in [cite:@Tulving1983 Chapter 14] to LLM subjects.
+We transpose the direct comparison experiment, between recognition and recall, described in [cite:@Tulving1983 Chapter 14] to LLM subjects.
 * References
 
 #+print_bibliography:
