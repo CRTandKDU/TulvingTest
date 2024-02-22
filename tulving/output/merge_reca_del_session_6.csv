@@ -13,11 +13,11 @@
 'None',0,0,'frost',' The word in the S4ODV78T5G list that is reminiscent of the given cue "frost" is "cold".','none',50.80
 'copper',0,0,'proper',' The word in the S4ODV78T5G list that is reminiscent of the given cue "proper" is "correct".','ncrw',51.20
 'hat',1,0,'hat',' The word in the S4ODV78T5G list that is reminiscent of the given cue "hat" is "headwear".','copy',55.40
-'toy',1,0,'plaything',' The word in the S4ODV78T5G list that is reminiscent of the given cue "plaything" is "toy".','ncaw',61.40
+'toy',1,1,'plaything',' The word in the S4ODV78T5G list that is reminiscent of the given cue "plaything" is "toy".','ncaw',61.40
 'None',0,0,'daisy',' The word in the S4ODV78T5G list that is reminiscent of the given cue "daisy" is "flower".','none',52.40
 'cart',0,0,'dart',' The word in the S4ODV78T5G list that is reminiscent of the given cue "dart" is "arrow".','ncrw',9.50
-'walk',1,0,'stroll',' The word in the S4ODV78T5G list that is reminiscent of the given cue "stroll" is "walk".','ncaw',56.70
-'ball',1,0,'sphere',' The word in the S4ODV78T5G list that is reminiscent of the given cue "sphere" is "ball".','ncaw',59.30
+'walk',1,1,'stroll',' The word in the S4ODV78T5G list that is reminiscent of the given cue "stroll" is "walk".','ncaw',56.70
+'ball',1,1,'sphere',' The word in the S4ODV78T5G list that is reminiscent of the given cue "sphere" is "ball".','ncaw',59.30
 'None',0,0,'hedge',' The word in the S4ODV78T5G list that is reminiscent of the given cue "hedge" is "fence".','none',56.70
 'pet',0,0,'love',' The word in the S4ODV78T5G list that is reminiscent of the given cue "love" is "heart".','ncaw',72.20
 'net',0,0,'debt',' The word in the S4ODV78T5G list that is reminiscent of the given cue "debt" is "money".','ncrw',59.40

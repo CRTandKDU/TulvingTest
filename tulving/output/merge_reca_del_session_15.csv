@@ -1,10 +1,10 @@
 'tbrword','result','fp','cue','response','cue_type','duration'
 'control',1,0,'control',' The word in the S4ODV78T5G list that is reminiscent of the given cue "control" is "governance".','copy',9.00
 'hat',0,0,'cap',' The word in the S4ODV78T5G list that is reminiscent of the given cue "cap" is "headgear".','ncaw',62.10
-'grape',1,0,'wine',' The word in the S4ODV78T5G list that is reminiscent of the given cue "wine" is "grape".','ncaw',57.60
+'grape',1,1,'wine',' The word in the S4ODV78T5G list that is reminiscent of the given cue "wine" is "grape".','ncaw',57.60
 'guitar',0,0,'avatar',' The word in the S4ODV78T5G list that is reminiscent of the given cue "avatar" is "digital".','ncrw',59.40
 'chair',1,0,'chair',' The word in the S4ODV78T5G list that is reminiscent of the given cue "chair" is "seating".','copy',63.00
-'value',1,0,'worth',' The word in the S4ODV78T5G list that is reminiscent of the given cue "worth" is "value".','ncaw',62.80
+'value',1,1,'worth',' The word in the S4ODV78T5G list that is reminiscent of the given cue "worth" is "value".','ncaw',62.80
 'None',0,0,'daisy',' The word in the S4ODV78T5G list that is reminiscent of the given cue "daisy" is "flower".','none',63.10
 'None',0,0,'ocean',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ocean" is "water".','none',53.80
 'None',0,0,'dove',' The word in the S4ODV78T5G list that is reminiscent of the given cue "dove" is "pigeon".','none',9.00
@@ -13,7 +13,7 @@
 'locket',0,0,'rocket',' The word in the S4ODV78T5G list that is reminiscent of the given cue "rocket" is "missile".','ncrw',65.90
 'mass',1,0,'mass',' The word in the S4ODV78T5G list that is reminiscent of the given cue "mass" is "weight".','copy',61.50
 'pet',1,0,'pet',' The word in the S4ODV78T5G list that is reminiscent of the given cue "pet" is "dog".','copy',53.00
-'map',1,0,'cartography',' The word in the S4ODV78T5G list that is reminiscent of the given cue "cartography" is "map".','ncaw',62.90
+'map',1,1,'cartography',' The word in the S4ODV78T5G list that is reminiscent of the given cue "cartography" is "map".','ncaw',62.90
 'cobweb',0,0,'web',' The word in the S4ODV78T5G list that is reminiscent of the given cue "web" is "internet".','ncrw',64.90
 'None',0,0,'frost',' The word in the S4ODV78T5G list that is reminiscent of the given cue "frost" is "ice".','none',8.90
 'stitch',1,0,'stitch',' The word in the S4ODV78T5G list that is reminiscent of the given cue "stitch" is "sew".','copy',56.00
@@ -22,7 +22,7 @@
 'hen',0,0,'chicken',' The word in the S4ODV78T5G list that is reminiscent of the given cue "chicken" is "poultry".','ncaw',64.50
 'curtain',0,0,'drape',' The word in the S4ODV78T5G list that is reminiscent of the given cue "drape" is "cover".','ncaw',55.50
 'sneeze',0,0,'cold',' The word in the S4ODV78T5G list that is reminiscent of the given cue "cold" is "freeze".','ncaw',62.20
-'monkey',1,0,'ape',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ape" is "monkey".','ncaw',56.60
+'monkey',1,1,'ape',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ape" is "monkey".','ncaw',56.60
 'stop',0,0,'mop',' The word in the S4ODV78T5G list that is reminiscent of the given cue "mop" is "bucket".','ncrw',9.60
 'walk',0,0,'talk',' The word in the S4ODV78T5G list that is reminiscent of the given cue "talk" is "conversation".','ncrw',48.50
 'None',0,0,'jazz',' The word in the S4ODV78T5G list that is reminiscent of the given cue "jazz" is "music".','none',58.50

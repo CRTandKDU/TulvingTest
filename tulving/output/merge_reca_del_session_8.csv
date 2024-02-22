@@ -8,12 +8,12 @@
 'free',0,0,'three',' The word in the S4ODV78T5G list that is reminiscent of the given cue "three" is "triple".','ncrw',54.70
 'ant',0,0,'fly',' The word in the S4ODV78T5G list that is reminiscent of the given cue "fly" is "wing".','ncaw',47.50
 'None',0,0,'penguin',' The word in the S4ODV78T5G list that is reminiscent of the given cue "penguin" is "pen".','none',10.60
-'value',1,0,'worth',' The word in the S4ODV78T5G list that is reminiscent of the given cue "worth" is "value".','ncaw',56.80
+'value',1,1,'worth',' The word in the S4ODV78T5G list that is reminiscent of the given cue "worth" is "value".','ncaw',56.80
 'ball',0,0,'mall',' The word in the S4ODV78T5G list that is reminiscent of the given cue "mall" is "shop".','ncrw',52.90
 'None',0,0,'ocean',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ocean" is "sea".','none',50.50
 'kitten',0,0,'adorable',' The word in the S4ODV78T5G list that is reminiscent of the given cue "adorable" is "cute".','ncaw',51.10
-'list',1,0,'catalog',' The word in the S4ODV78T5G list that is reminiscent of the given cue "catalog" is "list".','ncaw',56.00
-'volcano',1,0,'eruption',' The word in the S4ODV78T5G list that is reminiscent of the given cue "eruption" is "volcano".','ncaw',62.90
+'list',1,1,'catalog',' The word in the S4ODV78T5G list that is reminiscent of the given cue "catalog" is "list".','ncaw',56.00
+'volcano',1,1,'eruption',' The word in the S4ODV78T5G list that is reminiscent of the given cue "eruption" is "volcano".','ncaw',62.90
 'None',0,0,'frost',' The word in the S4ODV78T5G list that is reminiscent of the given cue "frost" is "freeze".','none',54.10
 'None',0,0,'jazz',' The word in the S4ODV78T5G list that is reminiscent of the given cue "jazz" is "jazzy".','none',8.70
 'star',1,0,'star',' The word in the S4ODV78T5G list that is reminiscent of the given cue "star" is "stars".','copy',51.00
@@ -23,7 +23,7 @@
 'chair',1,0,'chair',' The word in the S4ODV78T5G list that is reminiscent of the given cue "chair" is "seat".','copy',55.00
 'None',0,0,'ditch',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ditch" is "hole".','none',56.50
 'move',1,0,'move',' The word in the S4ODV78T5G list that is reminiscent of the given cue "move" is "action".','copy',50.00
-'arm',1,0,'swarm',' The word in the S4ODV78T5G list that is reminiscent of the given cue "swarm" is "arm".','ncrw',9.10
+'arm',1,1,'swarm',' The word in the S4ODV78T5G list that is reminiscent of the given cue "swarm" is "arm".','ncrw',9.10
 'sleet',1,0,'sleet',' The word in the S4ODV78T5G list that is reminiscent of the given cue "sleet" is "sheet".','copy',50.30
 'cake',1,0,'lake',' The word in the S4ODV78T5G list that is reminiscent of the given cue "lake" is "cake".','ncrw',52.80
 'hat',0,0,'fat',' The word in the S4ODV78T5G list that is reminiscent of the given cue "fat" is "bat".','ncrw',55.60

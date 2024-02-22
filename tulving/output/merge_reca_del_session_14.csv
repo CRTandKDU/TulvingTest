@@ -7,7 +7,7 @@
 'cart',1,0,'cart',' The word in the S4ODV78T5G list that is reminiscent of the given cue "cart" is "wheel".','copy',58.60
 'cake',0,0,'lake',' The word in the S4ODV78T5G list that is reminiscent of the given cue "lake" is "water".','ncrw',64.80
 'copper',0,0,'proper',' The word in the S4ODV78T5G list that is reminiscent of the given cue "proper" is "etiquette".','ncrw',55.60
-'stop',1,0,'halt',' The word in the S4ODV78T5G list that is reminiscent of the given cue "halt" is "stop".','ncaw',8.00
+'stop',1,1,'halt',' The word in the S4ODV78T5G list that is reminiscent of the given cue "halt" is "stop".','ncaw',8.00
 'side',0,0,'ride',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ride" is "cycle".','ncrw',50.90
 'ant',1,0,'ant',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ant" is "bug".','copy',51.90
 'star',0,0,'shine',' The word in the S4ODV78T5G list that is reminiscent of the given cue "shine" is "glow".','ncaw',59.10
@@ -22,7 +22,7 @@
 'None',0,0,'bloom',' The word in the S4ODV78T5G list that is reminiscent of the given cue "bloom" is "flower".','none',59.20
 'kitten',0,0,'adorable',' The word in the S4ODV78T5G list that is reminiscent of the given cue "adorable" is "cute".','ncaw',59.30
 'bead',0,0,'string',' The word in the S4ODV78T5G list that is reminiscent of the given cue "string" is "cord".','ncaw',60.10
-'grape',1,0,'wine',' The word in the S4ODV78T5G list that is reminiscent of the given cue "wine" is "grape".','ncaw',56.00
+'grape',1,1,'wine',' The word in the S4ODV78T5G list that is reminiscent of the given cue "wine" is "grape".','ncaw',56.00
 'stitch',0,0,'sew',' The word in the S4ODV78T5G list that is reminiscent of the given cue "sew" is "needle".','ncaw',8.20
 'cover',0,0,'conceal',' The word in the S4ODV78T5G list that is reminiscent of the given cue "conceal" is "hide".','ncaw',58.60
 'value',1,0,'value',' The word in the S4ODV78T5G list that is reminiscent of the given cue "value" is "worth".','copy',50.90

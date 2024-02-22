@@ -3,7 +3,7 @@
 'ball',0,0,'mall',' The word in the S4ODV78T5G list that is reminiscent of the given cue "mall" is "shopping".','ncrw',67.40
 'None',0,0,'mango',' The word in the S4ODV78T5G list that is reminiscent of the given cue "mango" is "fruit".','none',63.30
 'None',0,0,'caterpillar',' The word in the S4ODV78T5G list that is reminiscent of the given cue "caterpillar" is "insect".','none',62.10
-'stop',1,0,'halt',' The word in the S4ODV78T5G list that is reminiscent of the given cue "halt" is "stop".','ncaw',54.80
+'stop',1,1,'halt',' The word in the S4ODV78T5G list that is reminiscent of the given cue "halt" is "stop".','ncaw',54.80
 'None',0,0,'dove',' The word in the S4ODV78T5G list that is reminiscent of the given cue "dove" is "bird".','none',59.60
 'mass',0,0,'grass',' The word in the S4ODV78T5G list that is reminiscent of the given cue "grass" is "plant".','ncrw',57.60
 'small',1,0,'small',' The word in the S4ODV78T5G list that is reminiscent of the given cue "small" is "little".','copy',54.20
@@ -17,7 +17,7 @@
 'volcano',1,0,'volcano',' The word in the S4ODV78T5G list that is reminiscent of the given cue "volcano" is "eruption".','copy',58.60
 'cake',0,0,'lake',' The word in the S4ODV78T5G list that is reminiscent of the given cue "lake" is "water".','ncrw',9.20
 'locket',0,0,'pendant',' The word in the S4ODV78T5G list that is reminiscent of the given cue "pendant" is "jewel".','ncaw',40.80
-'hat',1,0,'cap',' The word in the S4ODV78T5G list that is reminiscent of the given cue "cap" is "hat".','ncaw',66.40
+'hat',1,1,'cap',' The word in the S4ODV78T5G list that is reminiscent of the given cue "cap" is "hat".','ncaw',66.40
 'guitar',1,0,'guitar',' The word in the S4ODV78T5G list that is reminiscent of the given cue "guitar" is "music".','copy',50.90
 'monkey',1,0,'monkey',' The word in the S4ODV78T5G list that is reminiscent of the given cue "monkey" is "animal".','copy',58.20
 'None',0,0,'ditch',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ditch" is "dig".','none',50.30
@@ -30,4 +30,4 @@
 'ant',1,0,'ant',' The word in the S4ODV78T5G list that is reminiscent of the given cue "ant" is "bug".','copy',54.40
 'faucet',1,0,'faucet',' The word in the S4ODV78T5G list that is reminiscent of the given cue "faucet" is "water".','copy',56.90
 'library',0,0,'books',' The word in the S4ODV78T5G list that is reminiscent of the given cue "books" is "read".','ncaw',56.00
-'toy',1,0,'plaything',' The word in the S4ODV78T5G list that is reminiscent of the given cue "plaything" is "toy".','ncaw',51.30
+'toy',1,1,'plaything',' The word in the S4ODV78T5G list that is reminiscent of the given cue "plaything" is "toy".','ncaw',51.30
