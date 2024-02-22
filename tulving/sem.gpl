@@ -1,0 +1,33 @@
+set title 'Synergistic Ecphory Model' font "Times, 24"
+set key font "Times"
+
+set xlabel 'Trace Information' font "Times, 18"
+set ylabel 'Retrieval Information' font "Times, 18"
+set xtics ("0" 0.5, "" 1, "" 1.5, "" 2, "1" 2.5)
+set ytics ("0" 0, "" 1, "" 2, "" 3, "" 4, "" 5, "1" 6)
+
+set label 'a_x' at 1, 1 left offset char 1,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+set label 'b_x' at 1.5, 1 left offset char 1,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+set label 'c_x' at 2.3, 1 left offset char 0.5,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+
+set object circle at 1, 1 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+set object circle at 1.5, 1 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+set object circle at 2.3, 1 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+
+set label 'a_y' at 1, 1.8 left offset char 1,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+set label 'b_y' at 1.5, 1.8 left offset char 1,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+set label 'c_y' at 2.3, 1.8 left offset char 0.5,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+
+set object circle at 1, 1.8 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+set object circle at 1.5, 1.8 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+set object circle at 2.3, 1.8 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+
+set label 'a_z' at 1, 4 left offset char 1,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+set label 'b_z' at 1.5, 4 left offset char 1,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+set label 'c_z' at 2.3, 4 left offset char 0.5,0 point pointtype 7 pointsize 0.01 lc rgb 'black'
+
+set object circle at 1, 4 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+set object circle at 1.5, 4 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+set object circle at 2.3, 4 size 0.01 fillstyle empty border lc rgb '#000000' lw 2
+
+plot [x=0.5:2.5] 2/x title 'Familiarity Threshold', 3/x title 'Identification Threshold'
