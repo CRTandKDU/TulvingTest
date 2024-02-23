@@ -90,9 +90,7 @@ def protocol_session( mdl, test, tbr, cs1, cs2, beg ):
             tdur     = (timeit.default_timer() - tbeg)*1000000
             answer   = w if w else 'None'
             res_val  = protocol_reca_match( response.text().lower(), answer.lower() )
-            res_valfp= protocol_reco_match( response.text(), w, cue,
-                                            false_positives=False,
-                                            tbr = tbr)
+            res_valfp= protocol_reca_match( response.text(), answer, false_positives=False, tbr = tbr)
             print( TEMPL_RES.format( word=w, val=res_val, valfp=res_valfp, cue=cue, txt=response.text(), cue_type=cue_type, tdur=tdur ) )
     else:
         pass
@@ -166,7 +164,6 @@ if __name__ == '__main__':
         cs2 = pickle.load( f )
     with open( TESTWORDS, 'rb' ) as f:
         tbr = pickle.load( f )
-
     protocol_session( args.model, args.test, tbr, cs1, cs2, args.begin )
     
 
