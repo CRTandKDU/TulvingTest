@@ -2,7 +2,7 @@ import argparse
 import numpy as np
 import pandas as pd
 
-OUTPUT_DIR      = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\output\\"
+OUTPUT_DIR      = "\\tulving\\output\\"
 TEMPL_MERGERECO = "merge_reco_{}_session_{}.csv"
 TEMPL_MERGERECA = "merge_reca_{}_session_{}.csv"
 SESSIONS        = [ 5 ]

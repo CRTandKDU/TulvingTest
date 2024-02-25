@@ -1,6 +1,6 @@
-cd "C:\Users\chauv\Documents\NEWNEWAI\tulving"
+cd "\tulving"
 python cues.py
-cd "C:\Users\chauv\Documents\CELF\gml"
+
 for /l %%x in (0, 8, 24) do python tulving_test.py -m %1 -b %%x -t reco > res_reco%%x.csv
 for /l %%x in (0, 8, 24) do python tulving_test.py -m %1 -b %%x -t reca > res_reca%%x.csv
 python resjoin.py -t reco -s %2

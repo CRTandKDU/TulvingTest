@@ -16,9 +16,9 @@ MODELS = { "orcamini": "orca-mini-3b-gguf2-q4_0",
           }
 
 # Source words
-TESTWORDS  = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\words_test.pickle"
-CUESHEET_1 = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\cues_half_1.pickle"
-CUESHEET_2 = "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\cues_half_2.pickle"
+TESTWORDS  = "\\tulving\\words_test.pickle"
+CUESHEET_1 = "\\tulving\\cues_half_1.pickle"
+CUESHEET_2 = "\\tulving\\cues_half_2.pickle"
 
 # Adjust for model context length
 BLOCKSIZE = 8
