@@ -1,4 +1,4 @@
-# tulving_test_imm-py.py -- Implementing the "immediate" Tulving protocol
+# tulving_test_imm-py.py -- Implementing the "immediate" Tulving Test protocol for ordinal cues
 # Started: Tuesday, January 23, 2024
 # Revised: Wednesday, January 31, 2024
 #          Monday, February 12, 2024
@@ -94,8 +94,8 @@ def protocol_session( mdl, tbr ):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser( prog="A LLM Psychoanalyst",
-                                      description="Tulving Test on the Mistral-7b LLM." )
+    parser = argparse.ArgumentParser( prog="A LLM Psychoanalyst?",
+                                      description="Tulving Test for LLMs." )
     parser.add_argument( '-m', '--model', default='mistral', choices=[ 'mistral', 'orcamini' ] )
 
     args = parser.parse_args()

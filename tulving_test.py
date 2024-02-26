@@ -1,4 +1,4 @@
-# tulving_test.py -- Implementing the "delayed" Tulving protocol
+# tulving_test.py -- Implementing the "delayed" Tulving Test protocol for recognition and recall tasks
 # Tuesday, January 23, 2024
 
 import argparse
@@ -114,59 +114,10 @@ def protocol_session( mdl, test, tbr, cs1, cs2, beg ):
     print( f'# END {tbeg}' )
 
 
-# def protocol_session( test, cs1, cs2 ):
-#     snow = datetime.now().isoformat( timespec='seconds' )
-#     print( f'# BEGIN {snow}' )
-    
-#     model	 = llm.get_model( "mistral-7b-instruct-v0" )
-#     conversation = model.conversation()
-
-#     # STEP 1: MEMO.
-#     tbeg = timeit.default_timer()
-#     response     = conversation.prompt( prompt_memo() )
-#     tdur = (timeit.default_timer() - tbeg)*1000000
-#     # print( response.text(), f'{tdur:4.2f}' )
-#     print( TEMPL_HEADER )
-
-#     if 'reco' == test:
-#         # STEP 2: RECO. TEST
-#         for w, cue in cs1:
-#             tbeg = timeit.default_timer()
-#             response = conversation.prompt( TEMPL_RECO.format( cue ) )
-#             tdur = (timeit.default_timer() - tbeg)*1000000
-#             res_y, res_n, res_txt = response.text().find( "Yes" ), response.text().find( "No" ), response.text()
-#             res_val = 1 if ( res_y > 0 and res_n < 0 and w == cue ) or ( res_y < 0 and res_n > 0 and w != cue )  else 0
-#             print( TEMPL_RES.format( word=w, val=res_val, cue=cue, txt=res_txt, tdur=tdur ) )
-
-#     if 'reca' == test:
-#         row = 0
-#         # STEP 2: RECA. TEST
-#         for w, cue in cs1:
-#             # print( TEMPL_RECA.format(
-#             #     ex1= cs2[0][1], an1=cs2[0][0],
-#             #     ex2= cs2[1][1], an2=cs2[1][0], 
-#             #     ex3= cs2[2][1], an3=cs2[2][0], 
-#             #     cue=cue ) )
-
-#             sprompt = TEMPL_RECA.format(ex1= cs2[0][1], an1=cs2[0][0], ex2= cs2[1][1], an2=cs2[1][0], ex3= cs2[2][1], an3=cs2[2][0], cue=cue ) if 0 == row else TEMPL_RECA_FOLLOWUP.format( cue=cue )
-#             row += 1
-            
-#             tbeg = timeit.default_timer()
-#             response = conversation.prompt( sprompt )
-#             tdur = (timeit.default_timer() - tbeg)*1000000
-#             res_y, res_n, res_txt = response.text().find( "Yes" ), response.text().find( "No" ), response.text()
-#             # Approximation of score (what if cue evokes a different word in list?)
-#             answer = w if w else 'None'
-#             res_val = protocol_reca_match( response.text().lower(), answer )
-#             print( TEMPL_RES.format( word=w, val=res_val, cue=cue, txt=res_txt, tdur=tdur ) )
-            
-#     snow = datetime.now().isoformat( timespec='seconds' )
-#     print( f'# END {snow}' )
-    
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser( prog="A LLM Psychoanalyst",
-                                      description="Tulving Test on the Mistral-7b LLM." )
+    parser = argparse.ArgumentParser( prog="A LLM Psychoanalyst?",
+                                      description="Tulving Test for LLM." )
     parser.add_argument( '-t', '--test', default='reco', choices=[ 'reco', 'reca' ] )
     parser.add_argument( '-m', '--model', default='mistral', choices=[ 'mistral', 'orcamini' ] )
     parser.add_argument( '-b', '--begin', type=int, required=True )

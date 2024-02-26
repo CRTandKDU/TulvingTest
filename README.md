@@ -38,4 +38,6 @@ The Python scripts are as follows:
   * `tulving_test.py` and variants, `tulving_test_imm.py`, `tulving_ord_del_test.py`, `tulving_ord_imm_test.py` runs a single test for given task, chronology and model, outputting a CSV-formatted table (see options `python tulving_test.py -h`).
   * `tulving_tabulate.py` tabulates aggregated results from result data files, generally outputting or-mode formatted text.
   * `words.py` and `resjoin.py` are utilities to query online dictionaries, and merge batches of result data files in unique CSV-formatted files, respectively.
-  
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
