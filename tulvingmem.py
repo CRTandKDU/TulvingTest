@@ -3,7 +3,8 @@
 import argparse
 from datetime import datetime
 import timeit
-import pickle
+import logging
+# import pickle
 import csv
 import numpy as np
 #
@@ -44,16 +45,28 @@ class TulvingTest:
         
 
     def perform(self, model_nn):
+        tbeg = datetime.now().isoformat( timespec='seconds' )
+        logging.info( f'{tbeg} > Performance' )
+        #
         tbr_str = ', '.join( [ self.encodings.format( *enc ) for enc in self.tbr_list ] )
         model     = llm.get_model( TulvingTest.MODELS[ model_nn ] )
+        #
+        tbeg = datetime.now().isoformat( timespec='seconds' )
+        logging.info( f'{tbeg} > Model {model_nn} loaded' )
         print( TulvingTest.RES_HEADER )
-
+        #
         if TulvingTest.TYPE_CHAT == self.protocol['type']:
             batch_idx = 0
             for batch in self.session:
+                tbeg = datetime.now().isoformat( timespec='seconds' )
+                logging.info( f'{tbeg} > BEGIN batch {batch_idx}' )
+                #
                 conversation = model.conversation()
                 response     = conversation.prompt( self.remember.format( tbr_str ) )
                 for row in batch:
+                    tbeg = datetime.now().isoformat( timespec='seconds' )
+                    logging.info( f'{tbeg} > BEGIN row {row}' )
+                    #
                     tbeg     = timeit.default_timer()
                     response = conversation.prompt( self.retrievals.format( row['probe'] ) )
                     tdur     = (timeit.default_timer() - tbeg)*1000000
@@ -69,10 +82,10 @@ class TulvingTest:
                         tdur      = tdur
                     ) )
                 batch_idx += 1
-                
+        #
         elif TulvingTest.TYPE_PROMPT == self.protocol['type']:
             batch_idx = 0
-            inst = '[INST]{}[/INST] '.format( self.remember.format( tbr_str ) )
+            inst = '{} '.format( self.remember.format( tbr_str ) )
             for batch in self.session:
                 for row in batch:
                     tbeg     = timeit.default_timer()
@@ -93,6 +106,10 @@ class TulvingTest:
 
         else:
             pass
+        tbeg = datetime.now().isoformat( timespec='seconds' )
+        logging.info( f'{tbeg} > Performance done' )
+
+
 
     def fill(self, csvfn ):
         assert self.protocol
@@ -150,37 +167,48 @@ def test():
         else:
             return 1 if resp.upper().find( "NO" ) >= 0 else 0
     
-    tt             = TulvingTest( 'Tulving Delayed' )
-    tt.distractors = [ 'D' ]
-    tt.remember    = 'Memorize the following list, called list S4ODV78T5G, of english words: {}.'
-    tt.encodings   = '{0}'
-    tt.retrievals  = 'Answer YES or NO. Is the following word in the list S4ODV78T5G: {0}?'
+    def tw_test_score( resp, row ):
+        return 1 if resp.upper().find( row['target'][0].upper() ) >= 0 else 0
+
+    # tt             = TulvingTest( 'Tulving Delayed' )
+    # tt.distractors = [ 'D' ]
+    # tt.remember    = 'Memorize the following list, called list S4ODV78T5G, of english words: {}.'
+    # tt.encodings   = '{0}'
+    # tt.retrievals  = 'Answer YES or NO. Is the following word in the list S4ODV78T5G: {0}?'
+    # tt.protocol    = {
+    #     'type'         : TulvingTest.TYPE_PROMPT,
+    #     'batch_number' : 4,
+    #     'batch_size'   : 8,
+    #     'encodings'    : [ ['T'], ['T'], ['T'], ['D'], ['T'], ['T'], ['T'], ['D'] ],
+    #     'retrievals'   : [ ['C'], ['A'], ['R'], ['D'], ['C'], ['A'], ['R'], ['D'] ]
+    # }
+    # tt.fill( 'tm_words2447.csv' )
+    # tt.score = test_score
+    # tt.perform( 'mistral' )
+
+    tt             = TulvingTest( 'Tulving Watkins' )
+    tt.encodings   = '{0} (context: {1})'
+    tt.distractors = []
+    tt.remember    = 'Memorize the following list of english words with their context: {}. You will be asked to remember and answer one of these words to later questions.'
+    tt.retrievals  = 'Which word in the memorized list is associated or rhymes with {0}?'
     tt.protocol    = {
         'type'         : TulvingTest.TYPE_PROMPT,
         'batch_number' : 4,
-        'batch_size'   : 8,
-        'encodings'    : [ ['T'], ['T'], ['T'], ['D'], ['T'], ['T'], ['T'], ['D'] ],
-        'retrievals'   : [ ['C'], ['A'], ['R'], ['D'], ['C'], ['A'], ['R'], ['D'] ]
+        'batch_size'   : 4,
+        'encodings'    : [ ['target', 'acue'], ['target', 'acue'], ['target', 'rcue'], ['target', 'rcue'] ],
+        'retrievals'   : [ ['altacue', 'altrcue'], ['altrcue', 'altacue'], ['altacue', 'altrcue'], ['altrcue', 'altacue'] ]
     }
-    tt.fill( 'tm_words2447.csv' )
-    tt.score = test_score
+    tt.fill( 'tw_cues.csv' )
+    tt.score = tw_test_score
     tt.perform( 'mistral' )
-
-    # tt             = TulvingTest( 'Tulving Watkins' )
-    # tt.encodings   = '{0} (context: {1})'
-    # tt.distractors = []
-    # tt.protocol    = {
-    #     'type'         : TulvingTest.TYPE_CHAT,
-    #     'batch_number' : 4,
-    #     'batch_size'   : 4,
-    #     'encodings'    : [ ['target', 'acue'], ['target', 'acue'], ['target', 'rcue'], ['target', 'rcue'] ],
-    #     'retrievals'   : [ ['altacue', 'altrcue'], ['altrcue', 'altacue'], ['altacue', 'altrcue'], ['altrcue', 'altacue'] ]
-    # }
-    # tt.fill( 'tw_cues.csv' )
-    # tt.perform( 'mistral' )
     
     
 if __name__ == '__main__':
+    logging.basicConfig(
+        filename='tulvingmem.log',
+        encoding='utf-8',
+        level=logging.INFO
+    )
     test()
         
 
