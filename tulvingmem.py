@@ -13,11 +13,12 @@ import llm
 class TulvingTest:
     TYPE_CHAT   = 1
     TYPE_PROMPT = 0
+    TYPE_LABELS = [ 'immediate', 'delayed' ]
     DISTRACTOR  = 'NONE'
-    
+    # Models are at [[C:\Users\chauv\.cache\gpt4all]]
     MODELS = {
-        "orcamini": "orca-mini-3b-gguf2-q4_0",
-        "mistral":  "mistral-7b-instruct-v0"
+        "orcamini" : "orca-mini-3b-gguf2-q4_0",
+        "mistral"  : "mistral-7b-instruct-v0"
     }
 
     RES_HEADER = "'TBRWORD','RESULT','INLIST','CUE','RESPONSE','CUE_TYPE','DURATION'"
@@ -111,7 +112,7 @@ class TulvingTest:
 
 
 
-    def fill(self, csvfn ):
+    def fill(self, csvfn, randomize=True ):
         assert self.protocol
         assert len( self.protocol['encodings']) == len( self.protocol['retrievals'] )
         assert len( self.protocol['encodings']) == self.protocol['batch_size']
@@ -128,8 +129,8 @@ class TulvingTest:
                     ntbr += [ row ]
 
         # Randomize
-        p        = np.random.permutation( len(tbr) )
-        q        = np.random.permutation( len(ntbr) )
+        p        = np.random.permutation( len(tbr) ) if randomize else range( len(tbr) )
+        q        = np.random.permutation( len(ntbr) ) if randomize else range( len(ntbr) )
         # Precompile session as a list of batches
         tbr_idx, ntbr_idx = 0, 0
         self.tbr_list = []
@@ -160,47 +161,6 @@ class TulvingTest:
             self.session += [ batch ]
                 
 
-def test():
-    def test_score( resp, row ):
-        if 'C' == row['cue_type']:
-            return 1 if resp.upper().find( "YES" ) >= 0 else 0
-        else:
-            return 1 if resp.upper().find( "NO" ) >= 0 else 0
-    
-    def tw_test_score( resp, row ):
-        return 1 if resp.upper().find( row['target'][0].upper() ) >= 0 else 0
-
-    # tt             = TulvingTest( 'Tulving Delayed' )
-    # tt.distractors = [ 'D' ]
-    # tt.remember    = 'Memorize the following list, called list S4ODV78T5G, of english words: {}.'
-    # tt.encodings   = '{0}'
-    # tt.retrievals  = 'Answer YES or NO. Is the following word in the list S4ODV78T5G: {0}?'
-    # tt.protocol    = {
-    #     'type'         : TulvingTest.TYPE_PROMPT,
-    #     'batch_number' : 4,
-    #     'batch_size'   : 8,
-    #     'encodings'    : [ ['T'], ['T'], ['T'], ['D'], ['T'], ['T'], ['T'], ['D'] ],
-    #     'retrievals'   : [ ['C'], ['A'], ['R'], ['D'], ['C'], ['A'], ['R'], ['D'] ]
-    # }
-    # tt.fill( 'tm_words2447.csv' )
-    # tt.score = test_score
-    # tt.perform( 'mistral' )
-
-    tt             = TulvingTest( 'Tulving Watkins' )
-    tt.encodings   = '{0} (context: {1})'
-    tt.distractors = []
-    tt.remember    = 'Memorize the following list of english words with their context: {}. You will be asked to remember and answer one of these words to later questions.'
-    tt.retrievals  = 'Which word in the memorized list is associated or rhymes with {0}?'
-    tt.protocol    = {
-        'type'         : TulvingTest.TYPE_PROMPT,
-        'batch_number' : 4,
-        'batch_size'   : 4,
-        'encodings'    : [ ['target', 'acue'], ['target', 'acue'], ['target', 'rcue'], ['target', 'rcue'] ],
-        'retrievals'   : [ ['altacue', 'altrcue'], ['altrcue', 'altacue'], ['altacue', 'altrcue'], ['altrcue', 'altacue'] ]
-    }
-    tt.fill( 'tw_cues.csv' )
-    tt.score = tw_test_score
-    tt.perform( 'mistral' )
     
     
 if __name__ == '__main__':
@@ -209,6 +169,8 @@ if __name__ == '__main__':
         encoding='utf-8',
         level=logging.INFO
     )
-    test()
-        
+    # Usage:
+    # test_recognition( TulvingTest.TYPE_CHAT, 'tm_words2447.csv', 'mistral' )
+    #
+    # test_tw( TulvingTest.TYPE_PROMPT, 'tw_cues.csv', 'mistral' )
 
