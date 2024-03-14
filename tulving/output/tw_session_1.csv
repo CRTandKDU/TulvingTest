@@ -1,0 +1,33 @@
+'TBRWORD','RESULT','INLIST','CUE','RESPONSE','CUE_TYPE','DURATION'
+'['hour', 'minute']',1,0,'twenty-four',' The word that is associated or rhymes with "twenty-four" from the memorized list is "hour".','altacue',43.00
+'['hour', 'minute']',0,0,'flour',' The word that is associated or rhymes with "flour" from the memorized list is "power".','altrcue',56.20
+'['apparel', 'clothing']',0,0,'aquarel',' The word that is associated or rhymes with "aquarel" from the memorized list is "lewd".','altrcue',52.60
+'['apparel', 'clothing']',0,0,'blouse',' The word that is associated or rhymes with "blouse" from the memorized list is "house".','altacue',61.60
+'['nostalgic', 'panic']',1,0,'homesick',' The word "nostalgic" is associated with homesickness as it refers to a sentimental longing for the past, often related to childhood memories or a sense of loss.','altacue',53.40
+'['nostalgic', 'panic']',0,0,'trick',' The word that is associated or rhymes with "trick" from the memorized list is "whip".','altrcue',63.80
+'['visit', 'transmit']',0,0,'grit',' The word that is associated or rhymes with "grit" from the memorized list is "bit".','altrcue',59.40
+'['visit', 'transmit']',0,0,'call',' The word that is associated or rhymes with "call" from the memorized list is "whip".','altacue',184.30
+'['sheep', 'pasture']',1,0,'wool',' The word "sheep" from the memorized list is associated or rhymes with wool.','altacue',109.30
+'['sheep', 'pasture']',1,0,'jeep',' The word that is associated or rhymes with "jeep" from the memorized list is "sheep".','altrcue',62.20
+'['helpless', 'powerless']',0,0,'mess',' The word that is associated or rhymes with "mess" from the memorized list is "apparel".','altrcue',61.60
+'['helpless', 'powerless']',1,0,'clueless',' The word that is associated or rhymes with "clueless" from the memorized list is "helpless".','altacue',54.60
+'['whip', 'tip']',0,0,'cream',' The word "cream" does not have any association or rhyme with any of the words listed in the context provided.','altacue',54.40
+'['whip', 'tip']',1,0,'ship',' The word that is associated or rhymes with "ship" from the memorized list is "whip".','altrcue',62.40
+'['superb', 'herb']',0,0,'curb',' The word that is associated or rhymes with "curb" from the memorized list is "sheep".','altrcue',50.90
+'['superb', 'herb']',0,0,'brillant',' The word that is associated or rhymes with brilliant from the memorized list is "jewel".','altacue',61.30
+'['jewel', 'gem']',1,0,'diamond',' The word that is associated or rhymes with "diamond" from the memorized list is "jewel".','altacue',51.30
+'['jewel', 'gem']',0,0,'cruel',' The word that is associated or rhymes with "cruel" from the memorized list is "guard".','altrcue',50.80
+'['price', 'cost']',0,0,'nice',' The word that is associated or rhymes with "nice" from the memorized list is "tacit".','altrcue',51.10
+'['price', 'cost']',1,0,'value',' The word "value" does not appear on the provided list, but it can be associated with the word "price," which refers to the cost of something.','altacue',62.30
+'['greet', 'meat']',0,0,'salutation',' The word that is associated or rhymes with "salutation" from the memorized list is "tacit".','altacue',53.60
+'['greet', 'meat']',0,0,'sleet',' The word that is associated or rhymes with "sleet" from the memorized list is "sheep".','altrcue',62.40
+'['tacit', 'facet']',0,0,'explicit',' The word that is associated or rhymes with "explicit" from the memorized list is "whip".','altrcue',55.40
+'['tacit', 'facet']',0,0,'implicit',' The word "implicit" does not appear on the provided list, so there is no association or rhyme between it and any of the listed words.','altacue',55.40
+'['annoying', 'irritating']',0,0,'unnerving',' The word that is associated or rhymes with "unnerving" from the memorized list is "sheep".','altacue',49.40
+'['annoying', 'irritating']',0,0,'toying',' The word that is associated or rhymes with "toying" from the memorized list is "whip".','altrcue',57.00
+'['guard', 'protect']',1,0,'shard',' The word that is associated or rhymes with "shard" from the memorized list is "guard".','altrcue',57.80
+'['guard', 'protect']',0,0,'soldier',' The word that is associated or rhymes with "soldier" from the memorized list is "whip".','altacue',52.70
+'['scientific', 'prolific']',0,0,'academic',' The word "tunnel" from the memorized list is associated or rhymes with academic.','altacue',58.60
+'['scientific', 'prolific']',0,0,'click',' The word that is associated or rhymes with "click" from the memorized list is "tick".','altrcue',56.20
+'['lewd', 'crude']',1,0,'shrewd',' The word that is associated or rhymes with "shrewd" from the memorized list is "lewd".','altrcue',61.50
+'['lewd', 'crude']',0,0,'vulgar',' The word "vulgar" does not appear on the provided list, so there is no association or rhyme between it and any of the listed words.','altacue',54.00

@@ -2,6 +2,11 @@
 import logging
 import tulvingmem as tm
 
+# Test protocols described in 
+
+# - Tulving, E. (1983). Elements of episodic memory. : Oxford University
+#   Press.
+
 def test_recognition( chrono, fn, model_nn ):
     def test_score( resp, row ):
         if 'C' == row['cue_type']:
@@ -48,27 +53,6 @@ def test_recall( chrono, fn, model_nn ):
     tt.fill( fn )
     tt.score = test_score
     tt.perform( model_nn )
-    
-    
-def test_tw( chrono, fn, model_nn ):
-    def tw_test_score( resp, row ):
-        return 1 if resp.upper().find( row['target'][0].upper() ) >= 0 else 0
-
-    tt             = tm.TulvingTest( 'Tulving Watkins {}'.format( tm.TulvingTest.TYPE_LABELS[chrono] ) )
-    tt.encodings   = '{0} (context: {1})'
-    tt.distractors = []
-    tt.remember    = 'Memorize the following list of english words with their context: {}. You will be asked to remember and answer one of these words to later questions.'
-    tt.retrievals  = 'Which word in the memorized list is associated or rhymes with {0}?'
-    tt.protocol    = {
-        'type'         : chrono,
-        'batch_number' : 4,
-        'batch_size'   : 4,
-        'encodings'    : [ ['target', 'acue'], ['target', 'acue'], ['target', 'rcue'], ['target', 'rcue'] ],
-        'retrievals'   : [ ['altacue', 'altrcue'], ['altrcue', 'altacue'], ['altacue', 'altrcue'], ['altrcue', 'altacue'] ]
-    }
-    tt.fill( fn )
-    tt.score = tw_test_score
-    tt.perform( model_nn )
 
     
 def test_ordering( chrono, fn, model_nn ):
@@ -76,6 +60,7 @@ def test_ordering( chrono, fn, model_nn ):
         return 1 if resp.upper().find( row['target'][0].upper() ) >= 0 else 0
 
     tt             = tm.TulvingTest( 'Tulving Ordering {}'.format( tm.TulvingTest.TYPE_LABELS[chrono] ) )
+
     tt.distractors = []
     tt.remember    = 'Memorize the following list, called list S4ODV78T5G, of english words: {}.'
     tt.encodings   = '{0}'
@@ -95,6 +80,48 @@ def test_ordering( chrono, fn, model_nn ):
     tt.score = test_score
     tt.perform( model_nn )
 
+    
+# Test protocols described in: 
+
+# - Tulving, E., & Watkins, M. J. (1975). Structure Of Memory
+#   Traces. Psychological Review, 82(4),
+#   261–275. http://dx.doi.org/10.1037/h0076782
+    
+def test_tw( chrono, fn, model_nn ):
+    def tw_test_score( resp, row ):
+        return 1 if resp.upper().find( row['target'][0].upper() ) >= 0 else 0
+
+    tt             = tm.TulvingTest( 'Tulving Watkins {}'.format( tm.TulvingTest.TYPE_LABELS[chrono] ) )
+
+    def tw_test_render_cue( cue_str, cue_type ):
+        """ Build the encoding string on each feature passed from `self.protocol.encodings'
+        """
+        str = cue_str
+        if 'acue' == cue_type:
+            str = f'is associated to {cue_str}'
+        elif 'rcue' == cue_type:
+            str = f'rhymes with {cue_str}'
+        else:
+            pass
+        return str
+
+
+    tt.encodings   = '{0} (context: {1})'
+    tt.distractors = []
+    tt.remember    = 'Memorize the following list of english words with their context: {}. You will be asked to remember and answer one of these words to later questions.'
+    tt.retrievals  = 'Which word in the memorized list is associated or rhymes with {0}?'
+    tt.protocol    = {
+        'type'         : chrono,
+        'batch_number' : 4,
+        'batch_size'   : 4,
+        'encodings'    : [ ['target', 'acue'], ['target', 'acue'], ['target', 'rcue'], ['target', 'rcue'] ],
+        'retrievals'   : [ ['altacue', 'altrcue'], ['altrcue', 'altacue'], ['altacue', 'altrcue'], ['altrcue', 'altacue'] ]
+    }
+    tt.score          = tw_test_score
+    tt.render_context = tw_test_render_cue
+    #
+    tt.fill( fn )
+    tt.perform( model_nn )
 
 
 if __name__ == '__main__':

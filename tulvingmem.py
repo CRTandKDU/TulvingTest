@@ -11,6 +11,83 @@ import numpy as np
 import llm
 
 class TulvingTest:
+    """Abstraction of the Tulving Test protocols for application to LLMs
+
+    The protocols are designed for testing recognition, or
+    familiarity, compared to recall, or recollection.
+
+    The general design articulates two steps:
+
+    1) The subject is instructed to remember a list of words, or a
+    list of words and contexts.
+
+    2) The subject is then presented with a cue to either recognize it
+    as included in the list in the familiarity task; or to recall a
+    word in the list that the cue might evoke.
+
+    In the immediate setting, step 2 happens coextensively after step
+    1.  For LLMs this is implemented with a single prompt joining the
+    list to be remembered and the presentation of the cue-based question.
+
+    In the delayed setting, a chat with the LLM is inited with step 1,
+    and successive retrieval queries are consecutive prompts in the
+    same conversation.
+    
+
+
+    Attributes
+    ----------
+    name : str
+        the name of the test
+    encodings: str
+        The template for presenting each TBR word
+        and optional context in the step 1 prompt
+    remember: str
+        The template for step 1 prompt
+    retrievals: str
+        The template for step 2 prompt
+    distractors : [ str ]
+        List of keys for distractor words or empty list
+    protocol: dict( type, batch_number, batch_size, encodings, retrievals )
+        A configuration object describing the test:
+          type: either TulvingTest.TYPE_CHAT (delayed), or
+          TulvingTest.TYPE_PROMPT (immediate).
+
+          batch_number: (int) number of batches to perform a session.
+
+          batch_size: (int) number of retrieval queries per batch.
+
+          encodings: [ [ str ] ] A list of `batch_size' selections of column
+          names from the data .CSV file to use for encoding in step 1.
+
+          retrievals: [ [ str ] ] A list of `batch_size' selections of
+          column names from the data .CSV file to use for retrieval in step 2.
+ 
+    Methods
+    -------
+    score( response: str, row: object )
+        Returns 1 if `response' passes the test, 0 if not, with row being from
+        the data .CSV file. (Usually overriden.)
+
+    score_inlist( response: str, row: object )
+        Returns 1 if `response' is considered in list, 0 if not, with
+        row being from the data .CSV file. This excludes true
+        negatives and includes false positive. (Usually overriden.)
+
+    render_context( cue_str: str, cue_type: str )
+        Used in step 1. to customize the individual encoding of TBR
+        word and optional context. `cue_type' is a column name in the
+        data .CSV file. (Usually overriden.)
+
+    fill( csvfn, randomize=True )
+        Prepares a full test session from the data .CSV file
+        `fn'. Randomize if required the order of presentations.
+        Session is tored in local instance attribute `session'.
+
+    perform( model )
+        Performs a prepared (`fill') session on model key `model'.
+    """
+    
     TYPE_CHAT   = 1
     TYPE_PROMPT = 0
     TYPE_LABELS = [ 'immediate', 'delayed' ]
@@ -43,9 +120,16 @@ class TulvingTest:
 
     def score_inlist( self, resp, row ):
         return 0
+
+
+    def render_context( self, cue_str, cue_type ):
+        return cue_str
         
 
     def perform(self, model_nn):
+        def render_target( lst ):
+            return ','.join( lst )
+        
         tbeg = datetime.now().isoformat( timespec='seconds' )
         logging.info( f'{tbeg} > Performance' )
         #
@@ -74,7 +158,7 @@ class TulvingTest:
                     val = self.score( response.text(), row )
                     valinlist = self.score_inlist( response.text(), row )
                     print( TulvingTest.RES_ROW.format(
-                        word      = row['target'],
+                        word      = render_target( row['target'] ),
                         val       = val,
                         valinlist = valinlist,
                         cue       = row['probe'],
@@ -95,7 +179,7 @@ class TulvingTest:
                     val = self.score( response.text(), row )
                     valinlist = self.score_inlist( response.text(), row )
                     print( TulvingTest.RES_ROW.format(
-                        word      = row['target'],
+                        word      = render_target( row['target'] ),
                         val       = val,
                         valinlist = valinlist,
                         cue       = row['probe'],
@@ -155,7 +239,7 @@ class TulvingTest:
                             'cue_type' : r
                         } ]
                     #
-                    row = [ tbr[tbr_idx][x] for x in self.protocol['encodings'][i] ]
+                    row = [ self.render_context( tbr[tbr_idx][x], x ) for x in self.protocol['encodings'][i] ]
                     self.tbr_list += [ row ]
                     tbr_idx += 1
             self.session += [ batch ]
@@ -169,7 +253,7 @@ if __name__ == '__main__':
         encoding='utf-8',
         level=logging.INFO
     )
-    # Usage:
+    # Example usage:
     # test_recognition( TulvingTest.TYPE_CHAT, 'tm_words2447.csv', 'mistral' )
     #
     # test_tw( TulvingTest.TYPE_PROMPT, 'tw_cues.csv', 'mistral' )
