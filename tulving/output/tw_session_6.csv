@@ -1,0 +1,33 @@
+'TBRWORD','RESULT','INLIST','CUE','RESPONSE','CUE_TYPE','DURATION'
+'sheep pasture',1,0,'wool',' The word in the memorized list that is associated or rhymes with wool is "sheep".','altacue',53.00
+'sheep pasture',1,0,'jeep',' The word that is associated or rhymes with "jeep" from the memorized list is "sheep".','altrcue',83.50
+'helpless powerless',0,0,'mess',' The word "visit" is associated or rhymes with "transmit".','altrcue',65.40
+'helpless powerless',0,0,'clueless',' The word that is associated or rhymes with "clueless" from the memorized list is "lewd".','altacue',56.50
+'tacit facet',0,0,'implicit',' The word "implicit" is not associated or rhymes with any of the words listed.','altacue',63.60
+'tacit facet',0,0,'explicit',' The word "explicit" is not included in the provided list so it cannot be associated or rhyme with any of the listed words.','altrcue',64.00
+'greet meat',0,0,'sleet',' The word "sleet" does not appear on the provided list so there is no association or rhyme between it and any of the listed words.','altrcue',57.00
+'greet meat',0,0,'salutation',' The word "visit" is associated or rhymes with salutation.','altacue',62.70
+'scientific research',0,0,'academic',' The word "academic" is not associated or rhymes with any of the words listed.','altacue',63.20
+'scientific research',0,0,'click',' The word "click" is not associated or rhymes with any of the words on the list you provided.','altrcue',54.50
+'visit tour',1,0,'grit',' The word "visit" is associated or rhymes with "grit".','altrcue',93.80
+'visit tour',0,0,'call',' The word "call" does not appear on the provided list so it cannot be associated or rhyme with any of the listed words.','altacue',71.50
+'annoying boying',0,0,'unnerving',' The word "unnerving" is not associated or rhymes with any of the words listed in the context provided.','altacue',70.20
+'annoying boying',0,0,'toying',' The word that is associated or rhymes with "toying" from the given list is "sheep".','altrcue',65.20
+'nostalgic panic',0,0,'trick',' The word "trick" is not associated or rhymes with any of the words on the list.','altrcue',52.60
+'nostalgic panic',1,0,'homesick',' The word "nostalgic" is associated with sentimental while "homesick" is not listed in the provided contexts.','altacue',54.70
+'guard protect',0,0,'soldier',' The word "whip" in the memorized list is associated with "tip."','altacue',67.30
+'guard protect',0,0,'shard',' The word "tacit" is associated with knowledge, not with a specific object like a shard.','altrcue',64.80
+'price cost',0,0,'nice',' The word "nice" is not associated or rhymes with any of the words on the list.','altrcue',60.00
+'price cost',1,0,'value',' The word "price" is associated with cost not value.','altacue',53.20
+'jewel newel',0,0,'diamond',' The word that is associated or rhymes with "diamond" from the memorized list is "tacit".','altacue',63.20
+'jewel newel',0,0,'cruel',' The word that is associated or rhymes with "cruel" from the memorized list is "guard".','altrcue',61.20
+'apparel tunnel',0,0,'aquarel',' The word that is associated or rhymes with "aquarel" from the memorized list is not provided.','altrcue',52.70
+'apparel tunnel',0,0,'blouse',' The word "visit" is associated or rhymes with blouse.','altacue',59.30
+'superb excellent',0,0,'brillant',' The word "visit" is associated or rhymes with brilliant.','altacue',56.30
+'superb excellent',0,0,'curb',' The word "curb" does not appear on the provided list so there is no association or rhyme for it.','altrcue',63.20
+'lewd obscene',0,0,'shrewd',' The word that is associated or rhymes with "shrewd" from the memorized list is "guard".','altrcue',67.40
+'lewd obscene',0,0,'vulgar',' The word "vulgar" is not present in the given list.','altacue',66.70
+'whip tip',0,0,'cream',' The word "visit" is associated or rhymes with cream.','altacue',50.20
+'whip tip',1,0,'ship',' The word "whip" is associated with "tip".','altrcue',60.40
+'hour sour',0,0,'flour',' The word "tacit" is associated with knowledge not with flour.','altrcue',59.80
+'hour sour',1,0,'twenty-four',' The word "hour" in the memorized list is associated or rhymes with twenty-four.','altacue',60.10

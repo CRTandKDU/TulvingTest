@@ -1,0 +1,33 @@
+'TBRWORD','RESULT','INLIST','CUE','RESPONSE','CUE_TYPE','DURATION'
+'helpless powerless',0,0,'clueless',' The word "whip" is associated with "tip".','altacue',50.90
+'helpless powerless',0,0,'mess',' The word "visit" is associated or rhymes with "transmit".','altrcue',58.20
+'scientific research',0,0,'click',' The word "click" is not associated or rhymes with any of the words on the list you provided.','altrcue',58.50
+'scientific research',0,0,'academic',' The word "academic" is not associated or rhymes with any of the words listed.','altacue',53.10
+'greet meat',1,0,'salutation',' The word that is associated or rhymes with "salutation" from the memorized list is "greet".','altacue',60.20
+'greet meat',0,0,'sleet',' The word that is associated or rhymes with sleet from the memorized list is "sheep".','altrcue',59.50
+'nostalgic panic',0,0,'trick',' The word "trick" is not associated or rhymes with any of the words on the list provided.','altrcue',60.80
+'nostalgic panic',1,0,'homesick',' The word "nostalgic" is associated with sentimental while "homesick" is not a word from the given list.','altacue',58.90
+'whip flog',0,0,'cream',' The word "visit" is associated or rhymes with cream.','altacue',51.80
+'whip flog',1,0,'ship',' The word "whip" is associated with "tip".','altrcue',52.30
+'lewd obscene',0,0,'shrewd',' The word that is associated or rhymes with "shrewd" from the memorized list is "guard".','altrcue',49.90
+'lewd obscene',1,0,'vulgar',' The word that is associated or rhymes with "vulgar" from the given list is "lewd".','altacue',51.30
+'jewel newel',1,0,'diamond',' The word "jewel" is associated with diamonds.','altacue',76.50
+'jewel newel',0,0,'cruel',' The word that is associated or rhymes with "cruel" from the memorized list is "guard".','altrcue',65.70
+'price ice',0,0,'nice',' The word "nice" is not associated or rhymes with any of the words listed in the context provided.','altrcue',56.40
+'price ice',1,0,'value',' The word "price" is associated with cost not value.','altacue',56.40
+'visit tour',0,0,'call',' The word "tacit" is associated with knowledge not call.','altacue',66.80
+'visit tour',1,0,'grit',' The word "visit" is associated or rhymes with "grit".','altrcue',56.20
+'sheep pasture',1,0,'jeep',' The word that is associated or rhymes with "jeep" from the memorized list is "sheep".','altrcue',60.30
+'sheep pasture',1,0,'wool',' The word in the memorized list that is associated or rhymes with wool is "sheep".','altacue',55.70
+'guard bard',0,0,'soldier',' The word "whip" in the memorized list is associated with "tip".','altacue',66.00
+'guard bard',1,0,'shard',' The word that is associated or rhymes with "shard" from the memorized list is "guard".','altrcue',57.00
+'hour sour',0,0,'flour',' The word that is associated or rhymes with "flour" from the given list is not provided.','altrcue',112.70
+'hour sour',1,0,'twenty-four',' The word "hour" in the memorized list is associated or rhymes with twenty-four.','altacue',117.10
+'annoying irritating',0,0,'unnerving',' The word that is associated or rhymes with "unnerving" from the memorized list is "sheep".','altacue',57.00
+'annoying irritating',0,0,'toying',' The word that is associated or rhymes with "toying" from the given list is "whip".','altrcue',59.00
+'apparel clothing',1,0,'aquarel',' The word "apparel" in the memorized list is associated or rhymes with "aqua."','altrcue',57.90
+'apparel clothing',0,0,'blouse',' The word that is associated or rhymes with "blouse" from the memorized list is "house".','altacue',59.40
+'tacit facet',0,0,'implicit',' The word "implicit" is not associated or rhymes with any of the words listed.','altacue',57.20
+'tacit facet',0,0,'explicit',' The word "explicit" is not present in the given list.','altrcue',60.90
+'superb herb',0,0,'curb',' The word that is associated or rhymes with "curb" from the memorized list is "sheep".','altrcue',94.10
+'superb herb',0,0,'brillant',' The word "brilliant" is not associated or rhymes with any of the words listed.','altacue',56.00

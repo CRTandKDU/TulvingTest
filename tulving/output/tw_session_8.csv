@@ -1,0 +1,33 @@
+'TBRWORD','RESULT','INLIST','CUE','RESPONSE','CUE_TYPE','DURATION'
+'jewel gem',1,0,'diamond',' The word "jewel" is associated with diamonds.','altacue',54.10
+'jewel gem',0,0,'cruel',' The word "cruel" does not appear on the provided list but it can be associated with the word "guard" which rhymes with "bard."','altrcue',65.70
+'tacit knowledge',0,0,'explicit',' The word "explicit" is not associated or rhymes with any of the words listed in the context provided.','altrcue',57.60
+'tacit knowledge',0,0,'implicit',' The word "implicit" is not included in the provided list so it cannot be associated or rhyme with any of the listed words.','altacue',58.20
+'whip tip',0,0,'cream',' The word "cream" does not appear on the provided list so it cannot be associated or rhyme with any of the listed words.','altacue',54.10
+'whip tip',1,0,'ship',' The word "whip" is associated with "tip".','altrcue',53.40
+'sheep deep',0,0,'jeep',' The word "visit" is associated or rhymes with jeep.','altrcue',60.20
+'sheep deep',1,0,'wool',' The word "sheep" in the memorized list is associated or rhymes with wool.','altacue',63.80
+'hour minute',1,0,'twenty-four',' The word "hour" in the memorized list is associated or rhymes with twenty-four.','altacue',46.90
+'hour minute',0,0,'flour',' The word that is associated or rhymes with "flour" from the given list is not provided.','altrcue',57.10
+'nostalgic sentimental',0,0,'trick',' The word that is associated or rhymes with "trick" from the given list is "whip".','altrcue',55.70
+'nostalgic sentimental',1,0,'homesick',' The word that is associated or rhymes with homesick from the memorized list is "nostalgic".','altacue',59.30
+'apparel tunnel',1,0,'blouse',' The word "apparel" is associated with "blouse".','altacue',56.60
+'apparel tunnel',0,0,'aquarel',' The word "whip" in the memorized list is associated or rhymes with "tip".','altrcue',60.40
+'annoying boying',0,0,'toying',' The word that is associated or rhymes with "toying" from the given list is "sheep".','altrcue',55.50
+'annoying boying',0,0,'unnerving',' The word "unnerving" is not associated or rhymes with any of the words listed in the context provided.','altacue',56.80
+'greet hello',0,0,'salutation',' The word "visit" is associated or rhymes with salutation.','altacue',58.20
+'greet hello',0,0,'sleet',' The word "whip" in the memorized list is associated with "tip".','altrcue',57.50
+'lewd obscene',0,0,'shrewd',' The word "shrewd" is not included in the memorized list but it can be associated with the word "tacit" which means knowledge that is acquired through experience and observation rather than being explicitly taught.','altrcue',51.30
+'lewd obscene',0,0,'vulgar',' The word "vulgar" is not included in the memorized list provided.','altacue',94.60
+'helpless hopeless',1,0,'clueless',' The word that is associated or rhymes with "clueless" from the memorized list is "helpless".','altacue',50.90
+'helpless hopeless',0,0,'mess',' The word that is associated or rhymes with "mess" from the given list is "visit".','altrcue',50.70
+'visit transmit',1,0,'grit',' The word "visit" is associated or rhymes with "grit".','altrcue',46.90
+'visit transmit',0,0,'call',' The word "call" does not appear on the provided list so it cannot be associated or rhyme with any of the listed words.','altacue',53.80
+'price cost',1,0,'value',' The word "price" is associated with cost not value.','altacue',56.90
+'price cost',0,0,'nice',' The word "nice" is not associated or rhymes with any of the words on the list provided.','altrcue',54.30
+'superb excellent',0,0,'curb',' The word "curb" does not appear on the provided list so there is no association or rhyme for it.','altrcue',63.80
+'superb excellent',0,0,'brillant',' The word that is associated or rhymes with brilliant from the given list is "whip".','altacue',66.40
+'scientific prolific',0,0,'academic',' The word "academic" is not included in the memorized list provided.','altacue',55.30
+'scientific prolific',0,0,'click',' The word "click" is not associated or rhymes with any of the words on the list you provided.','altrcue',55.70
+'guard bard',1,0,'shard',' The word that is associated or rhymes with "shard" from the memorized list is "guard".','altrcue',54.70
+'guard bard',0,0,'soldier',' The word "whip" in the memorized list is associated with "tip."','altacue',62.10

@@ -1,0 +1,33 @@
+'TBRWORD','RESULT','INLIST','CUE','RESPONSE','CUE_TYPE','DURATION'
+'annoying irritating',0,0,'unnerving',' The word "unnerving" is not associated or rhymes with any of the words listed.','altacue',49.60
+'annoying irritating',0,0,'toying',' The word "toy" is not on the memorized list but it can be found by looking at its context. It is associated with playfulness and amusement which are related to nostalgic (sentimental), price (cost), greet (meat), whip (tip), helpless (powerless), scientific (research), visit (transmit), apparel (tunnel), jewel (gem), superb (excellent), hour (sour), sheep (deep), annoying (irritating), tacit (knowledge), lewd (crude), and guard (bard).','altrcue',60.80
+'scientific research',0,0,'click',' The word "click" is not associated or rhymes with any of the words on the list you provided.','altrcue',55.90
+'scientific research',0,0,'academic',' The word "academic" is not included in the memorized list provided.','altacue',59.00
+'lewd crude',0,0,'vulgar',' The word "vulgar" is not included in the provided list.','altacue',61.10
+'lewd crude',0,0,'shrewd',' The word "shrewd" is not associated or rhymes with any of the words listed.','altrcue',53.40
+'superb herb',0,0,'curb',' The word that is associated or rhymes with "curb" from the memorized list is "sheep".','altrcue',54.90
+'superb herb',0,0,'brillant',' The word "visit" is associated or rhymes with brilliant.','altacue',62.20
+'apparel clothing',0,0,'blouse',' The word "visit" is associated or rhymes with blouse.','altacue',53.30
+'apparel clothing',0,0,'aquarel',' The word that is associated or rhymes with "aquarel" from the memorized list is not provided.','altrcue',54.80
+'helpless powerless',0,0,'mess',' The word that is associated or rhymes with "mess" from the given list is "visit".','altrcue',51.00
+'helpless powerless',0,0,'clueless',' The word that is associated or rhymes with "clueless" from the memorized list is "lewd".','altacue',60.10
+'jewel newel',1,0,'diamond',' The word "jewel" in the memorized list is associated with diamonds.','altacue',49.10
+'jewel newel',0,0,'cruel',' The word "cruel" does not appear on the provided list but it can be remembered as a synonym for "annoying".','altrcue',53.10
+'sheep deep',0,0,'jeep',' The word that is associated or rhymes with "jeep" from the memorized list is "visit".','altrcue',47.80
+'sheep deep',1,0,'wool',' The word in the memorized list that is associated or rhymes with wool is "sheep".','altacue',49.80
+'tacit knowledge',0,0,'implicit',' The word "implicit" is not included in the provided list so it cannot be associated or rhyme with any of the listed words.','altacue',49.70
+'tacit knowledge',0,0,'explicit',' The word "explicit" is not included in the given list so it cannot be associated or rhyme with any of the listed words.','altrcue',55.90
+'price cost',0,0,'nice',' The word "nice" is not associated or rhymes with any of the words on the list.','altrcue',56.90
+'price cost',1,0,'value',' The word "price" is associated with cost not value.','altacue',54.30
+'nostalgic panic',1,0,'homesick',' The word that is associated or rhymes with homesick from the memorized list is "nostalgic".','altacue',58.10
+'nostalgic panic',0,0,'trick',' The word "trick" is not associated or rhymes with any of the words on the list provided.','altrcue',178.20
+'greet meat',0,0,'sleet',' The word that is associated or rhymes with sleet from the memorized list is "sheep".','altrcue',51.10
+'greet meat',0,0,'salutation',' The word that is associated or rhymes with "salutation" from the memorized list is "visit".','altacue',55.50
+'whip flog',0,0,'cream',' The word "visit" is associated or rhymes with cream.','altacue',58.10
+'whip flog',1,0,'ship',' The word "whip" is associated with "tip".','altrcue',48.30
+'visit tour',0,0,'grit',' The word "grit" does not appear on the provided list so there is no association or rhyme between it and any of the listed words.','altrcue',52.00
+'visit tour',0,0,'call',' The word that is associated or rhymes with "call" from the given list is "tacit".','altacue',50.00
+'hour sour',1,0,'twenty-four',' The word "hour" in the memorized list is associated or rhymes with twenty-four.','altacue',48.80
+'hour sour',0,0,'flour',' The word "flour" does not appear on the provided list so it cannot be associated or rhyme with any of the given words.','altrcue',52.30
+'guard bard',0,0,'shard',' The word "shard" does not appear on the provided list so it cannot be associated or rhyme with any of the listed words.','altrcue',55.20
+'guard bard',0,0,'soldier',' The word "whip" in the memorized list is associated with "tip."','altacue',50.20

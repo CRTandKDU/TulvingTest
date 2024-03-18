@@ -128,7 +128,7 @@ class TulvingTest:
 
     def perform(self, model_nn):
         def render_target( lst ):
-            return ','.join( lst )
+            return ' - '.join( lst )
         
         tbeg = datetime.now().isoformat( timespec='seconds' )
         logging.info( f'{tbeg} > Performance' )
@@ -162,7 +162,7 @@ class TulvingTest:
                         val       = val,
                         valinlist = valinlist,
                         cue       = row['probe'],
-                        txt       = response.text(),
+                        txt       = response.text().replace( ',','' ),
                         cue_type  = row['cue_type'],
                         tdur      = tdur
                     ) )
@@ -183,7 +183,7 @@ class TulvingTest:
                         val       = val,
                         valinlist = valinlist,
                         cue       = row['probe'],
-                        txt       = response.text(),
+                        txt       = response.text().replace( ',','' ),
                         cue_type  = row['cue_type'],
                         tdur      = tdur
                     ) )

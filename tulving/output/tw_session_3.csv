@@ -1,0 +1,33 @@
+'TBRWORD','RESULT','INLIST','CUE','RESPONSE','CUE_TYPE','DURATION'
+'guard protect',0,0,'soldier',' The word "whip" is associated with "tip".','altacue',10303.00
+'guard protect',0,0,'shard',' The word "shard" does not appear on the provided list so it cannot be associated or rhyme with any of the listed words.','altrcue',200026.70
+'helpless powerless',0,0,'mess',' The word that is associated or rhymes with "mess" from the given list is "visit".','altrcue',237200.10
+'helpless powerless',1,0,'clueless',' The word that is associated or rhymes with "clueless" from the memorized list is "helpless".','altacue',56.50
+'hour sour',1,0,'twenty-four',' The word "hour" in the memorized list is associated or rhymes with twenty-four.','altacue',68.90
+'hour sour',0,0,'flour',' The word "flour" does not appear on the provided list so it cannot be associated or rhyme with any of the given words.','altrcue',67.40
+'jewel newel',0,0,'cruel',' The word that is associated or rhymes with "cruel" from the memorized list is "guard."','altrcue',78.30
+'jewel newel',0,0,'diamond',' The word that is associated or rhymes with "diamond" from the memorized list is "tacit".','altacue',63.20
+'annoying irritating',0,0,'unnerving',' The word that is associated or rhymes with "unnerving" from the memorized list is "sheep".','altacue',60.80
+'annoying irritating',0,0,'toying',' The word "toy" is not present in the given list.','altrcue',73.40
+'whip flog',1,0,'ship',' The word "whip" is associated with "tip".','altrcue',49.70
+'whip flog',0,0,'cream',' The word "visit" is associated or rhymes with cream.','altacue',92.50
+'greet meat',1,0,'salutation',' The word "greet" is associated or rhymes with salutation.','altacue',100.50
+'greet meat',0,0,'sleet',' The word that is associated or rhymes with sleet from the memorized list is "sheep".','altrcue',111.40
+'lewd crude',0,0,'shrewd',' The word "shrewd" is not associated or rhymes with any of the words listed in the memorized list.','altrcue',61.30
+'lewd crude',0,0,'vulgar',' The word "vulgar" is not present in the given list.','altacue',68.90
+'visit tour',0,0,'call',' The word that is associated or rhymes with "call" from the given list is "tacit".','altacue',57.80
+'visit tour',1,0,'grit',' The word "visit" is associated or rhymes with "grit".','altrcue',55.30
+'apparel clothing',0,0,'aquarel',' The word that is associated or rhymes with "aquarel" from the memorized list is not provided.','altrcue',54.90
+'apparel clothing',1,0,'blouse',' The word that is associated or rhymes with "blouse" from the memorized list is "apparel".','altacue',57.20
+'superb herb',0,0,'brillant',' The word "brilliant" is not associated or rhymes with any of the words listed in the context provided.','altacue',62.90
+'superb herb',0,0,'curb',' The word "curb" does not appear on the provided list so there is no association or rhyme for it.','altrcue',59.20
+'tacit facet',0,0,'explicit',' The word "explicit" is not included in the given list so it cannot be associated or rhyme with any of the listed words.','altrcue',52.60
+'tacit facet',0,0,'implicit',' The word "implicit" is not associated or rhymes with any of the words listed.','altacue',66.70
+'nostalgic sentimental',1,0,'homesick',' The word that is associated or rhymes with homesick from the memorized list is "nostalgic".','altacue',105.50
+'nostalgic sentimental',0,0,'trick',' The word that is associated or rhymes with "trick" from the given list is "whip".','altrcue',92.60
+'sheep pasture',0,0,'jeep',' The word "visit" is associated or rhymes with jeep.','altrcue',57.00
+'sheep pasture',1,0,'wool',' The word in the memorized list that is associated or rhymes with wool is "sheep".','altacue',57.30
+'scientific prolific',0,0,'academic',' The word "academic" is not associated or rhymes with any of the words listed.','altacue',54.40
+'scientific prolific',0,0,'click',' The word "click" is not associated or rhymes with any of the words on the list.','altrcue',90.80
+'price ice',0,0,'nice',' The word "nice" is not included in the provided list but it can be associated with "tacit" which means unspoken knowledge or understanding.','altrcue',55.40
+'price ice',1,0,'value',' The word "price" is associated with cost not value.','altacue',742.80
