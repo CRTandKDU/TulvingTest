@@ -6,8 +6,10 @@ import pandas as pd
 
 class TulvingTabulator:
     DATAFILE_TEMPLATE = 'tw_session_{}.csv'
+    # Encoding/Retrievals
     LABELS_ROWS       = [ 'A/AR', 'A/RA', 'R/AR', 'R/RA' ]
-    LABELS_COLS       = [ 'ar', 'Ra', 'Ar', 'AR' ]
+    # Lower case: fail, Upper case: pass
+    LABELS_COLS       = [ 'ar', 'aR', 'Ar', 'AR' ]
     #
     datadir = ''
 
@@ -42,16 +44,17 @@ class TulvingTabulator:
 
 
 if __name__ == '__main__':
-    pd.set_option("display.precision", 2)
-    #
-    parser = argparse.ArgumentParser( prog="Tabulate",
-                                      description="Tabulate Tulving-Watkins Test results." )
-    parser.add_argument('sessions', metavar='N', type=int, nargs='+', help='Session number(s)')
-    args       = parser.parse_args()
-    #
-    ttab = TulvingTabulator( "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\output\\" )
-    res = np.array( ttab.read_csv( args.sessions ), dtype=float ) / (4*len(args.sessions))
-    twres = pd.DataFrame( res, index=TulvingTabulator.LABELS_ROWS,  columns=TulvingTabulator.LABELS_COLS )
-    print( twres )
-    print( twres.mean() )
-    print( twres.sum( axis=1 ) )
+    pass
+    # pd.set_option("display.precision", 2)
+    # #
+    # parser = argparse.ArgumentParser( prog="Tabulate",
+    #                                   description="Tabulate Tulving-Watkins Test results." )
+    # parser.add_argument('sessions', metavar='N', type=int, nargs='+', help='Session number(s)')
+    # args       = parser.parse_args()
+    # #
+    # ttab = TulvingTabulator( "C:\\Users\\chauv\\Documents\\NEWNEWAI\\tulving\\output\\" )
+    # res = np.array( ttab.read_csv( args.sessions ), dtype=float ) / (4*len(args.sessions))
+    # twres = pd.DataFrame( res, index=TulvingTabulator.LABELS_ROWS,  columns=TulvingTabulator.LABELS_COLS )
+    # print( twres )
+    # print( twres.mean() )
+    # print( twres.sum( axis=1 ) )
