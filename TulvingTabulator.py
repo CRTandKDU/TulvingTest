@@ -17,6 +17,33 @@ class TulvingTabulator:
         self.datadir = datafiles_dir
 
 
+    def read_data_matrices_csv( self, sessions ):
+        dmXY, dmYX = np.zeros( (2, 2), dtype=float ), np.zeros( (2, 2), dtype=float )
+        for ses in sessions:
+            with open( self.datadir + TulvingTabulator.DATAFILE_TEMPLATE.format( ses ) ) as f:
+                csvreader    = csv.DictReader( f, delimiter=',', quotechar="'" )
+                idx = 0
+                xresp, yresp = 0, 0
+                for row in csvreader:
+                    if (0 == (idx % 8)) or (4 == (idx % 8)):
+                        xresp = int( row['RESULT'] )
+                    elif (1 == (idx % 8)) or (5 == (idx % 8)):
+                        yresp = int( row['RESULT'] )                        
+                        dmXY[ 1-xresp, 1-yresp ] += 1
+                        xresp, yresp = 0, 0
+                    elif (2 == (idx % 8)) or (6 == (idx % 8)):
+                        yresp = int( row['RESULT'] )
+                    elif (3 == (idx % 8)) or (7 == (idx % 8)):
+                        xresp = int( row['RESULT'] )
+                        dmYX[ 1-yresp, 1-xresp ] += 1
+                        xresp, yresp = 0, 0
+                    else:
+                        pass
+                    idx += 1
+        #
+        tot = 8*len( sessions )
+        return dmXY/tot, dmYX/tot
+
     def read_csv( self, sessions ):
         results = np.zeros( (4, 4), dtype=float )
         for ses in sessions:
@@ -42,6 +69,39 @@ class TulvingTabulator:
                 
         return results
 
+
+    def trace_mat( self, dmXY, dmYX ):
+        # Equations 1 to 6 from paper
+        xy = (dmXY[1,1] + dmYX[1,1])/2.
+        rxy, ryx  = (1-xy)/(1-dmXY[1,1]), (1-xy)/(1-dmYX[1,1])
+        X  = (dmXY[0,0] + dmXY[0,1])*rxy
+        Y  = (dmYX[0,0] + dmYX[0,1])*ryx
+        xY = dmXY[1,0]*rxy
+        Xy = dmYX[1,0]*ryx
+        eq6l, eq6r = (dmXY[0,0] + dmXY[0,1] + dmXY[1,0]), (dmYX[0,0] + dmYX[0,1] + dmYX[1,0])
+        # Adjust and complete as in text
+        return ([ [X-Xy, Xy, X],
+                  [xY,xy, xY+xy],
+                  [Y, Xy+xy, eq6l] ],
+                [ [Y-xY, Xy, X],
+                 [xY,xy, xY+xy],
+                 [Y, Xy+xy, eq6r] ] )
+
+
+    def trace_adjust( self, mat, x, y ):
+        # Adjust a 2x2 matrix by substracting an equal share of M_{x,y} from all other elenents
+        delta = mat[x][y]/3.
+        for i in range(2):
+            for j in range(2):
+                mat[i][j] += delta
+        mat[x][y] = 0.
+        # Update marginals
+        mat[0][2] = mat[0][0] + mat[0][1]
+        mat[1][2] = mat[1][0] + mat[1][1]
+        mat[2][0] = mat[0][0] + mat[1][0]
+        mat[2][1] = mat[0][1] + mat[1][1]
+        return mat
+    
 
 if __name__ == '__main__':
     pass
