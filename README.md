@@ -2,7 +2,7 @@
 
 Electronic Supplementary Material for:
 
-@Online{chauvet24:_memor_gaps,
+@Online{chauvet24:_memor_gaps,  
   author       = {Jean-Marie Chauvet},
   title	       = {{Memory GAPS: Would LLMs pass the Tulving Test?}},
   year	       = 2024,
