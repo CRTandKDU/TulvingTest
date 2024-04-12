@@ -5,19 +5,26 @@ import numpy as np
 import pandas as pd
 
 class TulvingTabulator:
+    #
+    datadir = ''
     DATAFILE_TEMPLATE = 'tw_session_{}.csv'
+    # This should really be read from a model description file shared with 'tulvinglib.py'
     # Encoding/Retrievals
     LABELS_ROWS       = [ 'A/AR', 'A/RA', 'R/AR', 'R/RA' ]
     # Lower case: fail, Upper case: pass
     LABELS_COLS       = [ 'ar', 'aR', 'Ar', 'AR' ]
-    #
-    datadir = ''
+    # Selecting encodings for data matrices
+    ENCODINGS         = {"all": range(32),
+                         "A": [ 0, 1, 2, 3,  8,  9, 10, 11, 16, 17, 18, 19, 24, 25, 26, 27 ],
+                         "R": [ 4, 5, 6, 7, 12, 13, 14, 15, 20, 21, 22, 23, 28, 29, 39, 31 ]
+                         }
+    
 
     def __init__( self, datafiles_dir ):
         self.datadir = datafiles_dir
 
 
-    def read_data_matrices_csv( self, sessions ):
+    def read_data_matrices_csv( self, sessions, encoding="all" ):
         dmXY, dmYX = np.zeros( (2, 2), dtype=float ), np.zeros( (2, 2), dtype=float )
         for ses in sessions:
             with open( self.datadir + TulvingTabulator.DATAFILE_TEMPLATE.format( ses ) ) as f:
@@ -25,23 +32,24 @@ class TulvingTabulator:
                 idx = 0
                 xresp, yresp = 0, 0
                 for row in csvreader:
-                    if (0 == (idx % 8)) or (4 == (idx % 8)):
-                        xresp = int( row['RESULT'] )
-                    elif (1 == (idx % 8)) or (5 == (idx % 8)):
-                        yresp = int( row['RESULT'] )                        
-                        dmXY[ 1-xresp, 1-yresp ] += 1
-                        xresp, yresp = 0, 0
-                    elif (2 == (idx % 8)) or (6 == (idx % 8)):
-                        yresp = int( row['RESULT'] )
-                    elif (3 == (idx % 8)) or (7 == (idx % 8)):
-                        xresp = int( row['RESULT'] )
-                        dmYX[ 1-yresp, 1-xresp ] += 1
-                        xresp, yresp = 0, 0
-                    else:
-                        pass
+                    if idx in TulvingTabulator.ENCODINGS[ encoding ]:
+                        if (0 == (idx % 8)) or (4 == (idx % 8)):
+                            xresp = int( row['RESULT'] )
+                        elif (1 == (idx % 8)) or (5 == (idx % 8)):
+                            yresp = int( row['RESULT'] )                        
+                            dmXY[ 1-xresp, 1-yresp ] += 1
+                            xresp, yresp = 0, 0
+                        elif (2 == (idx % 8)) or (6 == (idx % 8)):
+                            yresp = int( row['RESULT'] )
+                        elif (3 == (idx % 8)) or (7 == (idx % 8)):
+                            xresp = int( row['RESULT'] )
+                            dmYX[ 1-yresp, 1-xresp ] += 1
+                            xresp, yresp = 0, 0
+                        else:
+                            pass
                     idx += 1
         #
-        tot = 8*len( sessions )
+        tot = (8 if "all" == encoding else 4) * len( sessions )
         return dmXY/tot, dmYX/tot
 
     def read_csv( self, sessions ):
@@ -82,26 +90,45 @@ class TulvingTabulator:
         # Adjust and complete as in text
         return ([ [X-Xy, Xy, X],
                   [xY,xy, xY+xy],
-                  [Y, Xy+xy, eq6l] ],
+                  [Y, Xy+xy, dmXY[1,1] - dmYX[1,1]] ],
                 [ [Y-xY, Xy, X],
-                 [xY,xy, xY+xy],
-                 [Y, Xy+xy, eq6r] ] )
+                  [xY,xy, xY+xy],
+                  [Y, Xy+xy, dmYX[1,1] - dmXY[1,1]] ])
 
 
-    def trace_adjust( self, mat, x, y ):
-        # Adjust a 2x2 matrix by substracting an equal share of M_{x,y} from all other elenents
-        delta = mat[x][y]/3.
-        for i in range(2):
-            for j in range(2):
-                mat[i][j] += delta
-        mat[x][y] = 0.
-        # Update marginals
-        mat[0][2] = mat[0][0] + mat[0][1]
-        mat[1][2] = mat[1][0] + mat[1][1]
-        mat[2][0] = mat[0][0] + mat[1][0]
-        mat[2][1] = mat[0][1] + mat[1][1]
-        return mat
+    # def trace_adjust( self, mat, x, y ):
+    #     # Adjust a 2x2 matrix by substracting an equal share of M_{x,y} from all other elenents
+    #     delta = mat[x][y]/3.
+    #     for i in range(2):
+    #         for j in range(2):
+    #             mat[i][j] += delta
+    #     mat[x][y] = 0.
+    #     # Update marginals
+    #     mat[0][2] = mat[0][0] + mat[0][1]
+    #     mat[1][2] = mat[1][0] + mat[1][1]
+    #     mat[2][0] = mat[0][0] + mat[1][0]
+    #     mat[2][1] = mat[0][1] + mat[1][1]
+    #     return mat
     
+    def test( self ):
+        testXY = np.array( [[ .36, .07 ],
+                            [ .19, .38 ]] )
+        testYX = np.array( [[ .32, .21 ],
+                            [ .15, .32 ]] )
+        tm1, tm2 = self.trace_mat( testXY, testYX )
+        #
+        pd.set_option("display.precision", 2)
+        print( pd.DataFrame(tm1) )
+        print( pd.DataFrame(tm2) )
+        #       0     1     2
+        # 0  0.31  0.14  0.45
+        # 1  0.20  0.35  0.55
+        # 2  0.51  0.49  0.06
+        #       0     1     2
+        # 0  0.31  0.14  0.45
+        # 1  0.20  0.35  0.55
+        # 2  0.51  0.49 -0.06        
+
 
 if __name__ == '__main__':
     pass

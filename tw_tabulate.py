@@ -39,8 +39,29 @@ def tab_summary( ttab, args ):
     axright.set_title( 'T., W. results (1975)' )
     sns.heatmap( TW_RESULTS, vmin=0., vmax=1., annot=True, cmap="crest", ax=axright, cbar_ax=axbar )
     plt.show()
-    
 
+
+def trace_summary( sessions, encoding ):
+    print( f'* {encoding} encodings' )
+    dmXY, dmYX   = ttab.read_data_matrices_csv( sessions, encoding )
+    tm1, tm2     = ttab.trace_mat( dmXY, dmYX )
+    eqn61, eqn62 = tm1[1][1], tm2[1][1]
+    # print( '** Trace unadjusted' )
+    # print( pd.DataFrame( tm1 ) )
+    # print( '** Trace unadjusted' )
+    # print( pd.DataFrame( tm2) )
+    #
+    print( f'** Eqn. 6 LHS: {eqn61}' )
+    print( '*** Data' )
+    print( pd.DataFrame( dmXY ) )
+    print( '*** Trace' )
+    print( pd.DataFrame( tm1 ) )
+    print( f'** Eqn. 6 RHS: {eqn62}' )
+    print( '*** Data' )
+    print( pd.DataFrame( dmYX ) )
+    print( '*** Trace' )
+    print( pd.DataFrame( tm2 ) )
+    
 
 if __name__ == '__main__':
     pd.set_option("display.precision", 2)
@@ -55,9 +76,8 @@ if __name__ == '__main__':
     if args.summary:
         tab_summary( ttab, args )
     #
-    dmXY, dmYX = ttab.read_data_matrices_csv( args.sessions )
-    tm1, tm2 = ttab.trace_mat( dmXY, dmYX )
-    tm1, tm2 = ttab.trace_adjust( tm1, 0, 0 ), ttab.trace_adjust( tm2, 0, 0 )
-    print( pd.DataFrame( tm1 ) )
-    print( pd.DataFrame( tm2 ) )
+    trace_summary( args.sessions, "all" )
+    trace_summary( args.sessions, "A" )
+    trace_summary( args.sessions, "R" )
+
 
