@@ -2,14 +2,18 @@
 
 Electronic Supplementary Material for:
 
+```
 @Online{chauvet24:_memor_gaps,
   author       = {Jean-Marie Chauvet},
-  title	       = {{Memory GAPS: Would LLMs pass the Tulving Test?}},
-  year	       = 2024,
-  eprint       = {2402.16505v2},
-  primaryclass = {cs.AI},
-  archiveprefix= {arXiv}
+  title	       = {{Memory GAPS: Would LLMs pass the Tulving Test?}},  
+  year	       = 2024,  
+  eprint       = {2402.16505v2},  
+  primaryclass = {cs.AI},  
+  archiveprefix= {arXiv} 
 }
+```
+
+See: https://arxiv.org/abs/2402.16505
 
 The repository contains result data for the direct comparison Tulving Test performance by Large Language Models `mistral-7b-instruct-v0 ` without fine tuning, and a few instances by `orca-mini-3b`. All result data files are located in the `output`directory.
 
